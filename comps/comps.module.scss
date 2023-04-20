@@ -1,0 +1,34 @@
+@import '../styles/_library';
+
+.navbar {
+    background-color: $base-color;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    height: 100%;
+    position: fixed;
+}
+
+.choice {
+    margin-top: 1rem;
+    margin: 1rem;
+}
+
+.button {
+    margin-left: 9rem;
+    height: 5rem;
+    width: 1.5rem;
+    position: fixed;
+    top: 0%;
+    background-color: $base-color;
+    outline-style: none;
+    border: none;
+}
+
+.buttonText {
+    border: none;
+    font-size: 1rem;
+    color: white;
+}
+

@@ -1,0 +1,27 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    background-color: #02025e;
+    flex-direction: column;
+    //color: #02b6f0;
+    color: white;
+    width: 65rem;
+    margin: 10rem;
+    border: 4px solid;
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.titleText {
+    margin-left: 1rem;
+    font-family: Orbitron;
+}
+
+.paragraph {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
