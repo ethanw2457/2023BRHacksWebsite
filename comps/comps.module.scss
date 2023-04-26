@@ -1,4 +1,5 @@
 @import '../styles/_library';
+@import '../pages/index.module';
 
 .navbar {
     background-color: $base-color;
@@ -6,8 +7,13 @@
     display: flex;
     flex-direction: column;
     width: 9rem;
-    height: 100%;
+    height: 55%;
+    left: -9rem;
     position: fixed;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 .choice {
@@ -23,7 +29,12 @@
     top: 0%;
     background-color: $base-color;
     outline-style: none;
-    border: none;
+    border-right: 5px solid $border-color;
+    border-top: 5px solid $border-color;
+    border-bottom: 5px solid $border-color;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .buttonText {
@@ -32,3 +43,123 @@
     color: white;
 }
 
+.inputLeft {
+    margin: 0.5rem 0 0.5rem;
+    border: none;
+    width: 10rem;
+    height: 1.75rem;
+    font-size: 14px;
+    font-family: inherit;
+    border: 3.5px solid $border-color;
+    border-radius: 3px;
+}
+
+.inputRight {
+    @extend .inputLeft;
+    margin: 0.5rem 3rem 0.5rem;
+
+}
+
+.email {
+    @extend .inputLeft;
+    width: 20rem;
+}
+
+.register {
+    // @extend .title;
+    display: flex;
+    background-color: #02025e;
+    flex-direction: column;
+    //color: #02b6f0;
+    color: white;
+    // width: 65rem;
+    // margin-left: 10rem;
+    // margin: 3rem 11rem 3rem;
+    // border: 4px solid;
+    width: 100%;
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.form {
+    margin: 2rem $full-width 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup1 {
+    display: inline-block;
+}
+
+.submitButton {
+    background-color: $border-color;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 7rem;
+    height: 1.5rem;
+    font-family: inherit;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.box .time tr:hover {
+    background-color: $border-color;
+}
+
+.table {
+    @extend .box;
+}
+
+.time {
+    @extend .box;
+}
+
+// .titleText {
+//     margin: 0 0 1rem;
+// }
+
+.titleRegistration {
+    @extend .titleText;
+    margin: 0 0 1rem;
+}
+
+.box {
+    padding: 1rem;
+    border: 5px solid $border-color;
+    font-weight: bold;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.infoBox {
+    @extend .box;
+    background-color: $secondary-color;
+}
+
+.smallText {
+    font-size: 14px;
+    margin: 0.5rem 0 2rem;
+}
+
+.questions {
+    background-color: $base-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.question {
+    @extend .paragraph;
+    border-bottom: 1px solid $secondary-color;
+    padding-bottom: 0.25rem;
+}
+
+.answer {
+    @extend .paragraph;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .form {
+        margin: 2rem $half-width 0;
+    }
+}
