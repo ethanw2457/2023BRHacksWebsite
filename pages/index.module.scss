@@ -46,6 +46,19 @@
     margin-left: 5rem;
 }
 
+.circle,
+.rect,
+.line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+
+.svg {
+    margin-bottom: 0;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1000px) {
     .title {
         margin: 1rem $half-width 1rem;
