@@ -20,8 +20,8 @@ const schedule = [
 
 const Schedule = () => {
     return (
-        <div className={styles.title}>
-            <table className={styles.table}>
+        <div className={styles.title} id="schedule">
+            <table className={styles.table} rules="rows">
                 <tr>
                     <th className={styles.infoBox}> Time </th>
                     <th className={styles.infoBox}> Event </th>

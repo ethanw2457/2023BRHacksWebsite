@@ -6,8 +6,10 @@ import { motion } from 'framer-motion'
 import Question from '../comps/Question'
 import Navbar from '../comps/Navbar.js'
 import Team from '../comps/Team'
+import { RegisterButton } from '../comps/RegisterButton'
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { ParallaxBanner } from 'react-scroll-parallax'
+
 
 export default function Home() {
   const isOpen = true;
@@ -32,9 +34,9 @@ export default function Home() {
       <Navbar/>
       <div className={styles.svg}>
         <motion.svg
-        width="400"
-        height="400"
-        viewBox="0 0 600 600"
+        width="300"
+        height="150"
+        viewBox="0 0 600 100"
         initial="hidden"
         animate="visible"
         >
@@ -81,15 +83,16 @@ export default function Home() {
         </motion.svg>
       </div>
       {/* <div> */}
-        <div className={styles.title}>
+        <div className={styles.title} id="about">
           <h1 className={styles.titleText}>
             Hack BRHS 2023
           </h1>
           <p className={styles.paragraph}>
             Hack BRHS is an event taking place in 2023. It will have coding and many people will be involved.
           </p>
+          <RegisterButton/>
         </div>
-        <div className={styles.titleSecondary}>
+        <div className={styles.titleSecondary} id="faq">
           <h1 className={styles.titleText}>
             FAQ
           </h1>

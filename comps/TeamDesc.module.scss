@@ -1,0 +1,24 @@
+@import '../pages/index.module.scss';
+@import './comps.module.scss';
+@import '../styles/_library.scss';
+
+$width: 7rem;
+
+.card {
+    width: $width;
+    margin: 1rem;
+}
+
+.name {
+    margin: 0.25rem;
+}
+
+.desc {
+    margin: 0.25rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

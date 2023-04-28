@@ -2,7 +2,7 @@ import styles from './comps.module.scss'
 
 const Registration = ({title, desc}) => {
     return (
-        <div className={styles.register}>
+        <div className={styles.register} id="register">
             <form className={styles.form}>
                 <h1 className={styles.titleRegistration}>
                     {title}

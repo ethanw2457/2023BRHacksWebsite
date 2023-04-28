@@ -1,0 +1,20 @@
+@import '../styles/_library.scss';
+
+.left {
+    margin-left: 1rem;
+    background-color: $base-color;
+    // height: 1.5rem;
+    // width: 1.5rem;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    @extend .left;
+    margin-right: 1rem;
+}
+
+.icon {
+    // margin: 1rem;
+}

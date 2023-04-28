@@ -158,6 +158,20 @@
     margin-bottom: 2rem;
 }
 
+.registerButton {
+    margin: 1rem;
+    width: 9rem;
+    height: 3rem;
+    font-family: Orbitron;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    background-color: $secondary-color;
+    box-shadow: none;
+    border: 5px solid $border-color;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 1000px) {
     .form {
         margin: 2rem $half-width 0;

@@ -1,15 +1,36 @@
 import styles from './comps.module.scss'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const elements = [
-    "About",
-    "Registration",
-    "FAQ",
-    "Schedule",
-    "Sponsors",
-    "Prizes",
-    "Team",
+    {
+        name: "About",
+        id: "about"
+    },
+    {
+        name: "Registration",
+        id: "register"
+    },
+    {
+        name: "FAQ",
+        id: "faq"
+    },
+    {
+        name: "Schedule",
+        id: "schedule"
+    },
+    {
+        name: "Sponsors",
+        id: "register"
+    },
+    {
+        name: "Prizes",
+        id: "register"
+    },
+    {
+        name: "Team",
+        id: "team"
+    }
 ]
 
 const variants = {
@@ -19,7 +40,24 @@ const variants = {
 
 const Navbar = () => {
 
-    const  [isOpen, setIsOpen] = openClose();
+    const [isOpen, setIsOpen] = openClose();
+    const [doc, setDoc] = useState(null);
+
+    const scroll = (id) => {
+        if (doc) {
+            const el = doc.getElementById(id);
+            try {
+                el.scrollIntoView({behavior : "smooth"});
+                console.log("Element selected: " + el.id);
+            } catch(e) {
+                console.log(e);
+            }
+        }
+    }
+
+    useEffect(() => {
+        setDoc(document);
+    }, [])
 
     return (
         <motion.nav className={styles.navbar}
@@ -29,8 +67,8 @@ const Navbar = () => {
         >
             { elements.map((el) => {
                 return (
-                    <div className={styles.choice} key={el}>
-                        {el}
+                    <div className={styles.choice} key={el.name} onClick={() => scroll(el.id)}>
+                        {el.name}
                     </div>
                 )
             })}
@@ -51,5 +89,6 @@ export const openClose = () => {
     const [isOpen, setIsOpen] = useState(false);
     return [isOpen, setIsOpen];
 }
+
 
 export default Navbar;
