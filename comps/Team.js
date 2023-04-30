@@ -23,17 +23,17 @@ const tech = [
 
 const outreach = [
   {
-    name: "Ethan",
+    name: "Other",
     role: "President",
     src: ""
   },
   {
-    name: "Kinshuk",
+    name: "Other",
     role: "Tech",
     src: ""
   },
   {
-    name: "Alan",
+    name: "Other",
     role: "Tech",
     src: ""
   }
@@ -47,11 +47,9 @@ const team = [
 const Team = () => {
 
     const [cycle, setCycle] = useState(0);
-    const [arr, setArr] = useState(tech);
-
     const toggleUp = () => {
       let newCycle = cycle - 1;
-      newCycle = newCycle < 0 ? newCycle + team.length :newCycle;
+      newCycle = newCycle < 0 ? newCycle + team.length : newCycle;
       setCycle((newCycle - 1) % team.length);
     }
 
@@ -59,22 +57,22 @@ const Team = () => {
       setCycle((cycle + 1) % team.length);
     }
 
-    useEffect(() => {
-      setArr(team[cycle]);
-    }, [])
-
     return (
-        <div className={styles.title} id="team">
+        <div className={styles.teamTitle} id="team">
           <h1 className={styles.titleText}>
             Team
           </h1>
           <div className={styles.container}>
-            <LRButton onClick={toggleUp} left/>
-            {arr.map((el) => {
+            <LRButton onClick={toggleDown} left/>
+            {/* <div className={styles.card}> */}
+            {team[cycle].map((el) => {
               return (
-                <TeamDesc name={el.name} desc={el.role} src={el.src}/>
+                <>
+                <TeamDesc name={el.name} desc={el.role} src={el.src} key={el.name}/>
+                </>
               )
             })}
+            {/* </div> */}
             <LRButton onClick={toggleDown} right/>
           </div>
       </div>

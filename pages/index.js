@@ -32,89 +32,95 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <div className={styles.svg}>
-        <motion.svg
-        width="300"
-        height="150"
-        viewBox="0 0 600 100"
-        initial="hidden"
-        animate="visible"
-        >
-          <motion.circle
-            cx="100"
-            cy="100"
-            r="80"
-            stroke="#ff0055"
-            variants={draw}
-            custom={1}
-            className={styles.circle}
-          />
-          <motion.line
-            x1="220"
-            y1="30"
-            x2="360"
-            y2="170"
-            stroke="#00cc88"
-            variants={draw}
-            custom={2}
-            className={styles.line}
-          />
-          <motion.line
-            x1="220"
-            y1="170"
-            x2="360"
-            y2="30"
-            stroke="#00cc88"
-            variants={draw}
-            custom={2.5}
-            className={styles.line}
-          />
-          <motion.rect
-            width="140"
-            height="140"
-            x="410"
-            y="30"
-            rx="20"
-            stroke="#0099ff"
-            variants={draw}
-            custom={3}
-            className={styles.rect}
-          />
-        </motion.svg>
-      </div>
-      {/* <div> */}
-        <div className={styles.title} id="about">
-          <h1 className={styles.titleText}>
-            Hack BRHS 2023
-          </h1>
-          <p className={styles.paragraph}>
-            Hack BRHS is an event taking place in 2023. It will have coding and many people will be involved.
-          </p>
-          <RegisterButton/>
-        </div>
-        <div className={styles.titleSecondary} id="faq">
-          <h1 className={styles.titleText}>
-            FAQ
-          </h1>
-          <div className={styles.dark}>
-            <Question title="How do I register?">
-                Just Sign Up!
-            </Question>
-            <Question title="How do I get good at coding?">
-                Just improve your skills and learn from youtube
-            </Question>
-            <Question title="Should I join CWAP?">
-                Yes of Course!
-            </Question>
-            <Question title="What kind of workshops are there?">
-                There are a large variety of workshops.
-            </Question>
+      <div className={styles.wrapper}>
+          {/* <div className={styles.wrapper}> */}
+            <header>
+              <motion.svg
+              width="300"
+              height="200"
+              viewBox="0 0 200 100"
+              initial="hidden"
+              animate="visible"
+              className={styles.svg}
+              >
+                <motion.circle
+                  cx="100"
+                  cy="100"
+                  r="80"
+                  stroke="#ff0055"
+                  variants={draw}
+                  custom={1}
+                  className={styles.circle}
+                />
+              </motion.svg>
+              <h1 className={styles.frontTitle}>
+                Hack BRHS
+              </h1>
+              <img src="/Layer1.svg" className={styles.l1}/>
+              <img src="/Layer2.svg" className={styles.l2}/>
+              <img src="/Layer3.svg" className={styles.l3}/>
+              <img src="/Layer4.svg" className={styles.l4}/>
+            </header>
+          {/* </div> */}
+        {/* <div> */}
+        <section className={styles.content}>
+          <div className={styles.title} id="about">
+            <h1 className={styles.titleText}>
+              Hack BRHS 2023
+            </h1>
+            <p className={styles.paragraph}>
+              Hack BRHS is an event taking place in 2023. It will have coding and many people will be involved.
+            </p>
+            <RegisterButton/>
           </div>
-        </div>
-        <Schedule/>
-        <Team/>
-        <Registration title="Registration" desc="Pls register"/>
-      {/* </div> */}
+        </section>
+        <section className={styles.secondaryContent}>
+          <div className={styles.titleSecondary} id="faq">
+            <h1 className={styles.titleText}>
+              FAQ
+            </h1>
+            <div className={styles.dark}>
+              <Question title="How do I register?">
+                  Just Sign Up!
+              </Question>
+              <Question title="How do I get good at coding?">
+                  Just improve your skills and learn from youtube
+              </Question>
+              <Question title="Should I join CWAP?">
+                  Yes of Course!
+              </Question>
+              <Question title="What kind of workshops are there?">
+                  There are a large variety of workshops.
+              </Question>
+            </div>
+          </div>
+        </section>
+        <section className={styles.tertiaryContent}>
+          <Schedule/>
+        </section>
+        <section className={styles.content}>
+          <Team/>
+        </section>
+        {/* <section className={styles.sponsors}>
+              <img src="/LayerR1.svg" className={styles.l1}/>
+              <img src="/LayerR2.svg" className={styles.l2}/>
+              <img src="/LayerR3.svg" className={styles.l3}/>
+              <img src="/LayerR4.svg" className={styles.l4}/>
+              <section className={styles.bottomTitle}>
+                <h1>
+                  Sponsors
+                </h1>
+              </section>
+        </section> */}
+        {/* <section>
+          <h1>
+            Sponsors
+          </h1>
+        </section> */}
+              <Registration title="Registration" desc="Pls register"/>
+
+        {/* </div> */}
+      </div>
     </>
   )
 }

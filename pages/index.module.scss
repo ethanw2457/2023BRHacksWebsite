@@ -6,7 +6,7 @@
     flex-direction: column;
     color: white;
     margin: 1rem $full-width 1rem;
-    border: 4px solid $border-color;
+    // border: 4px solid $border-color;
     border-radius: 15px;
 }
 
@@ -17,7 +17,8 @@
 
 .titleSecondary {
     @extend .title;
-    background-color: $secondary-color;
+    background-color: white;
+    color: $secondary-color;
     margin: 0.25rem $full-width 0.25rem;
 
 }
@@ -48,10 +49,91 @@
   fill: transparent;
 }
 
-.svg {
-    margin-bottom: 0;
-    text-align: center;
+.wrapper {
+    // margin-bottom: 0;
+    // text-align: center;
+    // flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+
 }
+
+.foreground {
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.frontTitle {
+    // @extend .foreground;
+    font-size: 5rem;
+    z-index: -1;
+    font-family: Orbitron;
+    transform: translateZ(-25px) scale(3.5);
+}
+
+.bottomTitle {
+    // @extend .foreground;
+    font-size: 3rem;
+    z-index: -1;
+    font-family: Orbitron;
+    transform: translateZ(-25px) scale(3.5);
+}
+
+.l1 {
+    @extend .foreground;
+    transform: translateZ(-20px) scale(3);
+}
+.l2 {
+    @extend .foreground;
+    transform: translateZ(-15px) scale(2.5);
+}
+.l3 {
+    @extend .foreground;
+    transform: translateZ(-10px) scale(2);
+}
+.l4 {
+    @extend .foreground;
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.svg {
+    @extend .foreground;
+    transform: translateZ(-25px) scale(3.5);
+}
+
+.content {
+    margin: 0;
+    background-color: #330033;
+    // border-top: 3px solid white;
+    // border-bottom: 3px solid white;
+}
+
+.secondaryContent {
+    @extend .content;
+    // background-color: $bottom-parallax;
+}
+
+.tertiaryContent {
+    @extend .content;
+    // background-color: #FA7268;
+
+}
+
+.sponsors {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .title {

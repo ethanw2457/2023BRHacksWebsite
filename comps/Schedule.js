@@ -22,20 +22,22 @@ const Schedule = () => {
     return (
         <div className={styles.title} id="schedule">
             <table className={styles.table} rules="rows">
-                <tr>
-                    <th className={styles.infoBox}> Time </th>
-                    <th className={styles.infoBox}> Event </th>
-                    <th className={styles.infoBox}> Location </th>
-                </tr>
-                {schedule.map((el) => {
-                    return(
-                        <tr>
-                            <td className={styles.time}> {el.time} </td>
-                            <td className={styles.box}> {el.event} </td>
-                            <td className={styles.box}> {el.location} </td>
-                        </tr>
-                    )
-                })}
+                <tbody>
+                    <tr>
+                        <th className={styles.infoBox}> Time </th>
+                        <th className={styles.infoBox}> Event </th>
+                        <th className={styles.infoBox}> Location </th>
+                    </tr>
+                    {schedule.map((el) => {
+                        return(
+                            <tr>
+                                <td className={styles.time}> {el.time} </td>
+                                <td className={styles.box}> {el.event} </td>
+                                <td className={styles.box}> {el.location} </td>
+                            </tr>
+                        )
+                    })}
+                </tbody>
             </table>
         </div>
     )

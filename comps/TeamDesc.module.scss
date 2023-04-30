@@ -7,6 +7,8 @@ $width: 7rem;
 .card {
     width: $width;
     margin: 1rem;
+    flex: 1.5;
+    text-align: center;
 }
 
 .name {
@@ -21,4 +23,10 @@ $width: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.teamTitle {
+    @extend .title;
+    border: 4px solid white;
+
 }

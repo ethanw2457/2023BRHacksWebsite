@@ -1,18 +1,19 @@
 @import '../styles/_library.scss';
 
 .left {
-    margin-left: 1rem;
+    // margin-left: 1rem;
     background-color: $base-color;
     // height: 1.5rem;
     // width: 1.5rem;
     border: none;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .right {
     @extend .left;
-    margin-right: 1rem;
+    // margin-right: 1rem;
 }
 
 .icon {
