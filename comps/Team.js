@@ -48,9 +48,7 @@ const Team = () => {
 
     const [cycle, setCycle] = useState(0);
     const toggleUp = () => {
-      let newCycle = cycle - 1;
-      newCycle = newCycle < 0 ? newCycle + team.length : newCycle;
-      setCycle((newCycle - 1) % team.length);
+      setCycle(cycle + team.length - 1) % team.length;
     }
 
     const toggleDown = () => {

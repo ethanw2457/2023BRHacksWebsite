@@ -160,6 +160,7 @@
 .answer {
     @extend .paragraph;
     margin-bottom: 2rem;
+    z-index: -1;
 }
 
 .registerButton {

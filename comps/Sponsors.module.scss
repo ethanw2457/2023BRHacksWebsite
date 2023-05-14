@@ -1,0 +1,30 @@
+@import '../pages/index.module.scss';
+@import './comps.module.scss';
+@import '../styles/_library.scss';
+
+.displayBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    // filter: blur(1rem);
+    margin: 1rem;
+}
+
+.logoWrapper {
+    margin: 3rem 3em 3rem;
+    background: linear-gradient(90deg, #ffa0ae 0%, #aacaef 75%);
+    border-radius: 16px;
+    filter: blur(0.25rem);    
+    // -webkit-filter: blur(8px);
+}
+
+.sponsorsTitle {
+    font-size: 5rem;
+    font-family: Orbitron;
+    text-align: center;
+    margin: 1rem;
+}

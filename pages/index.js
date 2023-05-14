@@ -1,6 +1,7 @@
 import styles from './index.module.scss'
 import Registration from '../comps/Registration'
 import Schedule from '../comps/Schedule'
+import Sponsors from '../comps/Sponsors'
 import { openClose } from '../comps/Navbar.js'
 import { motion } from 'framer-motion'
 import Question from '../comps/Question'
@@ -47,7 +48,7 @@ export default function Home() {
       variants={variants}
       transition={{stiffness: 100}}
     >
-      <Navbar isOpen={isOpen} onClick={() => setIsOpen(isOpen => !isOpen)}/>
+      <Navbar isOpen={isOpen} onHover={() => setIsOpen(isOpen => !isOpen)}/>
       <motion.div className={styles.wrapper}
         animate={isOpen ? "open" : "closed"}
         variants={opacity}
@@ -119,6 +120,9 @@ export default function Home() {
         </section>
         <section className={styles.content}>
           <Team/>
+        </section>
+        <section className={styles.content} id="sponsors"> 
+          <Sponsors/>
         </section>
         {/* <section className={styles.sponsors}>
               <img src="/LayerR1.svg" className={styles.l1}/>

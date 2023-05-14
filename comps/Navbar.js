@@ -21,7 +21,7 @@ const elements = [
     },
     {
         name: "Sponsors",
-        id: "register"
+        id: "sponsors"
     },
     {
         name: "Prizes",
@@ -34,7 +34,7 @@ const elements = [
 ]
 
 
-const Navbar = ({isOpen, onClick}) => {
+const Navbar = ({isOpen, onClick, onHover}) => {
 
     const [doc, setDoc] = useState(null);
 
@@ -55,7 +55,7 @@ const Navbar = ({isOpen, onClick}) => {
     }, [])
 
     return (
-        <div className={styles.navbar}>
+        <div className={styles.navbar} onMouseEnter={onHover} onMouseLeave={onHover}>
             {elements.map((el) => {
                 return (
                     <div className={styles.choice} key={el.name} onClick={() => scroll(el.id)}>
