@@ -86,19 +86,19 @@
 
 .l1 {
     @extend .foreground;
-    transform: translateZ(-20px) scale(3);
+    transform: translateZ(-15px) scale(2.5);
 }
 .l2 {
     @extend .foreground;
-    transform: translateZ(-15px) scale(2.5);
+    transform: translateZ(-10px) scale(2);
 }
 .l3 {
     @extend .foreground;
-    transform: translateZ(-10px) scale(2);
+    transform: translateZ(-5px) scale(1.5);
 }
 .l4 {
     @extend .foreground;
-    transform: translateZ(-5px) scale(1.5);
+    // transform: translateZ(-5px) scale(1.5);
 }
 
 .svg {

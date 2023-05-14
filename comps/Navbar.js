@@ -33,14 +33,9 @@ const elements = [
     }
 ]
 
-const variants = {
-    open: { x: "100%" },
-    closed: { x: 0 }
-}
 
-const Navbar = () => {
+const Navbar = ({isOpen, onClick}) => {
 
-    const [isOpen, setIsOpen] = openClose();
     const [doc, setDoc] = useState(null);
 
     const scroll = (id) => {
@@ -60,12 +55,8 @@ const Navbar = () => {
     }, [])
 
     return (
-        <motion.nav className={styles.navbar}
-            animate={isOpen ? "open" : "closed"}
-            variants={variants}
-            transition={{stiffness: 100}}
-        >
-            { elements.map((el) => {
+        <div className={styles.navbar}>
+            {elements.map((el) => {
                 return (
                     <div className={styles.choice} key={el.name} onClick={() => scroll(el.id)}>
                         {el.name}
@@ -73,7 +64,7 @@ const Navbar = () => {
                 )
             })}
             <div>
-                <button onClick={() => setIsOpen(isOpen => !isOpen)} className={styles.button}>
+                <button onClick={onClick} className={styles.button}>
                     <p className={styles.buttonText}>
                         {isOpen && '<'}
                         {!isOpen && '>'}
@@ -81,13 +72,8 @@ const Navbar = () => {
 
                 </button>
             </div>
-        </motion.nav>
+        </div>
     )
-}
-
-export const openClose = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    return [isOpen, setIsOpen];
 }
 
 

@@ -3,11 +3,10 @@
 
 .navbar {
     background-color: $base-color;
-    height: 4rem;
     display: flex;
     flex-direction: column;
     width: 9rem;
-    height: 55%;
+    height: 100%;
     left: -9rem;
     position: fixed;
     border-right: 5px solid;

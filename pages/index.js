@@ -9,10 +9,21 @@ import Team from '../comps/Team'
 import { RegisterButton } from '../comps/RegisterButton'
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { ParallaxBanner } from 'react-scroll-parallax'
+import { useState } from 'react'
 
+const variants = {
+  open: { x: "9rem" },
+  closed: { x: 0 }
+}
+
+const opacity = {
+  open: {opacity: 0.5},
+  closed: {opacity: 1}
+}
 
 export default function Home() {
-  const isOpen = true;
+  // const isOpen = true;
+  const [isOpen, setIsOpen] = useState(false);
 
   const draw = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -29,10 +40,18 @@ export default function Home() {
     }
   };
 
+
   return (
-    <>
-      <Navbar/>
-      <div className={styles.wrapper}>
+    <motion.nav
+      animate={isOpen ? "open" : "closed"}
+      variants={variants}
+      transition={{stiffness: 100}}
+    >
+      <Navbar isOpen={isOpen} onClick={() => setIsOpen(isOpen => !isOpen)}/>
+      <motion.div className={styles.wrapper}
+        animate={isOpen ? "open" : "closed"}
+        variants={opacity}
+      >
           {/* <div className={styles.wrapper}> */}
             <header>
               <motion.svg
@@ -120,7 +139,7 @@ export default function Home() {
               <Registration title="Registration" desc="Pls register"/>
 
         {/* </div> */}
-      </div>
-    </>
+      </motion.div>
+    </motion.nav>
   )
 }
