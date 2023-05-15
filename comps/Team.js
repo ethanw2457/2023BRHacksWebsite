@@ -48,7 +48,7 @@ const Team = () => {
 
     const [cycle, setCycle] = useState(0);
     const toggleUp = () => {
-      setCycle(cycle + team.length - 1) % team.length;
+      setCycle((cycle + team.length - 1) % team.length);
     }
 
     const toggleDown = () => {
@@ -71,7 +71,7 @@ const Team = () => {
               )
             })}
             {/* </div> */}
-            <LRButton onClick={toggleDown} right/>
+            <LRButton onClick={toggleUp} right/>
           </div>
       </div>
     );

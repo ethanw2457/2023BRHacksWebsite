@@ -5,10 +5,13 @@
 $width: 7rem;
 
 .card {
+    @extend .highlight;
     width: $width;
-    margin: 1rem;
+    margin: 1rem 0.5rem 1rem;
     flex: 1.5;
     text-align: center;
+    padding: 0.25rem;
+    border-radius: 8px;
 }
 
 .name {

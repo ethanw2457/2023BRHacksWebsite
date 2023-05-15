@@ -34,31 +34,13 @@ const elements = [
 ]
 
 
-const Navbar = ({isOpen, onClick, onHover}) => {
-
-    const [doc, setDoc] = useState(null);
-
-    const scroll = (id) => {
-        if (doc) {
-            const el = doc.getElementById(id);
-            try {
-                el.scrollIntoView({behavior : "smooth"});
-                console.log("Element selected: " + el.id);
-            } catch(e) {
-                console.log(e);
-            }
-        }
-    }
-
-    useEffect(() => {
-        setDoc(document);
-    }, [])
+const Navbar = ({isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave}) => {
 
     return (
-        <div className={styles.navbar} onMouseEnter={onHover} onMouseLeave={onHover}>
+        <div className={styles.navbar} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             {elements.map((el) => {
                 return (
-                    <div className={styles.choice} key={el.name} onClick={() => scroll(el.id)}>
+                    <div className={styles.choice} key={el.name} onClick={() => onClickTab(el.id)}>
                         {el.name}
                     </div>
                 )

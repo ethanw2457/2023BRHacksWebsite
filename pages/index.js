@@ -10,7 +10,7 @@ import Team from '../comps/Team'
 import { RegisterButton } from '../comps/RegisterButton'
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { ParallaxBanner } from 'react-scroll-parallax'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const variants = {
   open: { x: "9rem" },
@@ -25,6 +25,26 @@ const opacity = {
 export default function Home() {
   // const isOpen = true;
   const [isOpen, setIsOpen] = useState(false);
+
+  const [doc, setDoc] = useState(null);
+
+  const scroll = (id) => {
+      if (doc) {
+          const el = doc.getElementById(id);
+          try {
+              el.scrollIntoView({behavior : "smooth", block: "center", inline: "center"});
+              console.log("Element selected: " + el.id);
+          } catch(e) {
+              console.log(e);
+          }
+      }
+
+      setIsOpen(false);
+  }
+
+  useEffect(() => {
+      setDoc(document);
+  }, [])
 
   const draw = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -48,7 +68,7 @@ export default function Home() {
       variants={variants}
       transition={{stiffness: 100}}
     >
-      <Navbar isOpen={isOpen} onHover={() => setIsOpen(isOpen => !isOpen)}/>
+      <Navbar isOpen={isOpen} onClickTab={scroll} onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}/>
       <motion.div className={styles.wrapper}
         animate={isOpen ? "open" : "closed"}
         variants={opacity}
@@ -96,7 +116,7 @@ export default function Home() {
         </section>
         <section className={styles.secondaryContent}>
           <div className={styles.titleSecondary} id="faq">
-            <h1 className={styles.titleText}>
+            <h1 className={styles.faq}>
               FAQ
             </h1>
             <div className={styles.dark}>
@@ -109,7 +129,7 @@ export default function Home() {
               <Question title="Should I join CWAP?">
                   Yes of Course!
               </Question>
-              <Question title="What kind of workshops are there?">
+              <Question title="What kind of workshops are there?" last>
                   There are a large variety of workshops.
               </Question>
             </div>
@@ -121,7 +141,7 @@ export default function Home() {
         <section className={styles.content}>
           <Team/>
         </section>
-        <section className={styles.content} id="sponsors"> 
+        <section id="sponsors" className={styles.sponsors}> 
           <Sponsors/>
         </section>
         {/* <section className={styles.sponsors}>
@@ -140,7 +160,7 @@ export default function Home() {
             Sponsors
           </h1>
         </section> */}
-              <Registration title="Registration" desc="Pls register"/>
+              <Registration title="Questions?" desc="Pls register"/>
 
         {/* </div> */}
       </motion.div>

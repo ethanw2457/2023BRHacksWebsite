@@ -12,6 +12,8 @@
 .logo {
     // filter: blur(1rem);
     margin: 1rem;
+    // -webkit-backdrop-filter: blur(15px) saturate(3);
+    // backdrop-filter: blur(15px) saturate(3);-filter: blur(15px) saturate(3);
 }
 
 .logoWrapper {

@@ -15,6 +15,7 @@ const Registration = ({title, desc}) => {
                 </div>
                 <input type="text" placeholder="Email" className={styles.email}/>
                 {/* <div className={styles.formGroup1}> */}
+                <textarea cols="30" rows="4" type="text" placeholder="Message" className={styles.message}/>
                     <button className={styles.submitButton}> Submit </button>
                     <p className={styles.smallText}>
                         *Please check your email for confirmation

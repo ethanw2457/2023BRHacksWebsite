@@ -13,7 +13,7 @@ const variants = {
     }
 }
 
-const Question = ({title, children}) => {
+const Question = ({title, last, children}) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -21,22 +21,39 @@ const Question = ({title, children}) => {
         setIsOpen(!isOpen);
     }
     
+    const isLast = (el) => {
+        let style;
+
+        if (last) {
+            style = styles.lastQuestion;
+        } else {
+            style = styles.questions;
+
+        }
+        return (
+            <div className={style}>
+                {el}
+            </div>
+        )
+    }
 
     return (
-        <div className={styles.questions}>
+        isLast(
+            <>
                 <h3 className={styles.question} onClick={toggleOpen}>
                     {title}
                 </h3>
-            {isOpen && <motion.p className={styles.answer}
-                variants={variants}
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{stiffness: 100, delay: 0.1}}
-            >
-                {children}
-            </motion.p>
-            }
-        </div>
+                {isOpen && <motion.p className={styles.answer}
+                    variants={variants}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{stiffness: 100, delay: 0.1}}
+                >
+                    {children}
+                </motion.p>
+                }
+            </>
+        )
     );
 }
 
