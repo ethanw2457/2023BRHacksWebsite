@@ -1,24 +1,30 @@
 @import '../styles/_library';
 @import '../pages/index.module';
 
-.navbar {
-    background-color: $base-color;
-    display: flex;
-    flex-direction: column;
-    width: 9rem;
+.navbarWrapper {
+
     height: 100%;
     left: -9rem;
     position: fixed;
-    border-right: 5px solid;
-    border-bottom: 5px solid;
-    border-image-slice: 2;
-    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
     z-index: 1;
+    background: #000000;
+}
+
+.navbar {
+    background-color: $base-color;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    border-right: 5px solid $border-color;
+    z-index: 2;
+    background: $secondary-color;
 }
 
 .choice {
     margin-top: 1rem;
     margin: 1rem;
+    z-index: 3;
 }
 
 .button {
@@ -62,7 +68,7 @@
 
 .email {
     @extend .inputLeft;
-    width: 20rem;
+    width: 23rem;
 }
 
 .message {
@@ -74,7 +80,7 @@
 .register {
     // @extend .title;
     display: flex;
-    background-color: #02025e;
+    background-color: #000000;
     flex-direction: column;
     //color: #02b6f0;
     color: white;

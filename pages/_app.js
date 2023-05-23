@@ -5,9 +5,7 @@ import Navbar from '../comps/Navbar'
 
 function MyApp({ Component, pageProps }) {
   return (
-      <ParallaxProvider>
         <Component {...pageProps} />
-      </ParallaxProvider>
   )
 }
 

@@ -33,18 +33,40 @@ const elements = [
     }
 ]
 
+const variants = {
+    open: {
+        rotateY: 0,
+    },
+    closed: {
+        rotateY: 90,
+    }
+}
 
 const Navbar = ({isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave}) => {
 
     return (
-        <div className={styles.navbar} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-            {elements.map((el) => {
-                return (
-                    <div className={styles.choice} key={el.name} onClick={() => onClickTab(el.id)}>
-                        {el.name}
-                    </div>
-                )
-            })}
+        <div className={styles.navbarWrapper}
+            onMouseEnter={onMouseEnter} 
+            onMouseLeave={onMouseLeave}
+        >
+            <motion.div  
+                className={styles.navbar}
+                animate={isOpen ? "open": "closed"}
+                variants={variants}
+                transition={{
+                    stiffness: 100,
+                    duration: 0.5,
+                    delay: 0.25
+                }}
+        >
+                {elements.map((el) => {
+                    return (
+                        <div className={styles.choice} key={el.name} onClick={() => onClickTab(el.id)}>
+                            {el.name}
+                        </div>
+                    )
+                })}
+            </motion.div>
             <div>
                 <button onClick={onClick} className={styles.button}>
                     <p className={styles.buttonText}>
