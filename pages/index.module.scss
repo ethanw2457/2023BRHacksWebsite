@@ -61,7 +61,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
-
+    scroll-snap-type: y;
 }
 
 .foreground {
@@ -113,17 +113,20 @@
 .content {
     margin: 0;
     background-color: #000000;
+    scroll-snap-align: start;
     // border-top: 3px solid white;
     // border-bottom: 3px solid white;
 }
 
 .secondaryContent {
     @extend .content;
+    scroll-snap-align: none;
     // background-color: $bottom-parallax;
 }
 
 .tertiaryContent {
     @extend .content;
+    scroll-snap-align: none;
     // background-color: #FA7268;
 
 }

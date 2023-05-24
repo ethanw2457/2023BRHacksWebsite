@@ -11,6 +11,7 @@ import { RegisterButton } from '../comps/RegisterButton'
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { ParallaxBanner } from 'react-scroll-parallax'
 import { useState, useEffect } from 'react'
+import Down from '../comps/Down'
 
 const variants = {
   open: { x: "9rem" },
@@ -41,6 +42,25 @@ export default function Home() {
 
       setIsOpen(false);
   }
+
+  const slowScroll = (id) => {
+    if (doc) {
+      const el = doc.getElementById('down');
+      el.on('click', (event) => {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          el.animate({
+            scrolltop: el.offset().top
+          }, 
+          800,
+          () => {window.location.hash = hash})
+        }
+      })
+    }
+
+    setIsOpen(false);
+}
 
   useEffect(() => {
       setDoc(document);
@@ -73,6 +93,7 @@ export default function Home() {
         animate={isOpen ? "open" : "closed"}
         variants={opacity}
       >
+          <Down onClick={() => scroll('about')}/>
           {/* <div className={styles.wrapper}> */}
             <header>
               <motion.svg
@@ -138,7 +159,7 @@ export default function Home() {
         <section className={styles.tertiaryContent}>
           <Schedule/>
         </section>
-        <section className={styles.content}>
+        <section className={styles.secondaryContent}>
           <Team/>
         </section>
         <section id="sponsors" className={styles.sponsors}> 

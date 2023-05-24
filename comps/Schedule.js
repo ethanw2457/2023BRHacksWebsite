@@ -15,6 +15,11 @@ const schedule = [
         time: "11:00 a.m.",
         event: "Start Hacking",
         location: "Cafeteria"
+    },
+    {
+        time: "12:00 p.m.",
+        event: "First Workshop Entry",
+        location: "Cafeteria"
     }
 ]
 

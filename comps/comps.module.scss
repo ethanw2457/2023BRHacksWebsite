@@ -1,13 +1,16 @@
 @import '../styles/_library';
 @import '../pages/index.module';
 
+$width: 9rem !default;
+
 .navbarWrapper {
 
     height: 100%;
-    left: -9rem;
+    left: -$width * 2;
     position: fixed;
     z-index: 1;
     background: #000000;
+
 }
 
 .navbar {
@@ -15,25 +18,27 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 9rem;
+    width: $width * 2;
     border-right: 5px solid $border-color;
     z-index: 2;
     background: $secondary-color;
 }
 
 .choice {
-    margin-top: 1rem;
-    margin: 1rem;
+    @extend .highlight;
     z-index: 3;
+    padding: 1rem;
+    display: flex;
+    padding-left: $width + 1;
 }
 
 .button {
-    margin-left: 9rem;
+    margin-left: $width * 2;
     height: 5rem;
     width: 1.5rem;
     position: fixed;
     top: 0%;
-    background-color: $base-color;
+    background-color: $secondary-color;
     outline-style: none;
     border-right: 5px solid $border-color;
     border-top: 5px solid $border-color;
@@ -218,6 +223,16 @@
         background-color: white;
         color: $secondary-color;
     }
+}
+
+.down {
+    @extend .highlight;
+
+    position: fixed;
+    bottom: 5vw;
+    left: 50vw;
+    z-index: 2;
+    border-radius: 1rem;
 }
 
 @media only screen and (max-width: 1000px) {
