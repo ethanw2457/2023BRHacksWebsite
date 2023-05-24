@@ -18,6 +18,11 @@ const tech = [
     name: "Alan",
     role: "Tech",
     src: ""
+  },
+  {
+    name: "Andrew",
+    role: "Tech",
+    src: ""
   }
 ];
 
@@ -36,8 +41,14 @@ const outreach = [
     name: "Other",
     role: "Tech",
     src: ""
+  },
+  {
+    name: "Other",
+    role: "Tech",
+    src: ""
   }
 ];
+
 
 const team = [
   tech,
