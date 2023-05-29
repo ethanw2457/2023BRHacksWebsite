@@ -77,8 +77,31 @@
     font-size: 5rem;
     z-index: -1;
     font-family: Orbitron;
-    transform: translateZ(-25px) scale(3.5);
-}
+    transform: translateZ(-30px) scale(3.5);
+    margin-top: -0.7rem;
+    color: rgb(255, 0, 81);
+
+    // Pixelation animation
+    animation: pixelate 1s ease-in-out;
+
+    // Stronger shadow effect
+    text-shadow: 10px 10px 20px rgba(129, 127, 127, 0.3);
+
+    @keyframes pixelate {
+      0% {
+        filter: blur(8px);
+        opacity: 0;
+      }
+      50% {
+        filter: blur(4px);
+        opacity: 0.7;
+      }
+      100% {
+        filter: none;
+        opacity: 1;
+      }
+    }
+  }
 
 .bottomTitle {
     // @extend .foreground;
