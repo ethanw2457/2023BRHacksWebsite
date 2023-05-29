@@ -125,7 +125,7 @@ background-size: 1000px;
 }
 
 .formGroup1 {
-  display: inline-block;
+  // display: inline-block;
 }
 
 .submitButton {
@@ -141,27 +141,18 @@ background-size: 1000px;
   margin: 0.5rem 0 0.5rem;
 }
 
+.titleRegistration {
+  @extend .titleText;
+  margin: 0 0 1rem;
+}
+
+
 .box .time tr:hover {
   background-color: $border-color;
 }
 
-// .table {
-//     @extend .box;
-//     border-collapse: collapse;
-//     border-radius: 1em;
-// }
-
 .time {
   @extend .box;
-}
-
-// .titleText {
-//     margin: 0 0 1rem;
-// }
-
-.titleRegistration {
-  @extend .titleText;
-  margin: 0 0 1rem;
 }
 
 .box {
@@ -222,12 +213,12 @@ background-size: 1000px;
   margin-bottom: 0;
   padding-bottom: 2rem;
   z-index: -1;
+
 }
 
 .registerButton {
+  padding: 0.25rem 1.25rem 0.25rem;
   margin: 1rem;
-  width: 9rem;
-  height: 3rem;
   font-family: inherit;
   font-weight: bold;
   color: white;
@@ -250,6 +241,7 @@ background-size: 1000px;
   position: fixed;
   bottom: 5vw;
   left: 50vw;
+  margin-left: -1rem;
   z-index: 2;
   border-radius: 1rem;
 }
@@ -257,5 +249,32 @@ background-size: 1000px;
 @media only screen and (max-width: 1000px) {
   .form {
     margin: 2rem $half-width 0;
+  }
+
+  .table {
+    font-size: 1rem
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    margin: 2rem $half-width 0;
+  }
+
+  .table {
+    font-size: 0.7rem;
+  }
+
+  .formGroup1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputRight {
+    margin-left: 0;
+  }
+
+  .box {
+    padding: 0.25rem;
   }
 }
