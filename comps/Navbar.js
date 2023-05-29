@@ -68,16 +68,31 @@ const Navbar = ({isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave}) => {
                 })}
             </motion.div>
             <div>
-                <button onClick={onClick} className={styles.button}>
-                    <p className={styles.buttonText}>
-                        {isOpen && '<'}
-                        {!isOpen && '>'}
-                    </p>
-
-                </button>
-            </div>
-        </div>
-    )
+            <button onClick={onClick} className={styles.button}>
+          <p className={styles.buttonText}>
+            {isOpen && (
+              <img
+                src="https://img.icons8.com/?size=512&id=40217&format=png"
+                width="20"
+                height="25"
+                alt=">"
+                style={{ marginLeft: '-3px' }} // Apply leftward movement using marginLeft
+              />
+            )}
+            {!isOpen && (
+              <img
+                src="https://img.icons8.com/?size=512&id=7849&format=png"
+                width="20"
+                height="25"
+                alt=">"
+                style={{ marginLeft: '-3px' }} // Apply leftward movement using marginLeft
+              />
+            )}
+          </p>
+        </button>
+      </div>
+    </div>
+  )
 }
 
 
