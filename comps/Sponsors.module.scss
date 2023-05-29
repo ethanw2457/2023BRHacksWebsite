@@ -29,11 +29,13 @@
   font-size: 5rem;
   font-family: Orbitron;
   text-align: center;
-  margin: 1rem;
+  justify-content: center;
+
 }
 
 .sponsorsWrapper {
   min-height: 100vh;
+  justify-content: center;
 }
 
 .displayBox {
@@ -64,6 +66,13 @@
 @media only screen and (max-width: 1000px) {
   .displayBox {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsorsTitle {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 

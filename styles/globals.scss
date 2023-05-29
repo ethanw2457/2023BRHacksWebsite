@@ -8,13 +8,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: url("../public/endless-constellation.svg");
-  cursor: url('../public/icons8-cursor.svg'), auto;
   font-size: 1.15rem;
   overflow-x: hidden;
-}
-
-button {
-  cursor: url('../public/icons8-cursor.svg'), auto;
 }
 
 header {
@@ -62,6 +57,12 @@ body {
 
   h3 {
     font-size: 1rem;
+  }
+}
+
+@media (min-device-width: 600px) {
+  body {  
+    min-width: 600px; 
   }
 }
 

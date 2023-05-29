@@ -35,19 +35,12 @@ const elements = [
 
 const variants = {
   open: {
-    rotateY: 0,
+    x: 0,
     opacity: 1,
-    transition: {
-      duration: 0.5,
-      delay: 0.25
-    }
   },
   closed: {
-    rotateY: 90,
+    x: "-9rem",
     opacity: 0,
-    transition: {
-      duration: 0.3
-    }
   }
 };
 
@@ -66,8 +59,9 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
     <div className={styles.navbarWrapper} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       <motion.div
         className={styles.navbar}
-        animate={isOpen ? "open" : "closed"}
-        variants={variants}
+        // animate={isOpen ? "open" : "closed"}
+        // transition={{stiffness: 100}}
+        // variants={variants}
       >
         {elements.map((el) => (
           <div

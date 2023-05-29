@@ -5,22 +5,20 @@ $width: 9rem !default;
 
 .navbarWrapper {
   height: 100%;
-  left: -$width * 2;
+  left: -$width;
   position: fixed;
   z-index: 1;
-  background-image: url("../public/nightCitybkgd.gif");
   background-size: 1000px;
 }
 
 .navbar {
-  background-color: $base-color;
+  background-color: $secondary-color;
   height: 100%;
   display: flex;
   flex-direction: column;
-  width: $width * 2;
   z-index: 2;
-background-image: url("../public/nightCitybkgd.gif");
-background-size: 1000px;
+  background-size: 1000px;
+  width: $width;
 
   //Modify the font properties
   font-family: "Helvetica", Arial, sans-serif;
@@ -30,24 +28,21 @@ background-size: 1000px;
 }
 
 .choice {
+    @extend .highlight;
     z-index: 3;
     padding: 1rem;
     display: flex;
-    padding-left: $width + 1;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
   
     &:hover {
-      background-image: url("../public/redIco.png");
       background-size: 90px;
-      border-radius: 30px;
-      color: rgb(255, 255, 255);
       opacity: 0.8;
     }
   }
 
 .button {
-  margin-left: $width * 2;
+  margin-left: $width;
   height: 5rem;
   width: 1.5rem;
   position: fixed;
@@ -275,6 +270,12 @@ background-size: 1000px;
   }
 
   .box {
-    padding: 0.25rem;
+    padding: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .box {
+    padding: 0.5rem;
   }
 }

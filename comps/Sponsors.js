@@ -52,7 +52,7 @@ const Sponsors = () => {
     return (
       <div className={styles.sponsorsWrapper}>
         <h1 className={styles.sponsorsTitle}>
-          Sponsors
+         Sponsors
         </h1>
         <div className={`${styles.displayBox} ${styles.sponsorsSection}`} ref={sponsorsRef}>
           <motion.div className={`${styles.logoWrapper} ${styles.card}`}>

@@ -14,11 +14,11 @@ import { useState, useEffect } from 'react'
 import Down from '../comps/Down'
 
 const variants = {
-  open: { x: "9rem" },
+  open: { x: "9rem"},
   closed: { x: 0 }
 }
 
-const opacity = {
+const centerVariants = {
   open: {opacity: 0.5},
   closed: {opacity: 1}
 }
@@ -43,23 +43,18 @@ export default function Home() {
       setIsOpen(false);
   }
 
-  const slowScroll = (id) => {
+  const scrollBottom = (id) => {
     if (doc) {
-      const el = doc.getElementById('down');
-      el.on('click', (event) => {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          el.animate({
-            scrolltop: el.offset().top
-          }, 
-          800,
-          () => {window.location.hash = hash})
-        }
-      })
-    }
+      const el = doc.getElementById(id);
+      try {
+          el.scrollIntoView({behavior : "smooth", inline: "center"});
+          console.log("Element selected: " + el.id);
+      } catch(e) {
+          console.log(e);
+      }
+  }
 
-    setIsOpen(false);
+  setIsOpen(false);
 }
 
   useEffect(() => {
@@ -91,9 +86,10 @@ export default function Home() {
       <Navbar isOpen={isOpen} onClickTab={scroll} onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}/>
       <motion.div className={styles.wrapper}
         animate={isOpen ? "open" : "closed"}
-        variants={opacity}
+        variants={centerVariants}
+        transition={{stiffness: 100}}
       >
-          <Down onClick={() => scroll('about')}/>
+          <Down onClick={() => scrollBottom('about')}/>
           {/* <div className={styles.wrapper}> */}
             <header>
               <motion.svg
@@ -124,8 +120,8 @@ export default function Home() {
             </header>
           {/* </div> */}
         {/* <div> */}
-        <section className={styles.content}>
-          <div className={styles.title} id="about">
+        <section className={styles.content} id="about">
+          <div className={styles.title}>
             <h1 className={styles.titleText}>
               Hack BRHS 2023
             </h1>
