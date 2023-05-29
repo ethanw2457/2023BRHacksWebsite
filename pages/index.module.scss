@@ -135,7 +135,7 @@
 
 .content {
     margin: 0;
-    background-color: #171717;
+    background-color: #000000;
     scroll-snap-align: start;
     // border-top: 3px solid white;
     // border-bottom: 3px solid white;
@@ -166,7 +166,11 @@
 
 .sponsors {
     @extend .content;
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/purpleCyber.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
 
 // .sponsors {
 //     position: relative;
