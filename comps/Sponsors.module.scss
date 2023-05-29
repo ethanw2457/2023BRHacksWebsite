@@ -17,12 +17,14 @@
 
 .logoWrapper {
   margin: 3rem 3em 3rem;
+  background-color: rgba(255, 255, 255); /* Change the last value (0.5) to adjust opacity */
   background-image: url("../public/pinkPixel.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 16px;
 }
+
 
 .sponsorsTitle {
   font-size: 5rem;
@@ -52,7 +54,7 @@
   }
   
   .logo:hover {
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px 5px rgba(31, 31, 31, 0.5);
     border-radius: 6px;
   }
   

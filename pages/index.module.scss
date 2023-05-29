@@ -166,8 +166,11 @@
 
 .sponsors {
     @extend .content;
-    background-color: $secondary-color;
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/purpleCyber.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
 
 // .sponsors {
 //     position: relative;
