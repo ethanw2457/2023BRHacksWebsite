@@ -54,33 +54,6 @@ const variants = {
 const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => {
   const [hoveredElement, setHoveredElement] = useState(null);
 
-<<<<<<< Updated upstream
-    return (
-        <div className={styles.navbarWrapper}
-            onMouseEnter={onMouseEnter} 
-            onMouseLeave={onMouseLeave}
-        >
-            <motion.div  
-                className={styles.navbar}
-                animate={isOpen ? "open": "closed"}
-                variants={variants}
-                transition={{
-                    stiffness: 100,
-                    duration: 0.5,
-                    delay: 0.25
-                }}
-        >
-                {elements.map((el) => {
-                    return (
-                        <div className={styles.choice} key={el.name} onClick={() => onClickTab(el.id)}>
-                            {el.name}
-                        </div>
-                    )
-                })}
-            </motion.div>
-            <div>
-            <button onClick={onClick} className={styles.button}>
-=======
   const handleMouseEnter = (id) => {
     setHoveredElement(id);
   };
@@ -110,7 +83,6 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
       </motion.div>
       <div>
         <button onClick={onClick} className={styles.button}>
->>>>>>> Stashed changes
           <p className={styles.buttonText}>
             {isOpen ? (
               <img
@@ -136,9 +108,4 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
   );
 };
 
-<<<<<<< Updated upstream
-
 export default Navbar;
-=======
-export default Navbar;
->>>>>>> Stashed changes
