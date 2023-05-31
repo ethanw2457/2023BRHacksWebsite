@@ -13,11 +13,12 @@
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.12.4",
-    "next": "13.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-scroll-parallax": "^3.4.2",
-    "sass": "^1.62.0"
+    "sass": "^1.62.0",
+    "yarn": "^1.22.19"
   }
 }

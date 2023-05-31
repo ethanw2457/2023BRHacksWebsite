@@ -4,11 +4,9 @@ import { motion } from 'framer-motion';
 
 const variants = {
     closed: {
-        // y : "-2rem",
         opacity: 1
     },
     open: {
-        // y : 0,
         opacity: 0
     }
 }
@@ -22,14 +20,8 @@ const Question = ({title, last, children}) => {
     }
     
     const isLast = (el) => {
-        let style;
+        let style = last ? styles.lastQuestion : styles.questions;
 
-        if (last) {
-            style = styles.lastQuestion;
-        } else {
-            style = styles.questions;
-
-        }
         return (
             <div className={style}>
                 {el}

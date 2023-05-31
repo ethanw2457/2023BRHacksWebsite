@@ -3,7 +3,7 @@ import styles from './comps.module.scss'
 
 const Down = ({onClick}) => {
     return (
-        <AiFillDownCircle size="40px" onClick={onClick} id="down" className={styles.down}/>
+        <AiFillDownCircle size="2rem" onClick={onClick} id="down" className={styles.down}/>
     )
 }
 
