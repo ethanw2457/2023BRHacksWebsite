@@ -9,6 +9,7 @@
     border: 4px solid white;
     border-radius: 15px;
     width: 50%;
+    // transform: translateZ(5px) scale(1);
 }
 
 .titleText {
@@ -78,17 +79,18 @@
     font-size: 5rem;
     z-index: -1;
     font-family: Orbitron;
-    transform: translateZ(-30px) scale(3.5);
+    transform: translateZ(-25px) scale(3);
     margin-top: -0.7rem;
     // color: rgb(255, 0, 81);
-    color: white;
+    // color: $secondary-color;
+    // background-color: white;
+    // text-shadow : 10px 10px 0px rgb(250, 114, 104);
+    text-shadow : -10px -10px 2px black;
 
 
     // Pixelation animation
     animation: pixelate 1s ease-in-out;
 
-    // Stronger shadow effect
-    text-shadow: 10px 10px 20px rgba(129, 127, 127, 0.3);
 
     @keyframes pixelate {
       0% {
@@ -130,17 +132,30 @@
     @extend .foreground;
     // transform: translateZ(-5px) scale(1.5);
 }
+.building {
+    position: absolute;
+    top: -80vh;
+    left: 50vh;
+    margin-left: -250px;
+    transform: translateZ(-35px) scale(5);
+}
+.credit {
+    position: fixed;
+    top: 92vh;
+    left: 85vw;
+    font-size: 11px;
+}
 
 .svg {
     @extend .foreground;
-    transform: translateZ(-25px) scale(3.5);
+    transform: translateZ(-40px) scale(5);
 }
 
 .content {
     margin: 0;
     background-color: #000000;
     justify-content: center;
-    // border-top: 3px solid white;
+    z-index: 0;    // border-top: 3px solid white;
     // border-bottom: 3px solid white;
 }
 
@@ -167,11 +182,48 @@
 
 .sponsors {
     @extend .content;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/purpleCyber.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/endless-constellation.svg");
     background-position: center;
     background-size: cover;
 }
-  
+
+.planet1 {
+    position: absolute;
+    z-index: -1;
+    z-index: 0;
+    left: 15vw;
+    top: 130vh;
+    transform: translateZ(3px) scale(1);
+    // top: ;
+}
+.planet2 {
+    @extend .planet1;
+    left: 70vw;
+    top: 60vh;
+    transform: translateZ(4px) scale(1);
+    // top: ;
+}
+.planet3 {
+    @extend .planet1;
+    left: 17vw;
+    top: 90vh;
+    transform: translateZ(2px) scale(1);
+    // top: ;
+}
+.planet4 {
+    @extend .planet1;
+    left: 65vw;
+    top: 10vh;
+    transform: translateZ(3px) scale(1);
+}
+
+.parallax {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
 
 // .sponsors {
 //     position: relative;
@@ -211,6 +263,11 @@
 
     .sponsors {
         flex-direction: column;
+    }
+
+    .building {
+        top: 8vh;
+        transform: translateZ(-35px) scale(5);
     }
 }
 

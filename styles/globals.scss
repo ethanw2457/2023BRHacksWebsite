@@ -8,6 +8,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: url("../public/endless-constellation.svg");
+  // background-image: url("../public/3161.jpg");
   font-size: 1.15rem;
   overflow-x: hidden;
 }
@@ -21,6 +22,15 @@ header {
   transform-style: preserve-3d;
   z-index: -1;
 }
+
+// section {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transform-style: preserve-3d;
+//   z-index: -1;
+// }
 
 table {
   border-collapse: collapse;
