@@ -1,34 +1,44 @@
+// Navbar.js
+
 import styles from './comps.module.scss';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { FaInfoCircle, FaUserPlus, FaQuestionCircle, FaCalendarAlt, FaHandshake, FaGift, FaUsers } from 'react-icons/fa';
 
 const elements = [
   {
     name: "About",
+    icon: <FaInfoCircle />,
     id: "about"
   },
   {
     name: "Registration",
+    icon: <FaUserPlus />,
     id: "register"
   },
   {
     name: "FAQ",
+    icon: <FaQuestionCircle />,
     id: "faq"
   },
   {
     name: "Schedule",
+    icon: <FaCalendarAlt />,
     id: "schedule"
   },
   {
     name: "Sponsors",
+    icon: <FaHandshake />,
     id: "sponsors"
   },
   {
     name: "Prizes",
+    icon: <FaGift />,
     id: "prizes"
   },
   {
     name: "Team",
+    icon: <FaUsers />,
     id: "team"
   }
 ];
@@ -59,9 +69,9 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
     <div className={styles.navbarWrapper} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       <motion.div
         className={styles.navbar}
-        // animate={isOpen ? "open" : "closed"}
-        // transition={{stiffness: 100}}
-        // variants={variants}
+        animate={isOpen ? "open" : "closed"}
+        transition={{ stiffness: 100 }}
+        variants={variants}
       >
         {elements.map((el) => (
           <div
@@ -71,7 +81,8 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
             onMouseEnter={() => handleMouseEnter(el.id)}
             onMouseLeave={handleMouseLeave}
           >
-            {el.name}
+            {el.icon}
+            <span className={styles.name}>{el.name}</span>
           </div>
         ))}
       </motion.div>
