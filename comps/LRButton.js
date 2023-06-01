@@ -12,7 +12,7 @@ const LRButton = ({ onClick, left, right}) => {
         )
     } else {
         return (
-            <button onClick={onClick} icon={AiFillRightCircle} className={styles.right}>
+            <button onClick={onClick} className={styles.right}>
                 <AiFillRightCircle color="white" size="25px" className={styles.icon}/>
             </button>
         )

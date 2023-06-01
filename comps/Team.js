@@ -86,9 +86,9 @@ const Team = () => {
                 {isMobile && <div className={styles.teamWrapper}>
                   {team[cycle].map((el) => {
                     return (
-                      <>
+                      // <>
                       <TeamDesc name={el.name} desc={el.role} src={el.src} key={el.name}/>
-                      </>
+                      // </>
                     )
                   })}
                 </div>}
@@ -97,9 +97,9 @@ const Team = () => {
                   ( <>
                     {team[cycle].map((el) => {
                     return (
-                      <>
+                      // <>
                       <TeamDesc name={el.name} desc={el.role} src={el.src} key={el.name}/>
-                      </>
+                      // </>
                     )
                   })}
                   </>
