@@ -130,7 +130,8 @@ export default function Home() {
           {/* </div> */}
         {/* <div> */}
         <div className={styles.parallax}>
-          <section className={styles.content} id="about">
+          <img src="/LayerR4.svg" className={styles.transition}/>
+          <section className={`${styles.content} ${styles.topspace}`} id="about">
             <div className={styles.title}>
               <h1 className={styles.titleText}>
                 Hack BRHS 2023

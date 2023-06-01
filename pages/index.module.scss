@@ -155,6 +155,7 @@
     margin: 0;
     background-color: #000000;
     justify-content: center;
+    margin-top: -1px;
     z-index: 0;    // border-top: 3px solid white;
     // border-bottom: 3px solid white;
 }
@@ -225,6 +226,17 @@
     z-index: -1;
 }
 
+.transition {
+    position: fixed;
+    z-index: 1;
+    left: -0.1vh;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.topspace {
+    padding-top: 10rem;
+}
 // .sponsors {
 //     position: relative;
 //     display: flex;
@@ -268,6 +280,10 @@
     .building {
         top: 8vh;
         transform: translateZ(-35px) scale(5);
+    }
+
+    .planet1 {
+        left: -1000vw;
     }
 }
 
