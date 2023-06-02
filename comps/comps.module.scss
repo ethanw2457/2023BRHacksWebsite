@@ -3,6 +3,10 @@
 
 $width: 10rem !default;
 
+.name {
+  margin-left: 2rem;
+}
+
 .navbarWrapper {
   height: 100%;
   left: -$width;

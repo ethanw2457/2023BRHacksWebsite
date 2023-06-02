@@ -35,7 +35,7 @@ const Schedule = () => {
                     </tr>
                     {schedule.map((el) => {
                         return(
-                            <tr>
+                            <tr key={el.event}>
                                 <td className={styles.time}> {el.time} </td>
                                 <td className={styles.box}> {el.event} </td>
                                 <td className={styles.box}> {el.location} </td>

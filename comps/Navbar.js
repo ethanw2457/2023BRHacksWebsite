@@ -8,37 +8,37 @@ import { FaInfoCircle, FaUserPlus, FaQuestionCircle, FaCalendarAlt, FaHandshake,
 const elements = [
   {
     name: "About",
-    icon: <FaInfoCircle />,
+    icon: <FaInfoCircle style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "about"
   },
   {
-    name: "Registration",
-    icon: <FaUserPlus />,
+    name: "Register",
+    icon: <FaUserPlus style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "register"
   },
   {
     name: "FAQ",
-    icon: <FaQuestionCircle />,
+    icon: <FaQuestionCircle style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "faq"
   },
   {
     name: "Schedule",
-    icon: <FaCalendarAlt />,
+    icon: <FaCalendarAlt style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "schedule"
   },
   {
     name: "Sponsors",
-    icon: <FaHandshake />,
+    icon: <FaHandshake style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "sponsors"
   },
   {
     name: "Prizes",
-    icon: <FaGift />,
+    icon: <FaGift style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "prizes"
   },
   {
     name: "Team",
-    icon: <FaUsers />,
+    icon: <FaUsers style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "team"
   }
 ];
