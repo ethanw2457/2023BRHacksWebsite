@@ -31,11 +31,11 @@ const elements = [
     icon: <FaHandshake style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "sponsors"
   },
-  {
-    name: "Prizes",
-    icon: <FaGift style={{marginRight: "1rem", position: "fixed"}}/>,
-    id: "prizes"
-  },
+  // {
+  //   name: "Prizes",
+  //   icon: <FaGift style={{marginRight: "1rem", position: "fixed"}}/>,
+  //   id: "prizes"
+  // },
   {
     name: "Team",
     icon: <FaUsers style={{marginRight: "1rem", position: "fixed"}}/>,
@@ -45,11 +45,11 @@ const elements = [
 
 const variants = {
   open: {
-    x: 0,
+    // x: 0,
     opacity: 1,
   },
   closed: {
-    x: "-9rem",
+    // x: "-9rem",
     opacity: 0,
   }
 };
