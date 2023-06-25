@@ -16,7 +16,7 @@ $width: 10rem !default;
 }
 
 .navbar {
-  background-color: $secondary-color;
+  background-color: rgba(167, 28, 139, 0.309);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -213,6 +213,11 @@ $width: 10rem !default;
   padding-bottom: 2rem;
   z-index: -1;
 
+}
+
+
+.blurred {
+  backdrop-filter: blur(10px);  
 }
 
 .registerButton {

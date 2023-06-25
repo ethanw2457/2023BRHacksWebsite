@@ -191,23 +191,23 @@ export default function Home() {
 
           {!isMobile &&
             <>
-            <motion.img width="200px" 
+            {/* <img width="200px" 
                 src="planet1.png"
                 className={styles.planet1}
                 id="planet1"
             />
-            <motion.img width="200px" 
+            <img width="200px" 
               src="planet3.png" 
               className={styles.planet3} 
               id="planet3"
             />
-            <motion.img width="200px" 
+            <img width="200px" 
               src="planet2.png" 
               className={styles.planet2} 
             />
             <img width="200px" 
               src="planet4.png" 
-              className={styles.planet4}/>
+              className={styles.planet4}/> */}
           </>
           }
         </div>

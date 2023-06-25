@@ -31,11 +31,11 @@ const elements = [
     icon: <FaHandshake style={{marginRight: "1rem", position: "fixed"}}/>,
     id: "sponsors"
   },
-  {
-    name: "Prizes",
-    icon: <FaGift style={{marginRight: "1rem", position: "fixed"}}/>,
-    id: "prizes"
-  },
+  // {
+  //   name: "Prizes",
+  //   icon: <FaGift style={{marginRight: "1rem", position: "fixed"}}/>,
+  //   id: "prizes"
+  // },
   {
     name: "Team",
     icon: <FaUsers style={{marginRight: "1rem", position: "fixed"}}/>,
@@ -45,11 +45,11 @@ const elements = [
 
 const variants = {
   open: {
-    x: 0,
+    // x: 0,
     opacity: 1,
   },
   closed: {
-    x: "-9rem",
+    // x: "-9rem",
     opacity: 0,
   }
 };
@@ -67,25 +67,25 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
 
   return (
     <div className={styles.navbarWrapper} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-      <motion.div
-        className={styles.navbar}
-        animate={isOpen ? "open" : "closed"}
-        transition={{ stiffness: 100 }}
-        variants={variants}
-      >
-        {elements.map((el) => (
-          <div
-            className={`${styles.choice} ${hoveredElement === el.id ? styles.highlighted : ""}`}
-            key={el.name}
-            onClick={() => onClickTab(el.id)}
-            onMouseEnter={() => handleMouseEnter(el.id)}
-            onMouseLeave={handleMouseLeave}
-          >
-            {el.icon}
-            <span className={styles.name}>{el.name}</span>
-          </div>
-        ))}
-      </motion.div>
+    <motion.div
+      className={`${styles.navbar} ${isOpen ? styles.blurred : ""}`}
+      animate={isOpen ? "open" : "closed"}
+      transition={{ stiffness: 100 }}
+      variants={variants}
+    >
+      {elements.map((el) => (
+        <div
+          className={`${styles.choice} ${hoveredElement === el.id ? styles.highlighted : ""}`}
+          key={el.name}
+          onClick={() => onClickTab(el.id)}
+          onMouseEnter={() => handleMouseEnter(el.id)}
+          onMouseLeave={handleMouseLeave}
+        >
+          {el.icon}
+          <span className={styles.name}>{el.name}</span>
+        </div>
+      ))}
+    </motion.div>
       <div>
         <button onClick={onClick} className={styles.button}>
           <p className={styles.buttonText}>

@@ -119,18 +119,22 @@
 .l1 {
     @extend .foreground;
     transform: translateZ(-15px) scale(2.5);
+    margin-top: 30rem;
 }
 .l2 {
     @extend .foreground;
     transform: translateZ(-10px) scale(2);
+    margin-top: 25rem;
 }
 .l3 {
     @extend .foreground;
     transform: translateZ(-5px) scale(1.5);
+    margin-top: 20rem;
 }
 .l4 {
     @extend .foreground;
     // transform: translateZ(-5px) scale(1.5);
+    margin-top: 5rem;
 }
 .building {
     position: absolute;
@@ -138,6 +142,7 @@
     left: 50vh;
     margin-left: -250px;
     transform: translateZ(-35px) scale(5);
+    margin-top: 25.5rem;
 }
 .credit {
     position: fixed;
