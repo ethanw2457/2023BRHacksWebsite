@@ -180,7 +180,7 @@
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
     &:hover {
-        background-color: white;
+        background-color: rgba(59, 3, 3, 0.359);
         color: $secondary-color;
         // border-color: white;
     }
