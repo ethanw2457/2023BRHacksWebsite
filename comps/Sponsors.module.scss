@@ -17,14 +17,17 @@
 
 .logoWrapper {
   margin: 3rem 3em 3rem;
-  background-color: rgba(255, 255, 255); /* Change the last value (0.5) to adjust opacity */
-  // background-image: url("../public/pinkPixel.png");
-  // background-color: $secondary-color;
+  background-image: url(../public/redCubes.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 16px;
 }
+
+.logoWrapper img {
+  filter: none;
+}
+
 
 .sponsorsTitle {
   font-size: 5rem;
@@ -58,11 +61,13 @@
 .logo {
   margin: 1rem;
   transition: box-shadow 0.3s ease-in-out;
+  filter: none;
 }
 
 .logo:hover {
   // box-shadow: 0 0 10px 5px rgba(31, 31, 31, 0.5);
   border-radius: 6px;
+  filter: none;
 }
 
 @media only screen and (max-width: 1000px) {
