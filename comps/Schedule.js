@@ -10,7 +10,7 @@ const csvData = `Time,Event,Location
 9:00 AM,Check In Opens,
 9:30 AM,,
 10:00 AM,Introduction Ceremony,
-10:30 AM,Hacking Starts,
+10:30 AM,PooPoo,
 10:30 AM,Team Building/Networking,
 11:00 AM,Intro Python,
 11:00 AM,Mini Competition,
