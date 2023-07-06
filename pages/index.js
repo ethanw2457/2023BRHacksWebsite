@@ -205,9 +205,18 @@ export default function Home() {
 
         <section className={styles.secondaryContent}>
           <Team />
-        </section>
+          <p>
 
-        <WaveSection />
+          </p>
+          <p>
+            
+          </p>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+
+        <WaveSection style = {{bottom: "-58px" }} />
 
         <section id="sponsors" className={styles.sponsors}>
           <Sponsors />
