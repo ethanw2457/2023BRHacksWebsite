@@ -142,25 +142,46 @@ export default function Home() {
 
         <WaveSection style={{ bottom: '300px' }} />
 
-
         <section className={styles.secondaryContent}>
           <div className={styles.titleSecondary} id="faq">
             <h1 className={styles.faq}>
               FAQ
             </h1>
             <div className={styles.dark}>
-              <Question title="How do I register?">
-                Just Sign Up!
+              <Question title="What time does registration start?">
+                Registration starts at 9 AM.
               </Question>
-              <Question title="How do I get good at coding?">
-                Just improve your skills and learn from YouTube.
+              <Question title="Where is the Hackathon?">
+                The Hackathon will be hosted in the main building of Bridgewater-Raritan High School. The address is: 600 Garretson Road, Bridgewater, NJ, 08807.
               </Question>
-              <Question title="Should I join CWAP?">
-                Yes, of course!
+              <Question title="What should I bring?">
+                Bring your computer, charger, snacks, and any other electronics you may need.
               </Question>
-              <Question title="What kind of workshops are there?" last>
-                There are a large variety of workshops.
+              <Question title="Is there a fee for participation?">
+                No, everything (including food!) is free, thanks to our wonderful sponsors.
               </Question>
+              <Question title="Can I participate if I am new to Hackathons?">
+                Yes! We will have plenty of beginner-friendly events, workshops, and competitions for you to join.
+              </Question>
+              <Question title="What can I learn?">
+                We have a variety of events rich with content. These events include topics from computer science, business, psychology, and more. You can check out our events below on our website.
+              </Question>
+              <Question title="Do I need a team?">
+                You are not required to have a team. We will have opportunities for you during the competition to network and form your own teams at the Hackathon.
+              </Question>
+              <Question title="Will there be food?">
+                Yes! We will have snacks and drinks throughout the Hackathon. We will also serve lunch and dinner.
+              </Question>
+              <Question title="What prizes will there be?">
+                We will be giving out fighter jets, military ships,and nuclear warheads.
+              </Question>
+              <Question title="Who can attend?">
+                Any high schooler is free to join regardless of where you are from.
+              </Question>
+              <Question title="I have another question.">
+                We would be happy to help you. You can contact us with your question at <a href="mailto:brhacks.team@gmail.com">brhacks.team@gmail.com</a>.
+              </Question>
+
             </div>
           </div>
         </section>
