@@ -173,7 +173,7 @@ export default function Home() {
                 Yes! We will have snacks and drinks throughout the Hackathon. We will also serve lunch and dinner.
               </Question>
               <Question title="What prizes will there be?">
-                We will be giving out fighter jets, military ships,and nuclear warheads.
+                To be decided, but they will be very well-worth it!
               </Question>
               <Question title="Who can attend?">
                 Any high schooler is free to join regardless of where you are from.
