@@ -127,20 +127,24 @@ export default function Home() {
             <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais">Image by vectorpocket</a> on Freepik
           </p>
         </header>
-
+        
+        <WaveSection style={{ bottom: "-200px" }} />
         <section className={`${styles.content} ${styles.topspace}`} id="about">
           <div className={styles.title}>
             <h1 className={styles.titleText}>
               Hack BRHS 2023
             </h1>
             <p className={styles.paragraph}>
-              Hack BRHS is an event taking place in 2023. It will have coding and many people will be involved.
+            In fall 2023, C.O.D.E. Club will hold the Bridgewater-Raritan HS Hackathon: a full-day, in-person event where 100+ high school students from around New Jersey collaborate to create STEM-related projects to serve their community. This event has already been approved by the BRHS administration and the CODE club team is currently planning it. During the event, participants work in teams to engineer quantum AI databases, create mini-startup companies, program stock robot predictors, create mobile apps to help people take their diabetes medication on time, design climate-friendly solutions, etc.
+            </p>
+            <p className={styles.paragraph}>
+            Essentially this hackathon is a way for students to explore the boundaries of their imagination and achieve them through hard work and determination. In addition to the main competition, CODE Club will also be conducting various workshops in conjunction with other computer science clubs at BRHS.
             </p>
             <RegisterButton />
           </div>
         </section>
 
-        <WaveSection style={{ bottom: '300px' }} />
+        
 
         <section className={styles.secondaryContent}>
           <div className={styles.titleSecondary} id="faq">
