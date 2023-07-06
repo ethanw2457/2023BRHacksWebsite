@@ -1,5 +1,10 @@
 @import '../styles/library';
 
+@font-face {
+    font-family: 'TitleFont';
+    src: url('/fonts/mars-wars.ttf') format('truetype');
+  }
+
 .title {
     display: flex;
     background-color: #000000;
@@ -74,39 +79,53 @@
     object-fit: cover;
     z-index: -1;
 }
-
 .frontTitle {
     font-size: 5rem;
     z-index: -1;
-    font-family: Orbitron;
+    font-family: 'TitleFont', sans-serif;
     transform: translateZ(-25px) scale(3);
     margin-top: -0.7rem;
-    // color: rgb(255, 0, 81);
-    // color: $secondary-color;
-    // background-color: white;
-    // text-shadow : 10px 10px 0px rgb(250, 114, 104);
-    text-shadow : -10px -10px 2px black;
-
-
-    // Pixelation animation
-    animation: pixelate 1s ease-in-out;
-
-
-    @keyframes pixelate {
+    color: #ffffff;
+    text-shadow: -10px -10px 2px rgb(15, 28, 62);
+  
+    /* Animation */
+    animation: cyberAnimation 2s ease-in-out infinite;
+  
+    @keyframes cyberAnimation {
       0% {
-        filter: blur(8px);
-        opacity: 0;
+        text-shadow: -10px -10px 2px rgb(15, 28, 62);
       }
-      50% {
-        filter: blur(4px);
-        opacity: 0.7;
+      20% {
+        text-shadow: 10px 10px 2px rgb(22, 41, 90);
+      }
+      40% {
+        text-shadow: 10px -10px 2px rgb(91, 253, 218);
+      }
+      60% {
+        text-shadow: -10px 10px 2px rgb(245, 0, 247);
+      }
+      80% {
+        text-shadow: -10px -10px 2px rgb(141, 63, 246);
       }
       100% {
-        filter: none;
-        opacity: 1;
+        text-shadow: -10px -10px 2px rgb(15, 28, 62);
       }
     }
   }
+  
+// .frontTitle {
+//     font-size: 5rem;
+//     z-index: -1;
+//     font-family: 'TitleFont', sans-serif;
+//     transform: translateZ(-25px) scale(3);
+//     margin-top: -0.7rem;
+//     // color: rgb(255, 0, 81);
+//     // color: $secondary-color;
+//     // background-color: white;
+//     // text-shadow : 10px 10px 0px rgb(250, 114, 104);
+//     text-shadow : -10px -10px 2px black;
+// }
+
 
 .bottomTitle {
     // @extend .foreground;
