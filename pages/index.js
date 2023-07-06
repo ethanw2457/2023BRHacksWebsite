@@ -154,6 +154,15 @@ export default function Home() {
               <Question title="Where is the Hackathon?">
                 The Hackathon will be hosted in the main building of Bridgewater-Raritan High School. The address is: 600 Garretson Road, Bridgewater, NJ, 08807.
               </Question>
+
+              <Question title="When will the Hackathon be?">
+                Fall of 2023
+              </Question>
+
+              <Question title="Where should I register?">
+                We have a form upcoming very soon where you can register.
+              </Question>
+
               <Question title="What should I bring?">
                 Bring your computer, charger, snacks, and any other electronics you may need.
               </Question>
