@@ -5,22 +5,36 @@
     src: url('/fonts/mars-wars.ttf') format('truetype');
   }
 
+
+@font-face {
+    font-family: 'AnotherFont';
+    src: url('/fonts/glitch.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sentex';
+    src: url('/fonts/Sentex.ttf') format('truetype');
+}
+
 .title {
     display: flex;
-    background-color: #000000;
     flex-direction: column;
     color: white;
     margin: 1rem $full-width 1rem;
-    border: 4px solid white;
+    border: 3px solid white;
     border-radius: 15px;
     width: 50%;
-    // transform: translateZ(5px) scale(1);
 }
 
 .titleText {
-    margin: 1rem;
+    margin: 1rem auto;
+    text-align: center;
     font-family: Orbitron;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
 .faq {
     @extend .titleText;
@@ -38,6 +52,7 @@
 
 .paragraph {
     margin: 0.5rem 1rem 0.5rem;
+    font-family: AnotherFont;
 }
 
 .flex {
@@ -82,7 +97,7 @@
 .frontTitle {
     font-size: 5rem;
     z-index: -1;
-    font-family: 'TitleFont', sans-serif;
+    font-family: 'Sentex';
     transform: translateZ(-25px) scale(3);
     margin-top: -0.7rem;
     color: #ffffff;
