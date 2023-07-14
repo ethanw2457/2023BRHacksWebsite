@@ -1,6 +1,5 @@
 
 import styles from './Footer.module.scss';
-// stuff
 
 
 const Footer = () => {
