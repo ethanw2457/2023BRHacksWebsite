@@ -14,7 +14,6 @@ import { useState, useEffect } from 'react';
 import { useScroll } from 'framer-motion';
 import Down from '../comps/Down';
 import WaveSection from '../comps/WaveSection';
-import Footer from '../comps/footer';
 
 const variants = {
   open: { x: "9rem" },
@@ -225,7 +224,6 @@ export default function Home() {
 
         <Registration title="Questions?" desc="Pls register" />
 
-        <Footer />
       </motion.div>
     </motion.nav>
   );
