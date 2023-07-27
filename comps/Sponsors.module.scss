@@ -2,6 +2,17 @@
 @import './comps.module.scss';
 @import '../styles/_library.scss';
 
+@font-face {
+  font-family: 'Sentex';
+  src: url('/fonts/Sentex.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GlitchFont';
+  src: url('/fonts/glitch.ttf') format('truetype');
+}
+
+
 .displayBox {
   display: flex;
   justify-content: center;
@@ -15,23 +26,48 @@
   image-rendering: crisp-edges;
 }
 
+
+
+
+
+
+// .logoWrapper {
+//   margin: 3rem 3em 3rem;
+//   background-image: url(../public/redCubes.gif);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   border-radius: 16px;
+// }
+
+
 .logoWrapper {
   margin: 3rem 3em 3rem;
-  background-image: url(../public/redCubes.gif);
+  /* Add a solid background color */
+  background-color: rgba(0, 0, 0, 0.5); /* You can adjust the alpha value (0 to 1) to control the opacity */
+
+  /* Apply the blur effect */
+  backdrop-filter: blur(8px); /* You can adjust the blur radius as needed */
+
+  /* Optional: add a solid fallback background color for older browsers */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Remove the background image */
+  background-image: none;
+
+  /* Apply the rest of the styles */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 16px;
 }
 
-.logoWrapper img {
-  filter: none;
-}
+
+
 
 
 .sponsorsTitle {
   font-size: 5rem;
-  font-family: Orbitron;
+  font-family: 'Orbitron';
   text-align: center;
   justify-content: center;
   text-shadow : -10px -10px 2px black;

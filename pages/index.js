@@ -129,7 +129,6 @@ export default function Home() {
           </p>
         </header>
         
-        <WaveSection style={{ bottom: "-200px" }} />
         <section className={`${styles.content} ${styles.topspace}`} id="about">
           <div className={styles.title}>
             <h1 className={styles.titleText}>
@@ -217,7 +216,6 @@ export default function Home() {
         <section></section>
         <section></section>
 
-        <WaveSection style = {{bottom: "-58px" }} />
 
         <section id="sponsors" className={styles.sponsors}>
           <Sponsors />
