@@ -124,6 +124,15 @@ export default function Home() {
           <img src="/Layer2.svg" className={styles.l2} alt="Layer 2" />
           <img src="/Layer3.svg" className={styles.l3} alt="Layer 3" />
           <img src="/Layer4.svg" className={styles.l4} alt="Layer 4" />
+          <div className={styles.b1}>
+            <img src="/B1.png" width="250px" />
+            <img src="/B2.png" width="250px" />
+            <img src="/B3.png" width="250px" />
+          </div>
+          <div className={styles.b2}>
+            <img src="/B4.png" width="250px"/>
+            <img src="/B5.png" width="250px"/>
+          </div>
           <p className={styles.credit}>
             <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais">Image by vectorpocket</a> on Freepik
           </p>

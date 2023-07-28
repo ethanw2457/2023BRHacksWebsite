@@ -95,11 +95,13 @@
     z-index: -1;
 }
 .frontTitle {
+    position: absolute;
+    top: -15rem;
     font-size: 5rem;
-    z-index: -1;
+    z-index: 1;
     font-family: 'Sentex';
     transform: translateZ(-25px) scale(3);
-    margin-top: -0.7rem;
+    // margin-top: -0.7rem;
     color: #ffffff;
     text-shadow: -10px -10px 2px rgb(15, 28, 62);
   
@@ -170,6 +172,28 @@
     // transform: translateZ(-5px) scale(1.5);
     margin-top: 5rem;
 }
+
+.b1 {
+    position: absolute;
+    top: -15rem;
+    transform: translateZ(-15px) scale(2.5);
+    margin-top: 30rem;
+    cursor: pointer;
+}
+
+.b2 {
+    @extend .b1;
+    transform: translateZ(-10px) scale(2);
+    top: -10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+// .building {
+//     cursor: pointer;
+// }
+
+
 .building {
     position: absolute;
     top: -80vh;
