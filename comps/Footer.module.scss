@@ -4,8 +4,8 @@
   }
   
   .footer {
-    background-image: url("../public/footer.gif");
     padding: 2% 5%;
+    background-color: black;
   }
   
   .footera {
@@ -39,7 +39,6 @@
   .viewfooter {
     font-size: 1.8rem;
     color: white;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 15%, rgba(210, 8, 89, 1) 50%, rgba(0, 0, 0, 1) 85%);
   }
   
   .viewfooter:hover {
@@ -50,6 +49,17 @@
     font-size: .8rem;
     color: white;
   }
+
+  .icons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+    margin: 0 1rem 0;
+  }
   
   .privacy {
     text-decoration: none;
@@ -57,7 +67,6 @@
     font-family: Orbitron, sans-serif;
     color: white;
     transition: all 0.3s ease-out;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 15%, rgba(210, 8, 89, 1) 50%, rgba(0, 0, 0, 1) 85%);
   }
   
   .privacy:hover {

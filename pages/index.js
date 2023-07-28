@@ -216,7 +216,7 @@ export default function Home() {
           <Sponsors />
         </section>
 
-        <Registration title="Questions?" desc="Pls register" />
+        {/* <Registration title="Questions?" desc="Pls register" /> */}
 
         <Footer />
 
