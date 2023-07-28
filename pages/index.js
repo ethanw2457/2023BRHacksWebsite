@@ -129,6 +129,8 @@ export default function Home() {
           </p>
         </header>
         
+        <div className={styles.parallax}>
+        <img src="/LayerR4.svg" className={styles.transition}/>
         <section className={`${styles.content} ${styles.topspace}`} id="about">
           <div className={styles.title}>
             <h1 className={styles.titleText}>
@@ -143,9 +145,6 @@ export default function Home() {
             <RegisterButton />
           </div>
         </section>
-
-        
-
         <section className={styles.secondaryContent}>
           <div className={styles.titleSecondary} id="faq">
             <h1 className={styles.faq}>
@@ -205,18 +204,14 @@ export default function Home() {
 
         <section className={styles.secondaryContent}>
           <Team />
-          <p>
+          {/* <p>
 
           </p>
           <p>
             
-          </p>
+          </p> */}
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-
-
+        </div>
         <section id="sponsors" className={styles.sponsors}>
           <Sponsors />
         </section>
