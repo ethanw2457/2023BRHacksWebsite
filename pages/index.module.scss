@@ -89,7 +89,6 @@
 
 .foreground {
     position: absolute;
-    height: 110%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
@@ -160,17 +159,17 @@
 .l2 {
     @extend .foreground;
     transform: translateZ(-10px) scale(2);
-    margin-top: 25rem;
+    margin-top: 80rem;
 }
 .l3 {
     @extend .foreground;
     transform: translateZ(-5px) scale(1.5);
-    margin-top: 20rem;
+    margin-top: 80rem;
 }
 .l4 {
     @extend .foreground;
     // transform: translateZ(-5px) scale(1.5);
-    margin-top: 5rem;
+    margin-top: 40rem;
 }
 
 .b1 {
@@ -178,20 +177,20 @@
     top: -15rem;
     transform: translateZ(-15px) scale(2.5);
     margin-top: 30rem;
-    cursor: pointer;
+    z-index: 1;
 }
 
 .b2 {
     @extend .b1;
     transform: translateZ(-10px) scale(2);
-    top: -10rem;
+    top: 5rem;
     align-items: center;
     justify-content: center;
 }
 
-// .building {
-//     cursor: pointer;
-// }
+.buildings {
+    cursor: pointer;
+}
 
 
 .building {
