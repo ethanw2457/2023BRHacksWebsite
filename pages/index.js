@@ -35,29 +35,30 @@ export default function Home() {
     if (doc) {
       const el = doc.getElementById(id);
       try {
-        el.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+        el.scrollIntoView({ behavior: "smooth" });
         console.log("Element selected: " + el.id);
       } catch (e) {
         console.log(e);
       }
     }
-
+  
     setIsOpen(false);
   };
-
+  
   const scrollBottom = (id) => {
     if (doc) {
       const el = doc.getElementById(id);
       try {
-        el.scrollIntoView({ behavior: "smooth", inline: "center" });
+        el.scrollIntoView({ behavior: "smooth" });
         console.log("Element selected: " + el.id);
       } catch (e) {
         console.log(e);
       }
     }
-
+  
     setIsOpen(false);
   };
+  
 
   useEffect(() => {
     setDoc(document);
