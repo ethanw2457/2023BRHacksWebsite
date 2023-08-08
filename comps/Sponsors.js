@@ -177,6 +177,37 @@ const Sponsors = () => {
       </div>
 
 
+
+      <div className={`${styles.displayBox} ${styles.sponsorsSection}`} ref={sponsorsRef}>
+        {/* XYZ Domain */}
+        <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
+          <motion.a
+            href="https://gen.xyz/"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <motion.img
+              src="xyz.png"
+              width={`${300 * scale}px`}
+              className={styles.logo}
+              initial="hidden"
+              animate={controls}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+              }}
+            />
+          </motion.a>
+        </motion.div>
+
+
+
+
+      </div>
+
+
+
+
     </div>
   );
 
