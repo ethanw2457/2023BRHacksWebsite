@@ -11,8 +11,14 @@ const Footer = () => {
       <footer className={styles.footer}>
 
         <div className={styles.icons}>
-          <AiFillGithub className={styles.logo}/>
-          <AiFillInstagram className={styles.logo}/>
+          <a href="https://github.com/ethanw2457/2023BRHacksWebsite" target='_blank' rel='noopener noreferrer'>
+            <AiFillGithub className={styles.logo} />
+          </a>
+
+          <a href='https://www.instagram.com/brhs.hacks/' target='_blank' rel='noopener noreferrer'>
+            <AiFillInstagram className={styles.logo} />
+          </a>
+
         </div>
         <p className={styles.footercopy}>© Copyright Hack BRHS</p>
         <div className={styles.linkscontainer}>
