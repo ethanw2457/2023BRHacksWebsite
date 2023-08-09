@@ -1,7 +1,7 @@
 
 import styles from './Footer.module.scss';
 import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
-
+import { motion } from 'framer-motion';
 
 
 const Footer = () => {
@@ -11,15 +11,29 @@ const Footer = () => {
       <footer className={styles.footer}>
 
         <div className={styles.icons}>
+
+          {/* GitHub */}
           <a href="https://github.com/ethanw2457/2023BRHacksWebsite" target='_blank' rel='noopener noreferrer'>
-            <AiFillGithub className={styles.logo} />
+            <motion.div
+              whileHover={{ scale: 1.5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <AiFillGithub className={styles.logo} />
+            </motion.div>
           </a>
 
+          {/* Instagram */}
           <a href='https://www.instagram.com/brhs.hacks/' target='_blank' rel='noopener noreferrer'>
-            <AiFillInstagram className={styles.logo} />
+            <motion.div
+              whileHover={{ scale: 1.5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <AiFillInstagram className={styles.logo} />
+            </motion.div>
           </a>
-
         </div>
+
+        
         <p className={styles.footercopy}>© Copyright Hack BRHS</p>
         <div className={styles.linkscontainer}>
           <a className={styles.privacy} href="https://mlh.io/privacy" target="_blank" class="privacy"><strong>Privacy Policy</strong></a>
