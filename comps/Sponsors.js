@@ -10,14 +10,6 @@ const Sponsors = () => {
   useEffect(() => {
     let height = 1;
 
-    if (window.matchMedia('(max-width: 1000px)').matches) {
-      height = 0.5;
-    }
-
-    if (window.matchMedia('(max-width: 600px)').matches) {
-      setScale(0.75);
-    }
-
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
