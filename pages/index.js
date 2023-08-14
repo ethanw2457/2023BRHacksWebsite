@@ -31,19 +31,33 @@ export default function Home() {
   const [doc, setDoc] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    setDoc(document);
+    const handleResize = () => {
+      if (window.matchMedia('(max-width: 1000px)').matches) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const scroll = (id) => {
     if (doc) {
       const el = doc.getElementById(id);
-      try {
+      if (el) {
         el.scrollIntoView({ behavior: "smooth" });
         console.log("Element selected: " + el.id);
-      } catch (e) {
-        console.log(e);
+        setIsOpen(false);
       }
     }
-  
-    setIsOpen(false);
   };
+
   
   const scrollBottom = (id) => {
     if (doc) {
