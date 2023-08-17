@@ -148,7 +148,7 @@ const Sponsors = () => {
         {/* Eye Level */}
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
-            href="https://www.echo3d.com/"
+            href="https://www.myeyelevel.com/US/index.do"
             whileHover={{ scale: 1.1 }} // You can adjust the hover scale effect if needed
             whileTap={{ scale: 0.9 }} // You can adjust the tap scale effect if needed
           >
