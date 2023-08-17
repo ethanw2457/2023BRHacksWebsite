@@ -14,8 +14,10 @@ $width: 10rem !default;
 }
 
 .navbar {
-  background-color: $secondary-color;
-  border-bottom: solid 1px white;
+
+  // make the background-color have a blur 
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   display: flex;
   z-index: 2;
   background-size: 1000px;
