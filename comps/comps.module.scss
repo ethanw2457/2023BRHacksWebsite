@@ -3,8 +3,9 @@
 
 $width: 10rem !default;
 
-.name {
-  // margin-left: 2rem;
+
+.registerElement {
+  margin-left: auto;
 }
 
 .navbarWrapper {
@@ -121,10 +122,6 @@ $width: 10rem !default;
   margin: 2rem $full-width 0;
   display: flex;
   flex-direction: column;
-}
-
-.formGroup1 {
-  // display: inline-block;
 }
 
 .submitButton {

@@ -13,11 +13,6 @@ const elements = [
     id: "about"
   },
   {
-    name: "Register",
-    icon: <FaUserPlus style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
-    id: "register"
-  },
-  {
     name: "FAQ",
     icon: <FaQuestionCircle style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "faq"
@@ -41,6 +36,11 @@ const elements = [
     name: "Team",
     icon: <FaUsers style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "team"
+  },
+  {
+    name: "Register",
+    icon: <FaUserPlus style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
+    id: "register"
   }
 ];
 
@@ -57,22 +57,20 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
 
   return (
     <div className={styles.navbarWrapper} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-    <div
-      className={styles.navbar}
-    >
-      {elements.map((el) => (
-        <div
-          className={`${styles.choice} ${hoveredElement === el.id ? styles.highlighted : ""}`}
-          key={el.name}
-          onClick={() => onClickTab(el.id)}
-          onMouseEnter={() => handleMouseEnter(el.id)}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className={styles.name}>{el.name}</span>
-          {el.icon}
-        </div>
-      ))}
-    </div>
+      <div className={styles.navbar}>
+        {elements.map((el) => (
+          <div
+            className={`${styles.choice} ${hoveredElement === el.id ? styles.highlighted : ""} ${el.id === "register" ? styles.registerElement : ""}`}
+            key={el.name}
+            onClick={() => onClickTab(el.id)}
+            onMouseEnter={() => handleMouseEnter(el.id)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <span className={styles.name}>{el.name}</span>
+            {el.icon}
+          </div>
+        ))}
+      </div>
       <div>
       </div>
     </div>
