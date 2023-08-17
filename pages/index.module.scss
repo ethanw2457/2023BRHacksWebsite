@@ -5,6 +5,10 @@
     src: url('/fonts/mars-wars.ttf') format('truetype');
   }
 
+@font-face {
+    font-family: 'HackedFont';
+    src: url('/fonts/hacked.otf') format('truetype');
+}
 
 @font-face {
     font-family: 'GlitchFont';
@@ -29,7 +33,7 @@
 .titleText {
     margin: 1rem auto;
     text-align: center;
-    font-family: Orbitron;
+    font-family: HackedFont;
     display: flex;
     justify-content: center;
     align-items: center;
