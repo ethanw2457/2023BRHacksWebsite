@@ -104,7 +104,7 @@ export default function Home() {
       variants={variants}
       transition={{ stiffness: 100 }}
     >
-      <Navbar isOpen={isOpen} onClickTab={scroll} onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)} />
+      <Navbar isOpen={isOpen} onClickTab={scroll}/>
       <motion.div className={styles.wrapper}
         animate={isOpen ? "open" : "closed"}
         variants={centerVariants}

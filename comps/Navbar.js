@@ -9,51 +9,40 @@ import smallPictureImage from '../public/krakenDoodle.gif';
 const elements = [
   {
     name: "About",
-    icon: <FaInfoCircle style={{marginRight: "1rem", position: "fixed"}}/>,
+    icon: <FaInfoCircle style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "about"
   },
   {
     name: "Register",
-    icon: <FaUserPlus style={{marginRight: "1rem", position: "fixed"}}/>,
+    icon: <FaUserPlus style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "register"
   },
   {
     name: "FAQ",
-    icon: <FaQuestionCircle style={{marginRight: "1rem", position: "fixed"}}/>,
+    icon: <FaQuestionCircle style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "faq"
   },
   {
     name: "Schedule",
-    icon: <FaCalendarAlt style={{marginRight: "1rem", position: "fixed"}}/>,
+    icon: <FaCalendarAlt style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "schedule"
   },
   {
     name: "Sponsors",
-    icon: <FaHandshake style={{marginRight: "1rem", position: "fixed"}}/>,
+    icon: <FaHandshake style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "sponsors"
   },
   // {
   //   name: "Prizes",
-  //   icon: <FaGift style={{marginRight: "1rem", position: "fixed"}}/>,
+  //   icon: <FaGift style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
   //   id: "prizes"
   // },
   {
     name: "Team",
-    icon: <FaUsers style={{marginRight: "1rem", position: "fixed"}}/>,
+    icon: <FaUsers style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "team"
   }
 ];
-
-const variants = {
-  open: {
-    // x: 0,
-    opacity: 1,
-  },
-  closed: {
-    // x: "-9rem",
-    opacity: 0,
-  }
-};
 
 const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => {
   const [hoveredElement, setHoveredElement] = useState(null);
@@ -68,11 +57,8 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
 
   return (
     <div className={styles.navbarWrapper} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-    <motion.div
-      className={`${styles.navbar} ${isOpen ? styles.blurred : ""}`}
-      animate={isOpen ? "open" : "closed"}
-      transition={{ stiffness: 100 }}
-      variants={variants}
+    <div
+      className={styles.navbar}
     >
       {elements.map((el) => (
         <div
@@ -82,33 +68,12 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
           onMouseEnter={() => handleMouseEnter(el.id)}
           onMouseLeave={handleMouseLeave}
         >
-          {el.icon}
           <span className={styles.name}>{el.name}</span>
+          {el.icon}
         </div>
       ))}
-    </motion.div>
+    </div>
       <div>
-        <button onClick={onClick} className={styles.button}>
-          <p className={styles.buttonText}>
-            {isOpen ? (
-              <img
-                src="https://img.icons8.com/?size=512&id=40217&format=png"
-                width="20"
-                height="25"
-                alt=">"
-                style={{ marginLeft: "-3px" }} // Apply leftward movement using marginLeft
-              />
-            ) : (
-              <img
-                src="https://img.icons8.com/?size=512&id=7849&format=png"
-                width="20"
-                height="25"
-                alt=">"
-                style={{ marginLeft: "-3px" }} // Apply leftward movement using marginLeft
-              />
-            )}
-          </p>
-        </button>
       </div>
     </div>
   );

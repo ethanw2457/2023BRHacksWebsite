@@ -4,25 +4,22 @@
 $width: 10rem !default;
 
 .name {
-  margin-left: 2rem;
+  // margin-left: 2rem;
 }
 
 .navbarWrapper {
-  height: 100%;
-  left: -$width;
   position: fixed;
   z-index: 1;
   background-size: 1000px;
 }
 
 .navbar {
-  background-color: rgba(167, 28, 139, 0.309);
-  height: 100%;
+  background-color: $secondary-color;
+  border-bottom: solid 1px white;
   display: flex;
-  flex-direction: column;
   z-index: 2;
   background-size: 1000px;
-  width: $width;
+  width: 100vw;
 
   //Modify the font properties
   font-family: "Helvetica", Arial, sans-serif;
@@ -41,7 +38,8 @@ $width: 10rem !default;
   
     &:hover {
       background-size: 90px;
-      opacity: 0.8;
+      background-color: white;
+      color: $secondary-color;
     }
   }
 
