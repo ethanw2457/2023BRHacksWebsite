@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Question from '../comps/Question';
 import Navbar from '../comps/Navbar.js';
 import Team from '../comps/Team';
+import Saturn from '../comps/Saturn.js';
 import { RegisterButton } from '../comps/RegisterButton';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { ParallaxBanner } from 'react-scroll-parallax';
@@ -226,14 +227,10 @@ export default function Home() {
           <Schedule />
         </section>
 
+        <Saturn />
+
         <section className={styles.secondaryContent}>
           <Team />
-          {/* <p>
-
-          </p>
-          <p>
-            
-          </p> */}
         </section>
         </div>
         <section id="sponsors" className={styles.sponsors}>
