@@ -4,22 +4,18 @@
 $width: 10rem !default;
 
 
-.registerElement {
-  margin-left: auto;
-}
-
 .navbarWrapper {
   position: fixed;
   z-index: 1;
   background-size: 1000px;
 }
 
-.navbar {
 
-  // make the background-color have a blur 
+.navbar {
   backdrop-filter: blur(5px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   display: flex;
+  justify-content: center; /* Center horizontally */
   z-index: 2;
   background-size: 1000px;
   width: 100vw;

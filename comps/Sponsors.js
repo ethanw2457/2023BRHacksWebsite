@@ -1,3 +1,5 @@
+// Sponsors.js
+
 import styles from './Sponsors.module.scss';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';

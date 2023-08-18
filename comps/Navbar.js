@@ -4,7 +4,7 @@ import styles from './comps.module.scss';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { FaInfoCircle, FaUserPlus, FaQuestionCircle, FaCalendarAlt, FaHandshake, FaGift, FaUsers } from 'react-icons/fa';
-import smallPictureImage from '../public/krakenDoodle.gif';
+import smallPictureImage from '../public/logo.png';
 
 const elements = [
   {
