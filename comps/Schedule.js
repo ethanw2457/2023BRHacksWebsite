@@ -1,3 +1,5 @@
+// Schedule.js
+
 import styles from './Schedule.module.scss';
 
 // Note that you do not need to add any space between the commas. 

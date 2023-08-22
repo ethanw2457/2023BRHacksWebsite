@@ -1,3 +1,4 @@
+// Footer.js
 
 import styles from './Footer.module.scss';
 import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';

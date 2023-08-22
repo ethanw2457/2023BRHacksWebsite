@@ -1,3 +1,5 @@
+// Question.js 
+
 import styles from './comps.module.scss';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
