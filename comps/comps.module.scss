@@ -5,6 +5,7 @@
 
 $width: 10rem !default;
 
+// Navbar Stuff
 
 .navbarWrapper {
   position: fixed;
@@ -21,6 +22,7 @@ $width: 10rem !default;
   z-index: 2;
   background-size: 1000px;
   width: 100vw;
+  height: 70px;
 
   //Modify the font properties
   font-family: "Helvetica", Arial, sans-serif;
@@ -28,6 +30,15 @@ $width: 10rem !default;
   font-weight: bold;
   color: #ffffff;
 }
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3px;
+}
+
+// End of Navbar stuff
 
 .choice {
     @extend .highlight;
@@ -41,6 +52,11 @@ $width: 10rem !default;
       background-size: 90px;
       background-color: white;
       color: $secondary-color;
+
+    &:not(.logo) {
+      background-color: white;
+      color: $secondary-color;
+    }
     }
   }
 

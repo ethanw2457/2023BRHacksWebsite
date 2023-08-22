@@ -4,7 +4,9 @@ import styles from './comps.module.scss';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { FaInfoCircle, FaUserPlus, FaQuestionCircle, FaCalendarAlt, FaHandshake, FaGift, FaUsers } from 'react-icons/fa';
-import smallPictureImage from '../public/logo.png';
+
+import Image from 'next/image';
+import logoImage from '../public/logo.png';
 
 const elements = [
   {
@@ -21,6 +23,15 @@ const elements = [
     name: "Schedule",
     icon: <FaCalendarAlt style={{margin: "0.1rem 0.4rem 0.1rem"}}/>,
     id: "schedule"
+  },
+  {
+    name: "",
+    icon: (
+      <div className={`${styles.logoWrapper} ${styles.logo}`}>
+        <Image src={logoImage} alt="Logo" width={70} height={70} />
+      </div>
+    ),
+    id: "logo"
   },
   {
     name: "Sponsors",
