@@ -41,24 +41,68 @@ $width: 10rem !default;
 // End of Navbar stuff
 
 .choice {
-    @extend .highlight;
-    z-index: 3;
-    padding: 1rem;
-    display: flex;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-  
-    &:hover {
-      background-size: 90px;
-      background-color: white;
-      color: $secondary-color;
+  @extend .highlight;
+  z-index: 3;
+  padding: 1rem;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
 
-    &:not(.logo) {
-      background-color: white;
-      color: $secondary-color;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $secondary-color;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    background-size: 90px;
+    background-color: transparent;
+    color: $secondary-color;
+
+    &:before {
+      transform: scaleX(1);
+      transform-origin: left;
     }
   }
+
+  &:not(.logo) {
+    background-color: transparent;
+    color: $secondary-color;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translate(0, 0);
+  }
+  25% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translate(-2%, 2%);
+  }
+  50% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translate(2%, -2%);
+  }
+  75% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translate(-2%, 2%);
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translate(0, 0);
+  }
+}
+
 
 .button {
   margin-left: $width;
