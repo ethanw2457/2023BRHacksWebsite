@@ -228,47 +228,9 @@ $width: 10rem !default;
   margin: 0.5rem 0 2rem;
 }
 
-.questions {
-  color: white;
-  background-color: $base-color;
-  // border-bottom-left-radius: 10px;
-  // border-bottom-right-radius: 10px;
-  margin: 0;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
-  &:hover {
-    background-color: white;
-    color: $secondary-color;
-    border-color: $base-color;
-  }
-}
 
-.question {
-  @extend .paragraph;
-  border-bottom: 1px solid $secondary-color;
-  padding-top: 0.5rem;
-  padding-bottom: 0.25rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  // padding-top: 0.25rem;
-  // padding-bottom: 0.25rem;
-}
 
-.lastQuestion {
-  @extend .questions;
-  border-bottom-left-radius: 8.5px;
-  border-bottom-right-radius: 8.5px;
-  border-bottom: none;
-  // margin-bottom: 0.5rem;
-}
-
-.answer {
-  @extend .paragraph;
-  margin-bottom: 0;
-  padding-bottom: 2rem;
-  z-index: -1;
-
-}
 
 
 .blurred {

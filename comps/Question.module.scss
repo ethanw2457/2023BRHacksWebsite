@@ -1,0 +1,74 @@
+// Question.module.scss
+
+@import '../styles/_library';
+@import '../pages/index.module';
+
+
+.lastQuestion {
+  @extend .questions;
+  border-bottom-left-radius: 8.5px;
+  border-bottom-right-radius: 8.5px;
+  border-bottom: none;
+  // margin-bottom: 0.5rem;
+}
+
+.question {
+  @extend .paragraph;
+  // border-bottom: 1px solid $secondary-color;
+  padding-top: 0.25rem; /* Adjust the top padding */
+  padding-bottom: 0.25rem; /* Adjust the bottom padding */
+  font-family: 'Metuo';
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.questions {
+  @extend .highlight;
+  z-index: 3;
+  padding: 0.75rem 1rem; /* Adjust the left and right padding */
+  padding-left: -3px; /* This line should be removed, as it's not valid */
+  font-size: 0.9rem; /* Adjust the font size */
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+
+  &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 15px; /* Adjust the left spacing */
+      width: calc(100% - 30px); /* Adjust the width to create spacing */
+      height: 3px;
+      background: $secondary-color;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s ease;
+  }
+
+  &:hover {
+      background-size: 90px;
+      background-color: transparent;
+      color: $secondary-color;
+
+      &:before {
+          transform: scaleX(1);
+          transform-origin: left;
+      }
+  }
+}
+
+.answer {
+    @extend .paragraph;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    font-family: 'Metuo';
+    font-size: 20px;
+    padding-left: 80px;
+    z-index: -1;
+  
+  }
+
+  

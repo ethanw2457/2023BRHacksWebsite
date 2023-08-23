@@ -1,3 +1,5 @@
+// index.module.scss
+
 @import '../styles/library';
 
 @font-face {
@@ -8,6 +10,11 @@
 @font-face {
     font-family: 'HackedFont';
     src: url('/fonts/hacked.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Metuo';
+    src: url('/fonts/metuo.otf') format('truetype');
 }
 
 @font-face {
