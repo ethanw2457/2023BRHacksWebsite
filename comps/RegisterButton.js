@@ -2,6 +2,7 @@ import styles from './comps.module.scss'
 import { color, motion } from 'framer-motion'
 import { useState } from 'react'
 import { withRouter } from 'next/router'
+import Link from 'next/link';
 
 const textAnimate = {
     normal: {
@@ -26,27 +27,38 @@ const textAnimate = {
     },
 }
 
-export const RegisterButton = () => {
 
+export const RegisterButton = () => {
     const [isHover, setHover] = useState(false);
+
+    const handleMouseEnter = () => {
+        setHover(true);
+    };
+
+    const handleMouseLeave = () => {
+        setHover(false);
+    };
+
+    const handleRegisterClick = () => {
+        window.open("https://forms.gle/ZPkJYQgZSnb7UJNR6", "_blank");
+    };
 
     return (
         <div>
-            <motion.button className={styles.registerButton}
-                onMouseEnter={()=>setHover(true)}
-                onMouseLeave={()=>setHover(false)}
+            <motion.button
+                className={styles.registerButton}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                onClick={handleRegisterClick}
             >
                 <motion.span
-                    initial='normal'
+                    initial="normal"
                     animate={isHover ? 'side' : 'normal'}
                     variants={textAnimate}
                 >
                     Register
                 </motion.span>
-                <motion.span>
-                    {/* <AiRightCircle/> */}
-                </motion.span>
             </motion.button>
         </div>
-    )
-}
+    );
+};

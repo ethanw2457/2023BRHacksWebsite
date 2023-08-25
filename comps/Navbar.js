@@ -81,6 +81,9 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
             onClick={() => {
               if (el.id === "register") {
                 handleRegisterClick();
+              } else if (el.id === "logo") {
+                // Open your website when clicking the logo
+                window.open("https://forms.gle/ZPkJYQgZSnb7UJNR6", "_blank");
               } else {
                 onClickTab(el.id);
               }
