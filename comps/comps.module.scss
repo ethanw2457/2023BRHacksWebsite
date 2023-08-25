@@ -59,7 +59,7 @@ $width: 10rem !default;
     left: 0;
     width: 100%;
     height: 2px;
-    background: $secondary-color;
+    background: #abc2fe;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
@@ -78,7 +78,7 @@ $width: 10rem !default;
 
   &:not(.logo) {
     background-color: transparent;
-    color: $secondary-color;
+    color: #abc2fe;
   }
 }
 
