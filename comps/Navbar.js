@@ -66,6 +66,11 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
     setHoveredElement(null);
   };
 
+  const handleRegisterClick = () => {
+    // Open the link in a new tab
+    window.open("https://forms.gle/ZPkJYQgZSnb7UJNR6", "_blank");
+  };
+
   return (
     <div className={styles.navbarWrapper} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       <div className={styles.navbar}>
@@ -73,7 +78,13 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
           <div
             className={`${styles.choice} ${hoveredElement === el.id ? styles.highlighted : ""} ${el.id === "register" ? styles.registerElement : ""}`}
             key={el.name}
-            onClick={() => onClickTab(el.id)}
+            onClick={() => {
+              if (el.id === "register") {
+                handleRegisterClick();
+              } else {
+                onClickTab(el.id);
+              }
+            }}
             onMouseEnter={() => handleMouseEnter(el.id)}
             onMouseLeave={handleMouseLeave}
           >
@@ -81,8 +92,6 @@ const Navbar = ({ isOpen, onClick, onClickTab, onMouseEnter, onMouseLeave }) => 
             {el.icon}
           </div>
         ))}
-      </div>
-      <div>
       </div>
     </div>
   );

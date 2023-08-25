@@ -188,7 +188,7 @@ export default function Home() {
               </Question>
 
               <Question title="Where should I register?">
-                We have a form upcoming very soon where you can register.
+                <a href="https://forms.gle/ZPkJYQgZSnb7UJNR6" target="_blank" rel="noopener noreferrer style"> <u>Register Here</u></a>
               </Question>
 
               <Question title="What should I bring?">
