@@ -37,6 +37,19 @@
     width: 50%;
 }
 
+.progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: red;
+    // width: 100%;
+    transform-origin: 0%;
+    z-index: 1;
+  }
+  
+
 .titleText {
     margin: 1rem auto;
     text-align: center;

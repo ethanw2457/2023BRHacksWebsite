@@ -11,8 +11,8 @@ import Saturn from '../comps/Saturn.js';
 import { RegisterButton } from '../comps/RegisterButton';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { ParallaxBanner } from 'react-scroll-parallax';
-import { useState, useEffect } from 'react';
-import { useScroll } from 'framer-motion';
+import { useState, useRef, useEffect} from 'react';
+import { useScroll, useMotionValueEvent} from 'framer-motion';
 import Down from '../comps/Down';
 import WaveSection from '../comps/WaveSection';
 import Footer from '../comps/Footer';
@@ -27,7 +27,18 @@ const centerVariants = {
   closed: { opacity: 1 }
 };
 
+
 export default function Home() {
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref
+  });
+  // const [hookedYPostion, setHookedYPosition] = useState(0);
+  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
+  //   console.log("Page scroll:", latest);
+  // })
+
   const [isOpen, setIsOpen] = useState(false);
   const [doc, setDoc] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -42,6 +53,7 @@ export default function Home() {
       }
     };
     handleResize();
+    console.log("Page scroll:", scrollYProgress);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -73,7 +85,6 @@ export default function Home() {
   
     setIsOpen(false);
   };
-  
 
   useEffect(() => {
     setDoc(document);
@@ -100,17 +111,13 @@ export default function Home() {
   };
 
   return (
-    <motion.nav
-      animate={isOpen ? "open" : "closed"}
-      variants={variants}
-      transition={{ stiffness: 100 }}
-    >
+    <>
+      <motion.div
+        className={styles.progressbar}
+        style={{ scaleX: scrollYProgress }}
+      />
       <Navbar isOpen={isOpen} onClickTab={scroll}/>
-      <motion.div className={styles.wrapper}
-        animate={isOpen ? "open" : "closed"}
-        variants={centerVariants}
-        transition={{ stiffness: 100 }}
-      >
+      <motion.div className={styles.wrapper}>
         <Down onClick={() => scrollBottom('about')} />
 
         <header>
@@ -242,6 +249,6 @@ export default function Home() {
         <Footer />
 
       </motion.div>
-    </motion.nav>
+      </>
   );
 }
