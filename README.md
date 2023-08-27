@@ -1,4 +1,4 @@
-# You are on the branch `previousDevelop`
+# You are on branch `previousDevelop`
 
 # DO NOT REMOVE 
 
