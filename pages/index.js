@@ -30,14 +30,15 @@ const centerVariants = {
 
 export default function Home() {
 
-  const ref = useRef(null);
+  const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref
   });
-  // const [hookedYPostion, setHookedYPosition] = useState(0);
-  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
-  //   console.log("Page scroll:", latest);
-  // })
+  const [hookedYPosition, setHookedYPosition] = useState(0);
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    setHookedYPosition(latest);
+    console.log("Page scroll:", latest);
+  })
 
   const [isOpen, setIsOpen] = useState(false);
   const [doc, setDoc] = useState(null);
@@ -53,7 +54,6 @@ export default function Home() {
       }
     };
     handleResize();
-    console.log("Page scroll:", scrollYProgress);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -111,57 +111,19 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div>
       <motion.div
         className={styles.progressbar}
         style={{ scaleX: scrollYProgress }}
       />
       <Navbar isOpen={isOpen} onClickTab={scroll}/>
-      <motion.div className={styles.wrapper}>
+      {/* <motion.div className={styles.wrapper}> */}
         <Down onClick={() => scrollBottom('about')} />
-
-        <header>
-          <motion.svg
-            width="300"
-            height="200"
-            viewBox="0 0 200 100"
-            initial="hidden"
-            animate="visible"
-            className={styles.svg}
-          >
-            <motion.circle
-              cx="100"
-              cy="100"
-              r="80"
-              stroke="#ff0055"
-              variants={draw}
-              custom={1}
-              className={styles.circle}
-            />
-          </motion.svg>
-          {/* <h1 className={styles.frontTitle}>
-            Hack BRHS
-          </h1> */}
-          <div className={styles.b1}>
-            <img src="/B1.png" width="250px" className={styles.buildings} onClick={() => scroll('about')} />
-            <img src="/B5.png" width="250px" className={styles.buildings} onClick={() => scroll('about')} />
-            <img src="/B3.png" width="250px" className={styles.buildings} onClick={() => scroll('prizes')} />
-          </div>
-          <div className={styles.b2}>
-            <img src="/B4.png" width="250px" className={styles.buildings} onClick={() => scroll('faq')}/>
-            <img src="/B2.png" width="250px" className={styles.buildings} onClick={() => scroll('sponsors')}/>
-          </div>
-          <img width="100%" src="3161-removebg.png" className={styles.building} alt="Building" />
-          <img src="/Layer1.svg" className={styles.l1} alt="Layer 1" />
-          <img src="/Layer2.svg" className={styles.l2} alt="Layer 2" />
-          <img src="/Layer3.svg" className={styles.l3} alt="Layer 3" />
-          <img src="/Layer4.svg" className={styles.l4} alt="Layer 4" />
-          <p className={styles.credit}>
-            <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais">Image by vectorpocket</a> on Freepik
-          </p>
-        </header>
-        
-        <div className={styles.parallax}>
+        <div className={styles.backdrop}/>
+        <p className={styles.credit}>
+          <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais">Image by vectorpocket</a> on Freepik
+        </p>
+      
         <img src="/LayerR4.svg" className={styles.transition}/>
         <section className={`${styles.content} ${styles.topspace}`} id="about">
           <div className={styles.title}>
@@ -239,16 +201,26 @@ export default function Home() {
         <section className={styles.secondaryContent}>
           <Team />
         </section>
-        </div>
         <section id="sponsors" className={styles.sponsors}>
           <Sponsors />
         </section>
+        <img width="100%" src="3161-removebg.png" className={styles.buildings} style={{bottom: `${-hookedYPosition * 300 + 10}vh`}} alt="Building" />
+        <img src="/Layer1.svg" className={styles.l1} alt="Layer 1" style={{bottom: `${-hookedYPosition * 300 - 30}vh`}}/>
+        <img src="/Layer2.svg" className={styles.l2} alt="Layer 2" style={{bottom: `${-hookedYPosition * 200 - 30}vh`}}/>
+        <img src="/Layer3.svg" className={styles.l3} alt="Layer 3" style={{bottom: `${-hookedYPosition * 100 - 30}vh`}}/>
+        <img src="/Layer4.svg" className={styles.l4} alt="Layer 4" style={{bottom: `${hookedYPosition * 20 -20}vh`}}/>
+
+        <img src="/B4.png" width="250px" className={styles.building} onClick={() => scroll('faq')} style={{bottom: `${hookedYPosition * 500 - 200}vh`, left: `${hookedYPosition * 500 - 200}vw`}}/>
+        <img src="/B2.png" width="250px" className={styles.building} onClick={() => scroll('sponsors')} style={{bottom: `${hookedYPosition * 500 - 40}vh`, left: `${hookedYPosition * 500 - 40}vw`}}/>
+        <img src="/B1.png" width="250px" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 80}vh`, left: `${hookedYPosition * 500 - 80}vw`}}/>
+        <img src="/B5.png" width="250px" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 120}vh`, left: `${hookedYPosition * 500 - 120}vw`}}/>
+        <img src="/B3.png" width="250px" className={styles.building} onClick={() => scroll('prizes')} style={{bottom: `${hookedYPosition * 500 - 160}vh`, left: `${hookedYPosition * 500 - 160}vw`}}/>
 
         {/* <Registration title="Questions?" desc="Pls register" /> */}
 
         <Footer />
 
-      </motion.div>
-      </>
+      {/* </motion.div> */}
+      </div>
   );
 }

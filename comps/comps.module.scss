@@ -261,7 +261,7 @@ $width: 10rem !default;
 .down {
   @extend .highlight;
 
-  position: fixed;
+  position: absolute;
   bottom: 5vw;
   left: 50vw;
   margin-left: -1rem;

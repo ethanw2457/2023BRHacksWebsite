@@ -39,11 +39,11 @@
 
 .progressbar {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 10px;
-    background: red;
+    background: white;
     // width: 100%;
     transform-origin: 0%;
     z-index: 1;
@@ -106,18 +106,12 @@
     // margin-bottom: 0;
     // text-align: center;
     // flex-direction: column;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
+    // height: 100vh;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    // perspective: 10px;
 }
 
-.foreground {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 .frontTitle {
     position: absolute;
     top: -15rem;
@@ -165,53 +159,63 @@
 
 .l1 {
     @extend .foreground;
-    transform: translateZ(-15px) scale(2.5);
-    margin-top: 30rem;
+    // transform: translateZ(-15px) scale(2.5);
+    // z-index: -1;
 }
 .l2 {
     @extend .foreground;
-    transform: translateZ(-10px) scale(2);
-    margin-top: 80rem;
+    // transform: translateZ(-10px) scale(2);
+    // z-index: -2;
 }
 .l3 {
     @extend .foreground;
-    transform: translateZ(-5px) scale(1.5);
-    margin-top: 80rem;
+    // transform: translateZ(-5px) scale(1.5);
+    // z-index: -3;
 }
 .l4 {
     @extend .foreground;
     // transform: translateZ(-5px) scale(1.5);
-    margin-top: 40rem;
+    // z-index: -4;
+}
+
+.foreground {
+    position: absolute;
+    width: 100%;
+    bottom: -15vh;
+
+    // z-index: -1;
+}
+
+.buildings {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    bottom: 10vh;
+    z-index: 0;
+}
+
+.backdrop {
+    height: 100vh;
+    z-index: -5;
 }
 
 .b1 {
     position: absolute;
     top: -15rem;
-    transform: translateZ(-15px) scale(2.5);
     margin-top: 30rem;
     z-index: 1;
 }
 
 .b2 {
     @extend .b1;
-    transform: translateZ(-10px) scale(2);
     top: 5rem;
     align-items: center;
     justify-content: center;
 }
 
-.buildings {
-    cursor: pointer;
-}
-
 
 .building {
-    position: absolute;
-    top: -80vh;
-    left: 50vh;
-    margin-left: -250px;
-    transform: translateZ(-35px) scale(5);
-    margin-top: 25.5rem;
+    position: fixed;
 }
 .credit {
     position: fixed;
@@ -226,11 +230,14 @@
 }
 
 .content {
-    margin: 0;
-    background-color: #000000;
-    justify-content: center;
-    margin-top: -1px;
-    z-index: 0;    // border-top: 3px solid white;
+
+    background-color: black;
+    z-index: 1;
+    // margin: 0;
+    // background-color: #000000;
+    // justify-content: center;
+    // margin-top: -1px;
+    // z-index: 0;    // border-top: 3px solid white;
     // border-bottom: 3px solid white;
 }
 
@@ -301,11 +308,11 @@
 }
 
 .transition {
-    position: fixed;
-    z-index: 1;
-    left: -0.1vh;
+    position: relative;
+    z-index: 0;
     width: 100%;
-    margin-top: -1px;
+    background-color: black;
+    margin-bottom: -10px;
 }
 
 .topspace {
