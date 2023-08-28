@@ -196,7 +196,7 @@ export default function Home() {
           <Schedule />
         </section>
 
-        <Saturn />
+        {/* <Saturn /> */}
 
         <section className={styles.secondaryContent}>
           <Team />
