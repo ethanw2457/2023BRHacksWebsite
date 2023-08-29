@@ -42,15 +42,25 @@ export default function Home() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [doc, setDoc] = useState(null);
+  const [isHalf, setIsHalf] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setDoc(document);
     const handleResize = () => {
-      if (window.matchMedia('(max-width: 1000px)').matches) {
-        setIsMobile(true);
-      } else {
+      if (window.matchMedia('(max-width: 1400px)').matches && window.matchMedia('(min-width: 601px)'.matches)) {
+        setIsHalf(true);
         setIsMobile(false);
+        console.log("Mobile");
+      } 
+      // else if (window.matchMedia('(max-width: 600px').matches) {
+      //   setIsMobile(true);
+      //   setIsHalf(false);
+      // }
+      else {
+        setIsHalf(false);
+        setIsMobile(false);
+        console.log("Not Mobile");
       }
     };
     handleResize();
@@ -88,11 +98,6 @@ export default function Home() {
 
   useEffect(() => {
     setDoc(document);
-    if (window.matchMedia('(max-width: 1000px)').matches) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
   }, []);
 
   const draw = {
@@ -116,9 +121,14 @@ export default function Home() {
         className={styles.progressbar}
         style={{ scaleX: scrollYProgress }}
       />
+      <Down onClick={() => scrollBottom('about')} />
       <Navbar isOpen={isOpen} onClickTab={scroll}/>
+      <img src="/B4.png" width="250" className={styles.building} onClick={() => scroll('faq')} style={{bottom: `${hookedYPosition * 500 - 200}vh`, left: `${hookedYPosition * 500 - 200}vw`}}/>
+        <img src="/B2.png" width="250" className={styles.building} onClick={() => scroll('sponsors')} style={{bottom: `${hookedYPosition * 500 - 40}vh`, left: `${hookedYPosition * 500 - 40}vw`}}/>
+        <img src="/B1.png" width="250" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 80}vh`, left: `${hookedYPosition * 500 - 80}vw`}}/>
+        <img src="/B5.png" width="250" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 120}vh`, left: `${hookedYPosition * 500 - 120}vw`}}/>
+        <img src="/B3.png" width="250" className={styles.building} onClick={() => scroll('prizes')} style={{bottom: `${hookedYPosition * 500 - 160}vh`, left: `${hookedYPosition * 500 - 160}vw`}}/>
       {/* <motion.div className={styles.wrapper}> */}
-        <Down onClick={() => scrollBottom('about')} />
         <div className={styles.backdrop}> 
           <h1 className={styles.frontTitle}>
             Hack BRHS
@@ -127,10 +137,10 @@ export default function Home() {
         <p className={styles.credit}>
           <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais">Image by vectorpocket</a> on Freepik
         </p>
-      
+        <div className={styles.bottomSection}>
         <img src="/LayerR4.svg" className={styles.transition}/>
-        {/* <section className={`${styles.content} ${styles.topspace}`} id="about"> */}
-          <div className={styles.titleWrapper}>
+        <section className={`${styles.content} ${styles.topspace}`} id="about">
+        {/* <div className={styles.titleWrapper}> */}
           <div className={styles.title}>
             <h1 className={styles.titleText}>
               Hack BRHS 2023
@@ -143,9 +153,9 @@ export default function Home() {
             </p>
             <RegisterButton />
           </div>
-          </div>
-        {/* </section> */}
-        {/* <section className={styles.secondaryContent}> */}
+        {/* </div> */}
+        </section>
+        <section className={styles.secondaryContent}>
           <div className={styles.titleSecondary} id="faq">
             <h1 className={styles.faq}>
               FAQ
@@ -196,33 +206,27 @@ export default function Home() {
 
             </div>
           </div>
-        {/* </section> */}
+        </section>
 
-        {/* <section className={styles.tertiaryContent}> */}
+        <section className={styles.tertiaryContent}>
           <Schedule />
-        {/* </section> */}
+        </section>
 
         {/* <Saturn /> */}
 
-        {/* <section className={styles.secondaryContent}> */}
+        <section className={styles.secondaryContent}>
           <Team />
-        {/* </section> */}
-        {/* <section id="sponsors" className={styles.sponsors}> */}
+        </section>
+        <section id="sponsors" className={styles.sponsors}>
           <Sponsors />
-        {/* </section> */}
-        <img width="100%" src="3161-removebg.png" className={styles.buildings} style={{bottom: `${-hookedYPosition * 300 + 10}vh`}} alt="Building" />
-        <img src="/Layer1.svg" className={styles.l1} alt="Layer 1" style={{bottom: `${-hookedYPosition * 300 - 30}vh`}}/>
-        <img src="/Layer2.svg" className={styles.l2} alt="Layer 2" style={{bottom: `${-hookedYPosition * 200 - 30}vh`}}/>
-        <img src="/Layer3.svg" className={styles.l3} alt="Layer 3" style={{bottom: `${-hookedYPosition * 100 - 30}vh`}}/>
-        <img src="/Layer4.svg" className={styles.l4} alt="Layer 4" style={{bottom: `${hookedYPosition * 20 -20}vh`}}/>
-
-        <img src="/B4.png" width="250px" className={styles.building} onClick={() => scroll('faq')} style={{bottom: `${hookedYPosition * 500 - 200}vh`, left: `${hookedYPosition * 500 - 200}vw`}}/>
-        <img src="/B2.png" width="250px" className={styles.building} onClick={() => scroll('sponsors')} style={{bottom: `${hookedYPosition * 500 - 40}vh`, left: `${hookedYPosition * 500 - 40}vw`}}/>
-        <img src="/B1.png" width="250px" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 80}vh`, left: `${hookedYPosition * 500 - 80}vw`}}/>
-        <img src="/B5.png" width="250px" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 120}vh`, left: `${hookedYPosition * 500 - 120}vw`}}/>
-        <img src="/B3.png" width="250px" className={styles.building} onClick={() => scroll('prizes')} style={{bottom: `${hookedYPosition * 500 - 160}vh`, left: `${hookedYPosition * 500 - 160}vw`}}/>
-
-        {/* <Registration title="Questions?" desc="Pls register" /> */}
+        </section>
+        </div>
+        <img src="/Layer1.svg" className={styles.l1} alt="Layer 1" style={{bottom: `${-hookedYPosition * (isHalf ? 0: 200) - (isHalf ? 0 : 30)}vh`}}/>
+        <img width="100%" src="3161-removebg.png" className={styles.buildings} style={{bottom: `${-hookedYPosition * (isHalf ? 0 :150) + (isHalf ? 11 : -6)}vh`}} alt="Building" />
+        <img src="/Layer2.svg" className={styles.l2} alt="Layer 2" style={{bottom: `${-hookedYPosition * (isHalf ? 0: 150) - (isHalf ? 0 : 30)}vh`}}/>
+        <img src="/Layer3.svg" className={styles.l3} alt="Layer 3" style={{bottom: `${-hookedYPosition * (isHalf ? 0: 60) - (isHalf ? 0 : 30)}vh`}}/>
+        <img src="/Layer4.svg" className={styles.l4} alt="Layer 4" style={{bottom: `${hookedYPosition * (isHalf ? 0: 20) - (isHalf ? 0: 20)}vh`}}/>
+        {/* <Registration title="Questions?" desc="Pls register" />
 
         <Footer />
 

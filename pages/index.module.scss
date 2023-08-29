@@ -35,10 +35,12 @@
     display: flex;
     flex-direction: column;
     color: white;
+    background-color: black;
     margin: 1rem $full-width 1rem;
     border: 3px solid white;
     border-radius: 15px;
     width: 50%;
+    z-index: 3;
 }
 
 .progressbar {
@@ -200,6 +202,7 @@
 .backdrop {
     height: 100vh;
     z-index: -5;
+    background-image: url("../public/endless-constellation.svg");
 }
 
 .b1 {
@@ -219,7 +222,6 @@
 
 .building {
     position: fixed;
-    // z-index: -1;
 }
 .credit {
     position: fixed;
@@ -234,9 +236,9 @@
 }
 
 .content {
-
-    background-color: black;
-    z-index: 1;
+    position: relative;
+    // background-color: black;
+    z-index: -1;
     // margin: 0;
     // background-color: #000000;
     // justify-content: center;
@@ -313,9 +315,7 @@
 
 .transition {
     position: relative;
-    z-index: 0;
     width: 100%;
-    background-color: black;
     margin-bottom: -10px;
 }
 
@@ -331,6 +331,11 @@
 //     transform-style: preserve-3d;
 //     z-index: -1;
 // }
+
+.bottomSection {
+    position: relative;
+    z-index: 4;
+}
 
 
 .custom_wave_section {
@@ -367,11 +372,6 @@
         flex-direction: column;
     }
 
-    .building {
-        top: 8vh;
-        transform: translateZ(-35px) scale(5);
-    }
-
     .planet1 {
         left: -1000vw;
     }
@@ -379,9 +379,12 @@
 
 @media only screen and (max-width: 600px) {
     .frontTitle {
-        font-size: 2rem;
-        position: fixed;
+        font-size: 1rem;
+        width: 75%;
+        position: absolute;
         top: 59%;
+        justify-content: center;
+        align-items: center;
         transform: translateZ(-25px) scale(3);
     }
     .building {

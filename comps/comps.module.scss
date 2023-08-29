@@ -242,6 +242,7 @@ $width: 10rem !default;
 .registerButton {
   padding: 0.25rem 1.25rem 0.25rem;
   margin: 1rem;
+  z-index: 1;
   font-family: inherit;
   font-weight: bold;
   color: white;
@@ -265,7 +266,7 @@ $width: 10rem !default;
   bottom: 5vw;
   left: 50vw;
   margin-left: -1rem;
-  z-index: 2;
+  z-index: 1;
   border-radius: 1rem;
 }
 
