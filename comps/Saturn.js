@@ -1,18 +1,12 @@
 import React from 'react';
 import { motion, useTransform, useScroll, useMotionValueEvent } from 'framer-motion';
+import { useState } from 'react';
 import styles from './Saturn.module.scss'; 
 
-const Saturn = () => {
-  const { scrollX } = useScroll();
-
-  // const saturnX = useTransform(
-  //   scrollX,
-  //   [30, 500],
-  //   [0, -500]
-  // );
+const Saturn = ( { style }) => {
 
   return (
-    <motion.div className={styles.saturnContainer} style={{ x: scrollX }}>
+    <motion.div className={styles.saturnContainer} style={style}>
       <img
         src='/saturn.png'
         alt="Saturn"

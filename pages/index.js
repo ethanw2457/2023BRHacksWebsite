@@ -123,11 +123,17 @@ export default function Home() {
       />
       <Down onClick={() => scrollBottom('about')} />
       <Navbar isOpen={isOpen} onClickTab={scroll}/>
-      <img src="/B4.png" width="250" className={styles.building} onClick={() => scroll('faq')} style={{bottom: `${hookedYPosition * 500 - 200}vh`, left: `${hookedYPosition * 500 - 200}vw`}}/>
-        <img src="/B2.png" width="250" className={styles.building} onClick={() => scroll('sponsors')} style={{bottom: `${hookedYPosition * 500 - 40}vh`, left: `${hookedYPosition * 500 - 40}vw`}}/>
+      {/* <Saturn style={{left: `${hookedYPosition * 500 - 200}vw`}}/> */}
+        <img src="/B2.png" width="250" className={styles.building} onClick={() => scroll('sponsors')} style={{bottom: `${hookedYPosition * 500 - 40}vh`, right: `${hookedYPosition * 500 - 40}vw`}}/>
         <img src="/B1.png" width="250" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 80}vh`, left: `${hookedYPosition * 500 - 80}vw`}}/>
-        <img src="/B5.png" width="250" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 120}vh`, left: `${hookedYPosition * 500 - 120}vw`}}/>
+        <img src="/B5.png" width="250" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 120}vh`, right: `${hookedYPosition * 500 - 120}vw`}}/>
         <img src="/B3.png" width="250" className={styles.building} onClick={() => scroll('prizes')} style={{bottom: `${hookedYPosition * 500 - 160}vh`, left: `${hookedYPosition * 500 - 160}vw`}}/>
+        <img src="/B4.png" width="250" className={styles.building} onClick={() => scroll('faq')} style={{bottom: `${hookedYPosition * 500 - 200}vh`, right: `${hookedYPosition * 500 - 200}vw`}}/>
+        <img src="/B2.png" width="250" className={styles.building} onClick={() => scroll('sponsors')} style={{bottom: `${hookedYPosition * 500 - 240}vh`, left: `${hookedYPosition * 500 - 240}vw`}}/>
+        <img src="/B1.png" width="250" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 280}vh`, right: `${hookedYPosition * 500 - 280}vw`}}/>
+        <img src="/B5.png" width="250" className={styles.building} onClick={() => scroll('about')} style={{bottom: `${hookedYPosition * 500 - 320}vh`, left: `${hookedYPosition * 500 - 320}vw`}}/>
+        <img src="/B3.png" width="250" className={styles.building} onClick={() => scroll('prizes')} style={{bottom: `${hookedYPosition * 500 - 360}vh`, right: `${hookedYPosition * 500 - 360}vw`}}/>
+        <img src="/B4.png" width="250" className={styles.building} onClick={() => scroll('faq')} style={{bottom: `${hookedYPosition * 500 - 400}vh`, left: `${hookedYPosition * 500 - 400}vw`}}/>
       {/* <motion.div className={styles.wrapper}> */}
         <div className={styles.backdrop}> 
           <h1 className={styles.frontTitle}>
@@ -226,11 +232,11 @@ export default function Home() {
         <img src="/Layer2.svg" className={styles.l2} alt="Layer 2" style={{bottom: `${-hookedYPosition * (isHalf ? 0: 150) - (isHalf ? 0 : 30)}vh`}}/>
         <img src="/Layer3.svg" className={styles.l3} alt="Layer 3" style={{bottom: `${-hookedYPosition * (isHalf ? 0: 60) - (isHalf ? 0 : 30)}vh`}}/>
         <img src="/Layer4.svg" className={styles.l4} alt="Layer 4" style={{bottom: `${hookedYPosition * (isHalf ? 0: 20) - (isHalf ? 0: 20)}vh`}}/>
-        {/* <Registration title="Questions?" desc="Pls register" />
+        {/* <Registration title="Questions?" desc="Pls register" /> */}
 
         <Footer />
 
-      {/* </motion.div> */}
+      {/* {/* </motion.div> */}
       </div>
   );
 }

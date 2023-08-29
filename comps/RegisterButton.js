@@ -53,7 +53,7 @@ export const RegisterButton = () => {
             >
                 <motion.span
                     initial="normal"
-                    animate={isHover ? 'side' : 'normal'}
+                    animate={isHover ? 'normal' : 'side'}
                     variants={textAnimate}
                 >
                     Register

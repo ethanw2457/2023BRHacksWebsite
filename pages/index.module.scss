@@ -52,14 +52,15 @@
     background: white;
     // width: 100%;
     transform-origin: 0%;
-    z-index: 1;
+    z-index: 3;
   }
   
 
 .titleText {
     margin: 1rem auto;
     text-align: center;
-    font-family: HackedFont;
+    // font-family: HackedFont;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,10 +225,11 @@
     position: fixed;
 }
 .credit {
-    position: fixed;
+    position: absolute;
     top: 92vh;
     left: 85vw;
     font-size: 11px;
+    z-index: 3;
 }
 
 .svg {
@@ -314,7 +316,6 @@
 }
 
 .transition {
-    position: relative;
     width: 100%;
     margin-bottom: -10px;
 }
@@ -334,7 +335,7 @@
 
 .bottomSection {
     position: relative;
-    z-index: 4;
+    z-index: 1;
 }
 
 
@@ -387,10 +388,9 @@
         align-items: center;
         transform: translateZ(-25px) scale(3);
     }
+
     .building {
-        top: 40vh;
-        left: 35vw;
-        transform: translateZ(-35px) scale(5);
+        width: 125px;
     }
 }
 
