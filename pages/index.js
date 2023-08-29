@@ -119,13 +119,18 @@ export default function Home() {
       <Navbar isOpen={isOpen} onClickTab={scroll}/>
       {/* <motion.div className={styles.wrapper}> */}
         <Down onClick={() => scrollBottom('about')} />
-        <div className={styles.backdrop}/>
+        <div className={styles.backdrop}> 
+          <h1 className={styles.frontTitle}>
+            Hack BRHS
+          </h1>
+        </div>
         <p className={styles.credit}>
           <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais">Image by vectorpocket</a> on Freepik
         </p>
       
         <img src="/LayerR4.svg" className={styles.transition}/>
-        <section className={`${styles.content} ${styles.topspace}`} id="about">
+        {/* <section className={`${styles.content} ${styles.topspace}`} id="about"> */}
+          <div className={styles.titleWrapper}>
           <div className={styles.title}>
             <h1 className={styles.titleText}>
               Hack BRHS 2023
@@ -138,8 +143,9 @@ export default function Home() {
             </p>
             <RegisterButton />
           </div>
-        </section>
-        <section className={styles.secondaryContent}>
+          </div>
+        {/* </section> */}
+        {/* <section className={styles.secondaryContent}> */}
           <div className={styles.titleSecondary} id="faq">
             <h1 className={styles.faq}>
               FAQ
@@ -190,20 +196,20 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
+        {/* </section> */}
 
-        <section className={styles.tertiaryContent}>
+        {/* <section className={styles.tertiaryContent}> */}
           <Schedule />
-        </section>
+        {/* </section> */}
 
         {/* <Saturn /> */}
 
-        <section className={styles.secondaryContent}>
+        {/* <section className={styles.secondaryContent}> */}
           <Team />
-        </section>
-        <section id="sponsors" className={styles.sponsors}>
+        {/* </section> */}
+        {/* <section id="sponsors" className={styles.sponsors}> */}
           <Sponsors />
-        </section>
+        {/* </section> */}
         <img width="100%" src="3161-removebg.png" className={styles.buildings} style={{bottom: `${-hookedYPosition * 300 + 10}vh`}} alt="Building" />
         <img src="/Layer1.svg" className={styles.l1} alt="Layer 1" style={{bottom: `${-hookedYPosition * 300 - 30}vh`}}/>
         <img src="/Layer2.svg" className={styles.l2} alt="Layer 2" style={{bottom: `${-hookedYPosition * 200 - 30}vh`}}/>
