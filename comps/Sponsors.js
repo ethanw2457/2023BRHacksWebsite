@@ -49,6 +49,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.qualcomm.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -66,6 +67,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://womeninstem.org/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -87,11 +89,12 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.echo3d.com/"
-            whileHover={{ scale: 1.1 }} // You can adjust the hover scale effect if needed
-            whileTap={{ scale: 0.9 }} // You can adjust the tap scale effect if needed
+            target='_blank'
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }} 
           >
             <motion.img
-              src="echo3D-Logo.png" // Replace with the actual image filename of the echo3D logo
+              src="echo3D-Logo.png" 
               width={`${300 * scale}px`}
               className={styles.logo}
               initial="hidden"
@@ -111,6 +114,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.bridgewateracura.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -132,6 +136,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.raycatena.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -153,11 +158,12 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.myeyelevel.com/US/index.do"
-            whileHover={{ scale: 1.1 }} // You can adjust the hover scale effect if needed
-            whileTap={{ scale: 0.9 }} // You can adjust the tap scale effect if needed
+            target='_blank'
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }} 
           >
             <motion.img
-              src="eyeLevel.png" // Replace with the actual image filename of the echo3D logo
+              src="eyeLevel.png" 
               width={`${300 * scale}px`}
               className={styles.logo}
               initial="hidden"
@@ -178,6 +184,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.interviewcake.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -199,6 +206,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.taskade.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -220,11 +228,12 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.stickergiant.com/"
-            whileHover={{ scale: 1.1 }} // You can adjust the hover scale effect if needed
-            whileTap={{ scale: 0.9 }} // You can adjust the tap scale effect if needed
+            target='_blank'
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }} 
           >
             <motion.img
-              src="stickerGiant.webp" // Replace with the actual image filename of the echo3D logo
+              src="stickerGiant.webp"
               width={`${300 * scale}px`}
               className={styles.logo}
               initial="hidden"
@@ -245,6 +254,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.axure.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -266,6 +276,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.wolfram.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -287,11 +298,12 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.codeninjas.com/nj-bridgewater"
-            whileHover={{ scale: 1.1 }} // You can adjust the hover scale effect if needed
-            whileTap={{ scale: 0.9 }} // You can adjust the tap scale effect if needed
+            target='_blank'
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }}
           >
             <motion.img
-              src="cNinjas.jpeg" // Replace with the actual image filename of the echo3D logo
+              src="cNinjas.jpeg"
               width={`${300 * scale}px`}
               className={styles.logo}
               initial="hidden"
@@ -312,6 +324,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://zonedinc.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -333,6 +346,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://carnegieevaluations.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -354,11 +368,12 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.aprilludwig.com/"
-            whileHover={{ scale: 1.1 }} // You can adjust the hover scale effect if needed
-            whileTap={{ scale: 0.9 }} // You can adjust the tap scale effect if needed
+            target='_blank'
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }} 
           >
             <motion.img
-              src="alp.jpeg" // Replace with the actual image filename of the echo3D logo
+              src="alp.jpeg" 
               width={`${300 * scale}px`}
               className={styles.logo}
               initial="hidden"
@@ -379,6 +394,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.fstonetechnologies.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -400,6 +416,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.goldsgym.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -421,11 +438,12 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.mathnasium.com/"
-            whileHover={{ scale: 1.1 }} // You can adjust the hover scale effect if needed
-            whileTap={{ scale: 0.9 }} // You can adjust the tap scale effect if needed
+            target='_blank'
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }} 
           >
             <motion.img
-              src="maths.jpeg" // Replace with the actual image filename of the echo3D logo
+              src="maths.jpeg" 
               width={`${300 * scale}px`}
               className={styles.logo}
               initial="hidden"
@@ -446,6 +464,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.carouselflowersnj.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -467,6 +486,7 @@ const Sponsors = () => {
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://www.jetbrains.com/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -484,21 +504,63 @@ const Sponsors = () => {
           </motion.a>
         </motion.div>
 
-        {/* Put Sponsor Here */}
+        {/* Interview Buddy */}
+        <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
+          <motion.a
+            href="https://www.jetbrains.com/"
+            target='_blank'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <motion.img
+              src="intbdd.png"
+              className={styles.logo}
+              initial="hidden"
+              width={`${300 * scale}px`}
+              animate={controls}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+              }}
+            />
+          </motion.a>
+        </motion.div>
 
 
       </div>
 
 
       <div className={`${styles.displayBox} ${styles.sponsorsSection}`} ref={sponsorsRef}>
-        {/* Put Sponsor Here */}
 
+
+        {/* Balsamiq */}
+        <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
+          <motion.a
+            href="https://balsamiq.com/"
+            target='_blank'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <motion.img
+              src="balsamiq.png"
+              className={styles.logo}
+              initial="hidden"
+              width={`${300 * scale}px`}
+              animate={controls}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+              }}
+            />
+          </motion.a>
+        </motion.div>
 
 
         {/* XYZ Domain */}
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
             href="https://gen.xyz/"
+            target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -516,39 +578,32 @@ const Sponsors = () => {
           </motion.a>
         </motion.div>
 
+        {/* Krizzan Consulting */}
+        <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
+          <motion.a
+            href="https://www.krizzanconsulting.com/"
+            target='_blank'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <motion.img
+              src="krizzan.png"
+              width={`${300 * scale}px`}
+              className={styles.logo}
+              initial="hidden"
+              animate={controls}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+              }}
+            />
+          </motion.a>
+        </motion.div>
+
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* XYZ Domain -- and more things with it  */}
-
-      <div className={`${styles.displayBox} ${styles.sponsorsSection}`} ref={sponsorsRef}>
-
-
-
-
-
-      </div>
-
-
-
 
     </div>
   );
-
-
-
 };
 
 export default Sponsors;
