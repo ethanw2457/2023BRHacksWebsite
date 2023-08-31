@@ -1,0 +1,67 @@
+/* TeamMemberProfile.module.scss */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 2px solid #06cd98;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 30px;
+  }
+  
+  .left {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .profilePicture {
+    max-width: 30px; /* Adjust the max-width to make the picture smaller */
+    border-radius: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .roleIcon {
+    font-size: 1.5rem;
+    color: #3498db; /* Change color based on role */
+    margin-top: 1rem;
+  }
+  
+  .right {
+    flex: 2;
+  }
+  
+  .bio {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .socialIconLink {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .socialIconLink:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  
+  .backLink {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #3498db; /* Change color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .backLink:hover {
+    color: #2980b9; /* Change color on hover */
+  }
