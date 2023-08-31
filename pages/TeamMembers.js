@@ -13,9 +13,15 @@ const TeamMembers = () => {
     profilePicture: '/aa-pictures/Kinshuk.jpeg',
     name: 'Kinshuk Goel',
     role: 'Tech & Design Leader',
-    bio: 'Massive tech enthusiast, Kinshuk Goel is a leader in the world of 2023. With his passion for technology, he is always looking for new ways to improve the user experience',
-    instagramLink: 'https://www.instagram.com/',
-    linkedinLink: 'https://www.linkedin.com/',
+
+    bio: 'Rising Junior at BRHS',
+    bio2: 'Favorite Song: Wow - Post Malone',
+    bio3: 'Favorite Food: Pizza',
+    bio4: 'Hobby: Basketball, Programming, Playing the Violin, Hiking',
+
+
+    instagramLink: 'https://www.instagram.com/shuknuk/',
+    linkedinLink: 'https://www.linkedin.com/in/kinshuk-goel-7137a1281/',
   };
 
   return (
@@ -34,6 +40,9 @@ const TeamMembers = () => {
       <div className={styles.right}>
         {/* Short Bio */}
         <p className={styles.bio}>{teamMember.bio}</p>
+        <p className={styles.bio2}>{teamMember.bio2}</p>
+        <p className={styles.bio3}>{teamMember.bio3}</p>
+        <p className={styles.bio4}>{teamMember.bio4}</p>
 
         {/* Social Icons */}
         <div className={styles.socialIcons}>
