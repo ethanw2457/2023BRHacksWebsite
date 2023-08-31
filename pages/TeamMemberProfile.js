@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import styles from './TeamMemberTemplate.module.scss';
+import styles from '../pages/TeamMemberTemplate.module.scss'; // Adjust the path accordingly
 
 const TeamMemberProfile = () => {
   const router = useRouter();
