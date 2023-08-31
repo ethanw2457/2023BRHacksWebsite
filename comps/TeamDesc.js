@@ -1,3 +1,5 @@
+// TeamDesc.js
+
 import styles from './TeamDesc.module.scss'
 import { motion } from 'framer-motion'
 
@@ -9,7 +11,7 @@ const TeamDesc = ({name, desc, src}) => {
             transition={{stiffness: 100, delay: 0.25}}
         >
             {src != "" && <img width="100" src={src}/>}
-            {src == "" && <img width="100" src="/vercel.svg"/>}
+            {src == "" && <img width="100" src="/PFP_EmptyAvatar.png"/>}
             <h3 className={styles.name}>
                 {name}
             </h3>

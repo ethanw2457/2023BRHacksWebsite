@@ -1,3 +1,5 @@
+// TeamDesc.module.scss
+
 @import '../pages/index.module.scss';
 @import './comps.module.scss';
 @import '../styles/_library.scss';
@@ -31,6 +33,15 @@ $fontSize: 0.8rem; // Adjust the font size
     max-width: calc(33.33% - 1rem); /* Adjust for three columns on smaller screens */
     margin: 1rem 0;
   }
+}
+
+
+.teamWrapperGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  gap: 1rem; /* Add spacing between cards */
+  max-width: calc(100% - 2rem); /* Adjust max-width and margin for spacing */
+  margin: 1rem;
 }
 
 .name {

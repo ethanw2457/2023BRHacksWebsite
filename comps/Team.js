@@ -33,11 +33,6 @@ const tech = [
     src: ""
   },
   {
-    name: "Jessica K",
-    role: "Social Media Team Leader",
-    src: ""
-  },
-  {
     name: "Kinshuk G",
     role: "Tech & Design Team Leader",
     src: ""
@@ -209,38 +204,18 @@ const Team = () => {
   }, [])
 
   return (
-      <div className={styles.teamTitle} id="team">
-        <h1 className={styles.titleText}>
-          Team
-        </h1>
-        <div className={styles.container}>
-          <LRButton onClick={toggleDown} left/>
-            {isMobile && <div className={styles.teamWrapper}>
-              {teams[cycle].map((el) => {
-                return (
-                  <>
-                  <TeamDesc name={el.name} desc={el.role} src={el.src} key={el.name}/>
-                  </>
-                )
-              })}
-            </div>}
-            
-            {!isMobile && 
-              ( <>
-                {teams[cycle].map((el) => {
-                return (
-                  <>
-                  <TeamDesc name={el.name} desc={el.role} src={el.src} key={el.name}/>
-                  </>
-                )
-              })}
-              </>
-              )
-            }
-            {/* TODO: Find a better way to do this */}
-          <LRButton onClick={toggleUp} right/>
+    <div className={styles.teamTitle} id="team">
+      <h1 className={styles.titleText}>Team</h1>
+      <div className={styles.container}>
+        <LRButton onClick={toggleDown} left />
+        <div className={styles.teamWrapperGrid}>
+          {teams[cycle].map((el) => (
+            <TeamDesc name={el.name} desc={el.role} src={el.src} key={el.name} />
+          ))}
         </div>
+        <LRButton onClick={toggleUp} right />
       </div>
+    </div>
   );
 }
 
