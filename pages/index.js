@@ -16,6 +16,8 @@ import { useScroll, useMotionValueEvent} from 'framer-motion';
 import Down from '../comps/Down';
 import WaveSection from '../comps/WaveSection';
 import Footer from '../comps/Footer';
+import Link from 'next/link';
+
 
 const variants = {
   open: { x: "9rem" },
@@ -206,9 +208,26 @@ export default function Home() {
               <Question title="Who can attend?">
                 Any high schooler is free to join regardless of where you are from.
               </Question>
+
+              
               <Question title="I have another question.">
-                We would be happy to help you. You can contact us with your question at <a href="mailto:brhacks.team@gmail.com">brhacks.team@gmail.com</a>.
-              </Question>
+  <div>
+    We would be happy to help you. You can contact us with your question at{' '}
+    <a href="mailto:brhacks.team@gmail.com">brhacks.team@gmail.com</a>.
+  </div>
+  <motion.button
+    className={styles.linktreeButton}
+    whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+  >
+    <a href="https://linktr.ee/brhacks" target="_blank" rel="noopener noreferrer">
+      Visit our Linktree
+    </a>
+  </motion.button>
+</Question>
+
+
+
+
 
             </div>
           </div>
