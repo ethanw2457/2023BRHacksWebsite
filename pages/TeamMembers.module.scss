@@ -27,7 +27,8 @@
     font-size: 1.5rem;
     color: #3498db; /* Change color based on role */
     margin-top: 1rem;
-    margin-left: 95px;
+    max-width: 100px;
+    margin-left: 48px;
   }
   
   .right {
@@ -43,6 +44,7 @@
   .socialIcons {
     display: flex;
     gap: 1rem;
+    color: lightblue;
   }
   
   .socialIconLink {
@@ -53,7 +55,7 @@
   }
   
   .socialIconLink:hover {
-    color: #3498db; /* Change color on hover */
+    color: #db3a16; /* Change color on hover */
   }
   
   .backLink {

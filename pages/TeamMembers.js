@@ -5,10 +5,9 @@ import styles from './TeamMembers.module.scss'; // Import your SCSS styles here
 
 const TeamMembers = () => {
   const router = useRouter();
-  const { name } = router.query; // Fetch the query parameter 'name'
+  const { name } = router.query; 
 
-  // Replace this with your data fetching logic based on the 'name'
-
+  // Replace this with your data:
   const teamMember = {
     profilePicture: '/aa-pictures/Kinshuk.jpeg',
     name: 'Kinshuk Goel',
@@ -32,12 +31,34 @@ const TeamMembers = () => {
 
         {/* Icon representing their role */}
         <div className={styles.roleIcon}>
-          {/* Insert the role icon here */}
-          Role Icon
+            
+            {/* Uncomment based on which division they belong in: */}
+            
+            {/* Tech and Design:  */}
+            <img src="/aa-role-icons/techNdesign.png" alt="Role Icon" className={styles.roleIcon} />
+
+
+            {/* Events and Logistics: */}
+            {/* <img src="/aa-role-icons/eventsNlogistics.png" alt="Role Icon" className={styles.roleIcon} /> */}
+
+            {/* Finance */}
+            {/* <img src="/aa-role-icons/finance.png" alt="Role Icon" className={styles.roleIcon} /> */}
+
+
+            {/* Outreach */}
+            {/* <img src="/aa-role-icons/outreach.png" alt="Role Icon" className={styles.roleIcon} /> */}
+
+            {/* Social Media */}
+            {/* <img src="/aa-role-icons/socialMedia.png" alt="Role Icon" className={styles.roleIcon} /> */}
+
         </div>
       </div>
 
       <div className={styles.right}>
+        {/* Name */}
+        <h1 className={styles.name}>{teamMember.name}</h1>
+        {/* Role */}
+        <p className={styles.role}>{teamMember.role}</p>
         {/* Short Bio */}
         <p className={styles.bio}>{teamMember.bio}</p>
         <p className={styles.bio2}>{teamMember.bio2}</p>
