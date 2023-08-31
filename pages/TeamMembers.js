@@ -20,7 +20,7 @@ const TeamMembers = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         {/* Profile Picture */}
-        <img src={teamMember.profilePicture} alt={teamMember.name} />
+        <img src={teamMember.profilePicture} alt={teamMember.name} className={styles.profilePicture} />
 
         {/* Icon representing their role */}
         <div className={styles.roleIcon}>
