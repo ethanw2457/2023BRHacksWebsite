@@ -1,3 +1,5 @@
+// TeamMembers.js
+
 import { useRouter } from 'next/router';
 import styles from './TeamMembers.module.scss'; // Import your SCSS styles here
 
@@ -38,13 +40,13 @@ const TeamMembers = () => {
           {/* Instagram Icon */}
           <a href={teamMember.instagramLink} target="_blank" rel="noopener noreferrer">
             {/* Insert Instagram icon here */}
-            Instagram Icon
+            Instagram
           </a>
 
           {/* LinkedIn Icon */}
           <a href={teamMember.linkedinLink} target="_blank" rel="noopener noreferrer">
             {/* Insert LinkedIn icon here */}
-            LinkedIn Icon
+            LinkedIn
           </a>
 
           {/* Back to Home Page */}
