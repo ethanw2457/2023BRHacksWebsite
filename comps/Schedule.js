@@ -9,34 +9,35 @@ import styles from './Schedule.module.scss';
 
 
 const csvData = `Time,Event,Location
+Time,Event,Location
 9:00 AM,Check In Opens,
 9:30 AM,,
-10:00 AM,Introduction Ceremony,
+10:00 AM,Introduction Ceremony,Auditorium
 10:30 AM,Hacking Starts,
-10:30 AM,Team Building/Networking,
-11:00 AM,Intro Python,
-11:00 AM,Mini Competition,
-12:00 PM,Lunch - Chess Tournament Sign ups,Cafeteria
-12:30 PM,Chess Tournament,
-1:00 PM,BR Prints (3D Printing Club),
-1:00 PM,AI/ML,
-1:30 PM,Neuroscience Workshop,
-1:30 PM,BR Engineering,
-2:00 PM,Intro to Java,
+10:30 AM,Team Building/Networking,Large Cafeteria/Auditorium
+11:00 AM,Intro Python,171
+11:00 AM,Mini Competition,103
+12:00 PM,Lunch - Chess Tournament Sign ups,Large Cafeteria
+12:30 PM,Chess Tournament,172
+1:00 PM,BR Prints (3D Printing Club),Small Cafeteria
+1:00 PM,AI/ML,173
+1:30 PM,Neuroscience Workshop,Small Cafeteria
+1:30 PM,BR Engineering,171
+2:00 PM,Intro to Java,172
 2:00 PM,Will AI Be Able To Model Human Emotion?,Classroom (NO CAFE)
-2:30 PM,Club Workshop,
-2:30 PM,Club Workshop,
-3:00 PM,General CS Knowledge Competition,
-3:00 PM,Cybersecurity Workshop,
-3:30 PM,Game Dev Workshop,
-3:30 PM,Club Workshop,
-4:00 PM,Competitive Programming Competition,
-4:00 PM,,
-4:30 PM,,
-4:30 PM,,
-4:30 PM,,
-5:00 PM,Dinner,
-5:30 PM,Minute to Win It Challenge,
+2:30 PM,Women In STEM,Small Cafeteria
+2:30 PM,Club Workshop,173
+3:00 PM,General CS Knowledge Competition,103
+3:00 PM,Cybersecurity Workshop,171
+3:30 PM,Game Dev Workshop,172
+3:30 PM,Club Workshop,173
+4:00 PM,Competitive Programming Competition,Small Cafeteria
+4:00 PM,Web Development and Github,171
+4:30 PM,Data Visualization,172
+4:30 PM,Intro to C++,173
+4:30 PM,Intro to Data Structures and Algorithms,171
+5:00 PM,Dinner,Large Cafeteria
+5:30 PM,Minute to Win It Challenge,Small Cafeteria
 6:00 PM,,
 6:30 PM,Hackathon Ends,
 7:00 PM,Judging Begins,
@@ -44,7 +45,7 @@ const csvData = `Time,Event,Location
 7:30 PM,Cup Stacking,
 8:00 PM,,
 8:30 PM,Judging Finishes,
-9:00 PM,Closing Ceremony,
+9:00 PM,Closing Ceremony,Auditorium
 9:30 PM,,
 10:00 PM,,
 `;
