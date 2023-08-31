@@ -2,16 +2,19 @@
 @import './comps.module.scss';
 @import '../styles/_library.scss';
 
-$width: 7rem;
+
+$cardWidth: 6rem; // Adjust the card width
+$fontSize: 0.8rem; // Adjust the font size
 
 .card {
   @extend .highlight;
-  width: $width;
-  margin: 1rem 0.5rem 1rem;
-  flex: 1.5;
+  width: $cardWidth;
+  margin: 0.5rem;
+  flex: 1; /* Remove flex-grow to prevent stretching */
   text-align: center;
   padding: 0.25rem;
   border-radius: 8px;
+  font-size: $fontSize;
 
   @media (max-width: 768px) {
     width: 100%; // Adjust the width for smaller screens
@@ -20,43 +23,39 @@ $width: 7rem;
 }
 
 .teamWrapper {
-  width: $width;
-  margin: 1rem 0.5rem 1rem;
-  flex: 1.5;
-  text-align: center;
-  padding: 0.25rem;
-  border-radius: 8px;
+  flex: 1; /* Occupy available space within the container */
+  max-width: calc(25% - 1rem); /* Adjust the max-width for four columns */
+  margin: 1rem 0.5rem; /* Adjust margins for spacing */
 
   @media (max-width: 768px) {
-    width: 100%; // Adjust the width for smaller screens
+    max-width: calc(33.33% - 1rem); /* Adjust for three columns on smaller screens */
     margin: 1rem 0;
   }
 }
 
 .name {
   margin: 0.25rem;
-
-  @media (max-width: 768px) {
-    font-size: 16px; // Adjust the font size for smaller screens
-  }
+  font-size: $fontSize; // Adjust the font size for smaller screens
 }
 
 .desc {
   margin: 0.25rem;
-
-  @media (max-width: 768px) {
-    font-size: 14px; // Adjust the font size for smaller screens
-    margin-top: 5px;
-  }
+  font-size: $fontSize - 0.2rem; // Adjust the font size for smaller screens
+  margin-top: 5px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* The rest of your SCSS code */
 
 .teamTitle {
   @extend .title;
   border: 4px solid white;
 }
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow multiple rows */
+  justify-content: center; /* Center the items horizontally */
+}
+
+
