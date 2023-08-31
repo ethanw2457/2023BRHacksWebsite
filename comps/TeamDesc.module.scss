@@ -44,6 +44,14 @@ $fontSize: 0.8rem; // Adjust the font size
   margin: 1rem;
 }
 
+.teamMember {
+  /* Your existing styles for the team members */
+
+  &.pointerCursor {
+    cursor: pointer; // Apply the cursor style
+  }
+}
+
 .name {
   margin: 0.25rem;
   font-size: $fontSize; // Adjust the font size for smaller screens

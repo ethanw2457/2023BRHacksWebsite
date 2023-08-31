@@ -7,7 +7,7 @@ const TeamMembers = () => {
   const router = useRouter();
   const { name } = router.query; 
 
-  // Replace this with your data:
+  // CLONE THIS FILE AND REPLACE IT WITH YOUR TEAM MEMBERS ---- YES FOR EACH TEAM MEMBER:
   const teamMember = {
     profilePicture: '/aa-pictures/Kinshuk.jpeg',
     name: 'Kinshuk Goel',
@@ -22,14 +22,14 @@ const TeamMembers = () => {
     instagramLink: 'https://www.instagram.com/shuknuk/',
     linkedinLink: 'https://www.linkedin.com/in/kinshuk-goel-7137a1281/',
   };
-
+//          MAKE SURE TO REPLACE THE ICON ---------        VVVVVVVV       ---- LOOK BELOW
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         {/* Profile Picture */}
         <img src={teamMember.profilePicture} alt={teamMember.name} className={styles.profilePicture} />
 
-        {/* Icon representing their role */}
+        {/* Icon representing their role --- MAKE SURE TO DO THIS */}
         <div className={styles.roleIcon}>
             
             {/* Uncomment based on which division they belong in: */}

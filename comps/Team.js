@@ -5,6 +5,8 @@ import TeamDesc from './TeamDesc';
 import LRButton from './LRButton';
 import { useEffect, useState } from 'react';
 import { set } from 'immutable';
+import { useRouter } from 'next/router'; // Import the useRouter hook
+
 
 const tech = [
   {
@@ -184,9 +186,10 @@ const teams = [
 ];
 
 const Team = () => {
-
   const [cycle, setCycle] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const router = useRouter(); // Initialize the router
+
   const toggleUp = () => {
     setCycle((cycle + teams.length - 1) % teams.length);
   }
@@ -194,6 +197,16 @@ const Team = () => {
   const toggleDown = () => {
     setCycle((cycle + 1) % teams.length);
   }
+
+  const handleTeamMemberClick = (teamMemberName) => {
+    if (teamMemberName === 'Kinshuk G') {
+      router.push('/TeamMembers'); // Replace with your actual path to TeamMembers.js
+    }
+    if (teamMemberName === 'Saanvi G') {
+      router.push('/TeamMembers'); // Replace with your actual path to TeamMembers.js
+    }
+  }
+
 
   useEffect(() => {
     if (window.matchMedia('(max-width: 600px)').matches) {
@@ -210,7 +223,13 @@ const Team = () => {
         <LRButton onClick={toggleDown} left />
         <div className={styles.teamWrapperGrid}>
           {teams[cycle].map((el) => (
-            <TeamDesc name={el.name} desc={el.role} src={el.src} key={el.name} />
+            <div
+              className={`${styles.teamMember} ${styles.pointerCursor}`} // Add the pointerCursor class
+              key={el.name}
+              onClick={() => handleTeamMemberClick(el.name)}
+            >
+              <TeamDesc name={el.name} desc={el.role} src={el.src} />
+            </div>
           ))}
         </div>
         <LRButton onClick={toggleUp} right />
