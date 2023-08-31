@@ -8,6 +8,7 @@
   border: 2px solid #ccc;
   border-radius: 8px;
   margin: 1rem 0;
+  padding: 30px;
 }
 
 .left {
@@ -16,8 +17,8 @@
 }
 
 .profilePicture {
-  max-width: 10px; /* Adjust the max-width to make the picture smaller */
-  border-radius: 80%;
+  max-width: 200px; /* Adjust the max-width to make the picture smaller */
+  border-radius: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
