@@ -581,13 +581,13 @@ const Sponsors = () => {
         {/* Krizzan Consulting */}
         <motion.div className={`${styles.logoWrapper} ${styles.card}`}>
           <motion.a
-            href="https://www.krizzanconsulting.com/"
+            href="https://www.cryocontouringstudio.com/"
             target='_blank'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <motion.img
-              src="krizzan.png"
+              src="cyro-ccc.jpeg"
               width={`${300 * scale}px`}
               className={styles.logo}
               initial="hidden"
