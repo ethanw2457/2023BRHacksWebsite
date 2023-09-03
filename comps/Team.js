@@ -203,8 +203,22 @@ const Team = () => {
       router.push('/TeamMembers'); // Replace with your actual path to TeamMembers.js
     }
     if (teamMemberName === 'Saanvi G') {
-      router.push('/TeamMembers'); // Replace with your actual path to TeamMembers.js
+      router.push('/TeamMembers--Saanvi'); // Replace with your actual path to TeamMembers.js
     }
+    if (teamMemberName === 'Ceiron D') {
+      router.push('/TeamMembers--Ceiron'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Chris Q') {
+      router.push('/TeamMembers--Chris'); // Replace with your actual path to TeamMembers.js
+    }
+
+
+    if (teamMemberName === 'Vanshika Y') {
+      router.push('/TeamMembers--Vanshika'); // Replace with your actual path to TeamMembers.js
+    }
+
+
   }
 
 

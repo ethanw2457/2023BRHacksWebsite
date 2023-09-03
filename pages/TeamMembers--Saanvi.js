@@ -9,17 +9,16 @@ const TeamMembers = () => {
 
   // CLONE THIS FILE AND REPLACE IT WITH YOUR TEAM MEMBERS ---- YES FOR EACH TEAM MEMBER:
   const teamMember = {
-    profilePicture: '/aa-pictures/Kinshuk.jpeg',
-    name: 'Kinshuk Goel',
-    role: 'Tech & Design Leader',
+    profilePicture: '/aa-pictures/Saanvi.jpeg',
+    name: 'Saanvi Goel',
+    role: 'Outreach Leader',
 
     bio: 'Rising Junior at BRHS',
-    bio2: 'Creator of the website and team members page',
-    bio4: 'Kinshuk Goel, recognized for leading the Tech & Design Team for the BRHS Hackathon and for bringing you such a great cyber-looking website. With a deep passion for programming, Kinshuk strongly believes it is the key to visualizing the complexities of the world. He enjoys working together with others to create new innovative solutions. In his free time, he enjoys programming, playing the violin, and hiking.',
+    bio4: 'Saanvi Goel is a sophomore at Bridgewater-Raritan High School. She enjoys devoting her time to community service, dance, tutoring underprivileged kids, debating, and singing as a part of various choirs.  In her free time, she enjoys listening to music, reading, painting, and coding.',
 
 
-    instagramLink: 'https://www.instagram.com/shuknuk/',
-    linkedinLink: 'https://www.linkedin.com/in/kinshuk-goel-7137a1281/',
+    instagramLink: 'https://www.instagram.com/saanvigoel7/',
+    linkedinLink: 'https://www.linkedin.com/in/saanvi-goel-635539255/',
   };
 //          MAKE SURE TO REPLACE THE ICON ---------        VVVVVVVV       ---- LOOK BELOW
   return (
@@ -34,7 +33,7 @@ const TeamMembers = () => {
             {/* Uncomment based on which division they belong in: */}
             
             {/* Tech and Design:  */}
-            <img src="/aa-role-icons/techNdesign.png" alt="Role Icon" className={styles.roleIcon} />
+            {/* <img src="/aa-role-icons/techNdesign.png" alt="Role Icon" className={styles.roleIcon} /> */}
 
 
             {/* Events and Logistics: */}
@@ -45,7 +44,7 @@ const TeamMembers = () => {
 
 
             {/* Outreach */}
-            {/* <img src="/aa-role-icons/outreach.png" alt="Role Icon" className={styles.roleIcon} /> */}
+            <img src="/aa-role-icons/outreach.png" alt="Role Icon" className={styles.roleIcon} />
 
             {/* Social Media */}
             {/* <img src="/aa-role-icons/socialMedia.png" alt="Role Icon" className={styles.roleIcon} /> */}

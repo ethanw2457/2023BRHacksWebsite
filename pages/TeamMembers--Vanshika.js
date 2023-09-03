@@ -9,17 +9,16 @@ const TeamMembers = () => {
 
   // CLONE THIS FILE AND REPLACE IT WITH YOUR TEAM MEMBERS ---- YES FOR EACH TEAM MEMBER:
   const teamMember = {
-    profilePicture: '/aa-pictures/Kinshuk.jpeg',
-    name: 'Kinshuk Goel',
-    role: 'Tech & Design Leader',
+    profilePicture: '/aa-pictures/Vanshika.jpeg/',
+    name: 'Vanshika Yadav',
+    role: 'Finance Leader',
 
-    bio: 'Rising Junior at BRHS',
-    bio2: 'Creator of the website and team members page',
-    bio4: 'Kinshuk Goel, recognized for leading the Tech & Design Team for the BRHS Hackathon and for bringing you such a great cyber-looking website. With a deep passion for programming, Kinshuk strongly believes it is the key to visualizing the complexities of the world. He enjoys working together with others to create new innovative solutions. In his free time, he enjoys programming, playing the violin, and hiking.',
+    bio: 'Rising Senior at BRHS',
+    bio4: 'Vanshika Yadav is a senior at Bridgewater Raritan High School with a keen interest in business and computer science. At school, she is the president of the Economics Club at her school, involved in her school’s FBLA chapter, and vice president of the CODE club. In her role as Finance Director of HackBRHS, Vanshika works with her team to contact local businesses, secure sponsorships, and manage the budget of the hackathon. Vanshika’s passion for computer science continues to drive her towards a promising future, and she looks forward to making a positive difference in the world by working with the hackathon organizing team.',
 
 
-    instagramLink: 'https://www.instagram.com/shuknuk/',
-    linkedinLink: 'https://www.linkedin.com/in/kinshuk-goel-7137a1281/',
+    instagramLink: 'https://www.instagram.com/vanshika.yadav06/?igshid=OGQ5ZDc2ODk2ZA%3D%3D',
+    linkedinLink: 'https://www.linkedin.com/in/vanshika-yadav-7bb7b2232/',
   };
 //          MAKE SURE TO REPLACE THE ICON ---------        VVVVVVVV       ---- LOOK BELOW
   return (
@@ -34,14 +33,14 @@ const TeamMembers = () => {
             {/* Uncomment based on which division they belong in: */}
             
             {/* Tech and Design:  */}
-            <img src="/aa-role-icons/techNdesign.png" alt="Role Icon" className={styles.roleIcon} />
+            {/* <img src="/aa-role-icons/techNdesign.png" alt="Role Icon" className={styles.roleIcon} /> */}
 
 
             {/* Events and Logistics: */}
             {/* <img src="/aa-role-icons/eventsNlogistics.png" alt="Role Icon" className={styles.roleIcon} /> */}
 
             {/* Finance */}
-            {/* <img src="/aa-role-icons/finance.png" alt="Role Icon" className={styles.roleIcon} /> */}
+            <img src="/aa-role-icons/finance.png" alt="Role Icon" className={styles.roleIcon} />
 
 
             {/* Outreach */}

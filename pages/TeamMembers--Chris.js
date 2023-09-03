@@ -9,17 +9,16 @@ const TeamMembers = () => {
 
   // CLONE THIS FILE AND REPLACE IT WITH YOUR TEAM MEMBERS ---- YES FOR EACH TEAM MEMBER:
   const teamMember = {
-    profilePicture: '/aa-pictures/Kinshuk.jpeg',
-    name: 'Kinshuk Goel',
-    role: 'Tech & Design Leader',
+    profilePicture: '/aa-pictures/Chris.jpeg/',
+    name: 'Christopher Qiu',
+    role: 'Events & Logistics Leader',
 
-    bio: 'Rising Junior at BRHS',
-    bio2: 'Creator of the website and team members page',
-    bio4: 'Kinshuk Goel, recognized for leading the Tech & Design Team for the BRHS Hackathon and for bringing you such a great cyber-looking website. With a deep passion for programming, Kinshuk strongly believes it is the key to visualizing the complexities of the world. He enjoys working together with others to create new innovative solutions. In his free time, he enjoys programming, playing the violin, and hiking.',
+    bio: 'Rising Senior at BRHS',
+    bio4: 'Christopher Qiu is a rising junior at Bridgewater-Raritan High School. In his free time, he likes to play badminton and clarinet. At school, he participates in the math, coding, and linguistics clubs. He hopes to help younger students to establish an interest in coding and other STEM-related subjects.',
 
 
-    instagramLink: 'https://www.instagram.com/shuknuk/',
-    linkedinLink: 'https://www.linkedin.com/in/kinshuk-goel-7137a1281/',
+    instagramLink: '',
+    linkedinLink: '',
   };
 //          MAKE SURE TO REPLACE THE ICON ---------        VVVVVVVV       ---- LOOK BELOW
   return (
@@ -34,11 +33,11 @@ const TeamMembers = () => {
             {/* Uncomment based on which division they belong in: */}
             
             {/* Tech and Design:  */}
-            <img src="/aa-role-icons/techNdesign.png" alt="Role Icon" className={styles.roleIcon} />
+            {/* <img src="/aa-role-icons/techNdesign.png" alt="Role Icon" className={styles.roleIcon} /> */}
 
 
             {/* Events and Logistics: */}
-            {/* <img src="/aa-role-icons/eventsNlogistics.png" alt="Role Icon" className={styles.roleIcon} /> */}
+            <img src="/aa-role-icons/eventsNlogistics.png" alt="Role Icon" className={styles.roleIcon} />
 
             {/* Finance */}
             {/* <img src="/aa-role-icons/finance.png" alt="Role Icon" className={styles.roleIcon} /> */}
