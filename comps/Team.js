@@ -12,32 +12,32 @@ const tech = [
   {
     name: "Ethan Wang",
     role: "President",
-    src: ""
+    src: "../aa-pictures/default.png"
   },
   {
     name: "Vanshika Y",
     role: "Finance Team Leader",
-    src: ""
+    src: "../aa-pictures/Vanshika.jpeg"
   },
   {
     name: "Ceiron D",
     role: "Events & Logistics Team Leader",
-    src: ""
+    src: "../aa-pictures/Ceiron.png"
   },
   {
     name: "Chris Q",
     role: "Events & Logistics Team Leader",
-    src: ""
+    src: "../aa-pictures/Chris.jpeg"
   },
   {
     name: "Saanvi G",
     role: "Outreach Team Leader",
-    src: ""
+    src: "../aa-pictures/Saanvi.jpeg"
   },
   {
     name: "Kinshuk G",
     role: "Tech & Design Team Leader",
-    src: ""
+    src: "../aa-pictures/Kinshuk.jpeg"
   }
 ];
 
@@ -46,7 +46,7 @@ const finance = [
   {
     name: "Vraj S",
     role: "Finance Team",
-    src: ""
+    src: "../aa-pictures/Vraj.png"
   },
   {
     name: "Krish",
@@ -56,7 +56,7 @@ const finance = [
   {
     name: "Nikita K",
     role: "Finance Team",
-    src: ""
+    src: "../aa-pictures/NikitaK.jpeg"
   },
   {
     name: "Ridhi P",
@@ -80,12 +80,12 @@ const events_logistics = [
   {
     name: "Andrei C",
     role: "Events and Logistics Team",
-    src: ""
+    src: "../aa-pictures/Andrei.jpeg"
   },
   {
     name: "Nikita S",
     role: "Events and Logistics Team",
-    src: ""
+    src: "../aa-pictures/NikitaS.jpeg"
   },
   {
     name: "Arnav D",
@@ -95,7 +95,7 @@ const events_logistics = [
   {
     name: "Aarav N",
     role: "Events and Logistics Team",
-    src: ""
+    src: "../aa-pictures/AaravN.png"
   },
   {
     name: "Pranav S",
@@ -109,12 +109,12 @@ const outreach = [
   {
     name: "Joon D",
     role: "Outreach Team",
-    src: ""
+    src: "../aa-pictures/Joon.jpeg"
   },
   {
     name: "Soham C",
     role: "Outreach Team",
-    src: ""
+    src: "../aa-pictures/Soham.jpeg"
   },
   {
     name: "Nakul R",
@@ -138,7 +138,7 @@ const social_media = [
   {
     name: "Amogh J",
     role: "Social Media Team",
-    src: ""
+    src: "../aa-pictures/Amogh.jpeg"
   },
   {
     name: "Victoria W",
@@ -148,7 +148,7 @@ const social_media = [
   {
     name: "Afraz A",
     role: "Social Media Team",
-    src: ""
+    src: "../aa-pictures/Afraz.png"
   },
   {
     name: "Harshini Y",
@@ -217,6 +217,48 @@ const Team = () => {
     if (teamMemberName === 'Vanshika Y') {
       router.push('/TeamMembers--Vanshika'); // Replace with your actual path to TeamMembers.js
     }
+
+    if (teamMemberName === 'Andrew Z') {
+      router.push('/TeamMembers--Andrew'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Amogh J') {
+      router.push('/TeamMembers--Amogh'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Afraz A') {
+      router.push('/TeamMembers--Afraz'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Andrei C') {
+      router.push('/TeamMembers--Andrei'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Nikita S') {
+      router.push('/TeamMembers--NikitaS'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Aarav N') {
+      router.push('/TeamMembers--AaravN'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Vraj S') {
+      router.push('/TeamMembers--Vraj'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Nikita K') {
+      router.push('/TeamMembers--NikitaK'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Joon D') {
+      router.push('/TeamMembers--Joon'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Soham C') {
+      router.push('/TeamMembers--Soham'); // Replace with your actual path to TeamMembers.js
+    }
+
+
 
 
   }
