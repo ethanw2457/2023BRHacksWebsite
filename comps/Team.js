@@ -119,17 +119,17 @@ const outreach = [
   {
     name: "Nakul R",
     role: "Outreach Team",
-    src: ""
+    src: "../aa-pictures/Nakul.jpeg"
   },
   {
     name: "Advik J",
     role: "Outreach Team",
-    src: ""
+    src: "../aa-pictures/Advik.jpeg"
   },
   {
     name: "Kevin A",
     role: "Outreach Team",
-    src: ""
+    src: "../aa-pictures/Kevin.jpeg"
   }
 ];
 
@@ -200,7 +200,7 @@ const Team = () => {
 
   const handleTeamMemberClick = (teamMemberName) => {
     if (teamMemberName === 'Kinshuk G') {
-      router.push('/TeamMembers'); // Replace with your actual path to TeamMembers.js
+      router.push('/TeamMember-WebsiteLeader'); // Replace with your actual path to TeamMembers.js
     }
     if (teamMemberName === 'Saanvi G') {
       router.push('/TeamMembers--Saanvi'); // Replace with your actual path to TeamMembers.js
@@ -256,6 +256,18 @@ const Team = () => {
 
     if (teamMemberName === 'Soham C') {
       router.push('/TeamMembers--Soham'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Nakul R') {
+      router.push('/TeamMembers--Nakul'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Advik J') {
+      router.push('/TeamMembers--Advik'); // Replace with your actual path to TeamMembers.js
+    }
+
+    if (teamMemberName === 'Kevin A') {
+      router.push('/TeamMembers--Kevin'); // Replace with your actual path to TeamMembers.js
     }
 
 
