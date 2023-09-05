@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/router';
 import styles from './TeamMembers.module.scss'; // Import your SCSS styles here
+import Footer from '../comps/Footer';
 
 import Link from 'next/link'; 
 
@@ -90,6 +91,7 @@ const TeamMembers = () => {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   );
 };

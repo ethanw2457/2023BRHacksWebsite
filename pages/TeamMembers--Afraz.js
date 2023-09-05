@@ -3,6 +3,7 @@
 import { useRouter } from 'next/router';
 import styles from './TeamMembers.module.scss'; // Import your SCSS styles here
 import Link from 'next/link';
+import Footer from '../comps/Footer';
 
 const TeamMembers = () => {
   const router = useRouter();
@@ -23,6 +24,7 @@ const TeamMembers = () => {
   };
 //          MAKE SURE TO REPLACE THE ICON ---------        VVVVVVVV       ---- LOOK BELOW
   return (
+    <>
     <div className={styles.container}>
       <div className={styles.left}>
         {/* Profile Picture */}
@@ -87,6 +89,8 @@ const TeamMembers = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
