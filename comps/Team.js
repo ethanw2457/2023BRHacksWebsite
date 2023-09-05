@@ -12,7 +12,7 @@ const tech = [
   {
     name: "Ethan Wang",
     role: "President",
-    src: "../aa-pictures/default.png"
+    src: "../aa-pictures/Ethan.jpeg"
   },
   {
     name: "Vanshika Y",
@@ -269,6 +269,12 @@ const Team = () => {
     if (teamMemberName === 'Kevin A') {
       router.push('/TeamMembers--Kevin'); // Replace with your actual path to TeamMembers.js
     }
+
+    if (teamMemberName === 'Ethan Wang') {
+      router.push('/TeamMembers--Ethan'); // Replace with your actual path to TeamMembers.js
+    }
+
+    
 
 
 
