@@ -3,6 +3,8 @@
 import { useRouter } from 'next/router';
 import styles from './TeamMembers.module.scss'; // Import your SCSS styles here
 
+import Link from 'next/link'; 
+
 const TeamMembers = () => {
   const router = useRouter();
   const { name } = router.query; 
@@ -23,6 +25,7 @@ const TeamMembers = () => {
   };
 //          MAKE SURE TO REPLACE THE ICON ---------        VVVVVVVV       ---- LOOK BELOW
   return (
+    <>
     <div className={styles.container}>
       <div className={styles.left}>
         {/* Profile Picture */}
@@ -78,10 +81,16 @@ const TeamMembers = () => {
             LinkedIn
           </a>
 
-          {/* Back to Home Page */}
+        {/* Back to Homepage Button */}
+        <div className={styles.backToHome}>
+          <Link href="/"> {/* Link to the index.js page */}
+            <a>Back to Homepage</a>
+          </Link>
+        </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 

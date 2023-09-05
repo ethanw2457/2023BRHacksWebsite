@@ -1,6 +1,7 @@
 // TeamMembers.js
 
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import styles from './TeamMembers.module.scss'; // Import your SCSS styles here
 
 const TeamMembers = () => {
@@ -77,7 +78,12 @@ const TeamMembers = () => {
             LinkedIn
           </a>
 
-          {/* Back to Home Page */}
+        {/* Back to Homepage Button */}
+        <div className={styles.backToHome}>
+          <Link href="/"> {/* Link to the index.js page */}
+            <a>Back to Homepage</a>
+          </Link>
+        </div>
         </div>
       </div>
     </div>
