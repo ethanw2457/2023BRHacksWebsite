@@ -169,6 +169,16 @@ export default function Home() {
               FAQ
             </h1>
             <div className={styles.dark}>
+            <Question title="Visit our LinkTree!">
+              <motion.button
+                className={styles.linktreeButton}
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              >
+              <a href="https://linktr.ee/brhacks" target="_blank" rel="noopener noreferrer">
+                Visit our Linktree
+              </a>
+              </motion.button>
+            </Question>
               <Question title="What time does registration start?">
                 Registration starts at 9 AM.
               </Question>
@@ -215,14 +225,6 @@ export default function Home() {
     We would be happy to help you. You can contact us with your question at{' '}
     <a href="mailto:brhacks.team@gmail.com">brhacks.team@gmail.com</a>.
   </div>
-  <motion.button
-    className={styles.linktreeButton}
-    whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-  >
-    <a href="https://linktr.ee/brhacks" target="_blank" rel="noopener noreferrer">
-      Visit our Linktree
-    </a>
-  </motion.button>
 </Question>
 
 
