@@ -70,6 +70,13 @@ $fontSize: 0.8rem; // Adjust the font size
   border: 4px solid white;
 }
 
+.teamPicture {
+  width: 100px; /* Set your desired width */
+  height: 100px; /* Set your desired height */
+  object-fit: cover; /* This ensures the image retains its aspect ratio */
+  border-radius: 50%; /* To make the images circular, assuming they are square */
+}
+
 
 .container {
   display: flex;
