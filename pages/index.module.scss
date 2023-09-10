@@ -48,17 +48,17 @@
     z-index: 3;
 }
 
-.progressbar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: white;
-    // width: 100%;
-    transform-origin: 0%;
-    z-index: 3;
-  }
+// .progressbar {
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     height: 10px;
+//     background: white;
+//     // width: 100%;
+//     transform-origin: 0%;
+//     z-index: 3;
+//   }
   
 
 .titleText {
@@ -293,6 +293,9 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/endless-constellation.svg");
     background-position: center;
     background-size: cover;
+    font-family: 'Metuo';
+    text-shadow: 0 0 10px white;
+    color: #9d032c;
 }
 
 .planet1 {
