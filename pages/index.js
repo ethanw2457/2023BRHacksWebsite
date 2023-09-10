@@ -154,10 +154,13 @@ export default function Home() {
               Hack BRHS 2023
             </h1>
             <p className={styles.paragraph}>
-            In fall 2023, C.O.D.E. Club will hold the Bridgewater-Raritan HS Hackathon: a full-day, in-person event where 100+ high school students from around New Jersey collaborate to create STEM-related projects to serve their community. This event has already been approved by the BRHS administration and the CODE club team is currently planning it. During the event, participants work in teams to engineer quantum AI databases, create mini-startup companies, program stock robot predictors, create mobile apps to help people take their diabetes medication on time, design climate-friendly solutions, etc.
+            In the upcoming Fall of 2023, the C.O.D.E. Club is all set to host the Bridgewater-Raritan HS Hackathon, a vibrant, full-day, in-person event uniting over 100 high school students from across New Jersey. This hackathon has received official approval from the BRHS administration and is currently in the meticulous planning stages by the CODE club team.
             </p>
             <p className={styles.paragraph}>
-            Essentially this hackathon is a way for students to explore the boundaries of their imagination and achieve them through hard work and determination. In addition to the main competition, CODE Club will also be conducting various workshops in conjunction with other computer science clubs at BRHS.
+            During this exciting event, participants will join forces in teams to tackle a diverse range of STEM-related projects aimed at benefiting their community. These endeavors include the development of advanced computing solutions, the formation of mini-startup companies, the creation of innovative market prediction systems, the development of mobile apps to support diabetes management, and the design of environmentally-conscious solutions.
+            </p>
+            <p className={styles.paragraph}>
+            In essence, this hackathon serves as a platform for students to unleash their creativity and push the boundaries of their imagination, all while achieving their goals through unwavering dedication and hard work. Beyond the main competition, CODE Club will also collaborate with other computer science clubs at BRHS to offer a variety of engaging workshops.
             </p>
             <RegisterButton />
           </div>

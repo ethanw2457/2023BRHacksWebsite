@@ -16,8 +16,8 @@
 .question {
   @extend .paragraph;
   // border-bottom: 1px solid $secondary-color;
-  padding-top: 10px; /* Adjust the top padding */
-  // padding-bottom: 10px; /* Adjust the bottom padding */
+  padding-top: 10px; 
+  padding-bottom: 10px; 
   // font-family: 'Metuo';
   font-size: 20px;
   margin-top: 0;
@@ -27,9 +27,8 @@
 .questions {
   @extend .highlight;
   z-index: 3;
-  padding: 0.5rem; /* Adjust the left and right padding */
-  padding-left: -3px; /* This line should be removed, as it's not valid */
-  font-size: 0.9rem; /* Adjust the font size */
+  padding: 0.5rem; 
+  font-size: 0.9rem; 
   cursor: pointer;
   position: relative;
   overflow: hidden;
