@@ -13,7 +13,7 @@ const TeamMembers = () => {
   const teamMember = {
     profilePicture: '/aa-pictures/Ethan.jpeg',
     name: 'Ethan Wang',
-    role: 'President',
+    role: 'Founder & Lead Organizer',
 
     bio: 'Rising Senior at BRHS',
     bio4: 'Ethan has built countless websites, lead multiple clubs and organizations, played ice hockey (Former AAA Elite club hockey player), and managed social media accounts. Every day he strives to learn and apply his knowledge about computer science and business for the greater good of society. He also enjoys running and experiencing nature whether it be in his neighborhood or in a foreign country. Having traveled to over 17 countries and states, Ethan appreciates unique the identities and cultures of each and every location he visits. Ethans computer science journey was greatly inspired by the culture hackathons create and as a result he has founded the BRHS Hackathon to better bring the hackathon community to Bridgewater Raritan High School! Ethan enjoys working on the Hackathon as Lead Organizer of BRHacks 2023!',

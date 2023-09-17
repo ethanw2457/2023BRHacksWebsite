@@ -11,32 +11,32 @@ import { useRouter } from 'next/router'; // Import the useRouter hook
 const tech = [
   {
     name: "Ethan Wang",
-    role: "President",
+    role: "Founder & Lead Organizer",
     src: "../aa-pictures/Ethan.jpeg"
   },
   {
     name: "Vanshika Y",
-    role: "Finance Team Leader",
+    role: "Finance Hackathon Leader",
     src: "../aa-pictures/Vanshika.jpeg"
   },
   {
     name: "Ceiron D",
-    role: "Events & Logistics Team Leader",
+    role: "Events & Logistics Hackathon Leader",
     src: "../aa-pictures/Ceiron.png"
   },
   {
     name: "Chris Q",
-    role: "Events & Logistics Team Leader",
+    role: "Events & Logistics Hackathon Leader",
     src: "../aa-pictures/Chris.jpeg"
   },
   {
     name: "Saanvi G",
-    role: "Outreach Team Leader",
+    role: "Outreach Hackathon Leader",
     src: "../aa-pictures/Saanvi.jpeg"
   },
   {
     name: "Kinshuk G",
-    role: "Tech & Design Team Leader",
+    role: "Tech & Design Hackathon Leader",
     src: "../aa-pictures/Kinshuk.jpeg"
   }
 ];
