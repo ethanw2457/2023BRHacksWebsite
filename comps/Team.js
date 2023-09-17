@@ -16,27 +16,27 @@ const tech = [
   },
   {
     name: "Vanshika Y",
-    role: "Finance Hackathon Leader",
+    role: "BRHacks Finance Leader",
     src: "../aa-pictures/Vanshika.jpeg"
   },
   {
     name: "Ceiron D",
-    role: "Events & Logistics Hackathon Leader",
+    role: "BRHacks Logistics Leader",
     src: "../aa-pictures/Ceiron.png"
   },
   {
     name: "Chris Q",
-    role: "Events & Logistics Hackathon Leader",
+    role: "BRHacks Logistics Leader",
     src: "../aa-pictures/Chris.jpeg"
   },
   {
     name: "Saanvi G",
-    role: "Outreach Hackathon Leader",
-    src: "../aa-pictures/Saanvi.jpeg"
+    role: "BRHacks Outreach Leader",
+    src: "../aa-pictures/Saanvi1.jpeg"
   },
   {
     name: "Kinshuk G",
-    role: "Tech & Design Hackathon Leader",
+    role: "BRHacks Tech Leader",
     src: "../aa-pictures/Kinshuk.jpeg"
   }
 ];
