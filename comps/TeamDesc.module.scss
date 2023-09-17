@@ -12,7 +12,7 @@ $fontSize: 0.8rem; // Adjust the font size
   @extend .highlight;
   width: $cardWidth;
   margin: 0.5rem;
-  flex: 1; /* Remove flex-grow to prevent stretching */w
+  flex: 1; /* Remove flex-grow to prevent stretching */
   text-align: center;
   padding: 0.25rem;
   border-radius: 8px;
