@@ -17,7 +17,7 @@ const TeamMembers = () => {
     role: 'Tech & Design Leader',
 
     bio: 'Rising Junior at BRHS',
-    bio2: 'Creator of the website and team members page',
+    bio2: 'Creator of this phenomenal Website and Team Members page',
     bio4: 'Kinshuk Goel, recognized for leading the Tech & Design Team for the BRHS Hackathon and for bringing you such a great cyber-looking website. With a deep passion for programming, Kinshuk strongly believes it is the key to visualizing the complexities of the world. He enjoys working together with others to create new innovative solutions. In his free time, he enjoys programming, playing the violin, and hiking.',
 
 

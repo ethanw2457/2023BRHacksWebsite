@@ -17,10 +17,22 @@
   margin-right: 2rem;
 }
 
+.name {
+  font-size: 50px;
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 0.8rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 8px #877f7f;
+}
+
 .profilePicture {
   max-width: 300px; /* Adjust the max-width to make the picture smaller */
   border-radius: 40px;
   box-shadow: 0 2px 4px rgb(59, 207, 150);
+}
+
+.role {
+  font-family: 'Orbitron';
 }
 
 .roleIcon {
