@@ -139,11 +139,12 @@ export default function Home() {
       {/* <motion.div className={styles.wrapper}> */}
         <div className={styles.backdrop}> 
           <h1 className={styles.frontTitle}>
-            Hack BRHS
+            BRHS Hacks
           </h1>
         </div>
         <p className={styles.credit}>
-          <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais">Image by vectorpocket</a> on Freepik
+          <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais"></a>
+        {/*  The following image is by Vectorpocket on Freepik. Via the link. */}
         </p>
         <div className={styles.bottomSection}>
         <img src="/LayerR4.svg" className={styles.transition}/>
