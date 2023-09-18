@@ -152,7 +152,7 @@ export default function Home() {
         {/* <div className={styles.titleWrapper}> */}
           <div className={styles.title}>
             <h1 className={styles.titleText}>
-              Hack BRHS 2023
+              BRHacks 2023
             </h1>
             <p className={styles.paragraph}>
             In the upcoming Fall of 2023, the C.O.D.E. Club is all set to host the Bridgewater-Raritan HS Hackathon, a vibrant, full-day, in-person event uniting over 100 high school students from across New Jersey. This hackathon has received official approval from the BRHS administration and is currently in the meticulous planning stages by the CODE club team.
