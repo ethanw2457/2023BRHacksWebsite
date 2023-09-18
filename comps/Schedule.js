@@ -10,7 +10,6 @@ import styles from './Schedule.module.scss';
 
 const csvData = `Time,Event,Location
 9:00 AM,Check In Opens,
-9:30 AM,,
 10:00 AM,Opening Ceremony,Auditorium
 10:30 AM,Team Bonding During Opening Ceremony,Large Cafetria
 11:15 AM,Intro Python,171
@@ -32,9 +31,9 @@ const csvData = `Time,Event,Location
 6:30 PM,Data Visualization,172
 6:30 PM,Web Development and Github,171
 7:00 PM,Hacking Ends,
-7:15 PM,Dinner,
+7:15 PM,Dinner,Large Cafeteria
 7:15 PM,Judging Begins,
-7:30 PM,Cup Stacking,
+7:30 PM,Cup Stacking,Large Cafeteria
 8:30 PM,Judging Finishes,
 9:00 PM,Closing Ceremony,Auditorium
 `;
