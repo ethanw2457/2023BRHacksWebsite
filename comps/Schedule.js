@@ -9,13 +9,13 @@ import styles from './Schedule.module.scss';
 
 
 const csvData = `Time,Event,Location
-9:00 AM,Check In Opens,
+9:00 AM,Check In Opens,Large Cafeteria
 10:00 AM,Opening Ceremony,Auditorium
-10:30 AM,Team Bonding During Opening Ceremony,Large Cafetria
+10:30 AM,Team Bonding During Opening Ceremony,Large Cafeteria
 11:15 AM,Intro Python,171
 11:15 AM,Intro to C++,172
 12:00 PM,Lunch - Chess Tournament Sign ups,Large Cafeteria
-12:30 PM,Lunch/Chess Tournament,
+12:30 PM,Lunch/Chess Tournament,Large Cafeteria
 1:00 PM,3D Printing Workshop,Small Cafeteria - 2hrs
 1:00 PM,AI/Machine Learning Workshop,173
 1:45 PM,General CS Knowledge Competition,Large Cafeteria
@@ -25,7 +25,7 @@ const csvData = `Time,Event,Location
 3:15 PM,Intro to Data Structures and Algorithms,172
 4:00 PM,Engineering Workshop,173
 4:00 PM,Neuroscience Workshop,103
-4:45 PM,Competitive Programming Competition,Small Cafetria
+4:45 PM,Competitive Programming Competition,Small Cafeteria
 5:45 PM,Game Dev Workshop,173
 5:45 PM,Women In STEM,103
 6:30 PM,Data Visualization,172
