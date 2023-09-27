@@ -14,8 +14,10 @@ const csvData = `Time,Event,Location
 10:30 AM,Team Bonding During Opening Ceremony,Large Cafeteria
 11:15 AM,Intro Python,171
 11:15 AM,Intro to C++,172
+11:15 AM,Intro to Github,103
 12:00 PM,Lunch - Chess Tournament Sign ups,Large Cafeteria
 12:30 PM,Lunch/Chess Tournament,Large Cafeteria
+1:00 PM,Coding With a Purpose Workshop,172
 1:00 PM,3D Printing Workshop,Small Cafeteria - 2hrs
 1:00 PM,AI/Machine Learning Workshop,173
 1:45 PM,General CS Knowledge Competition,Large Cafeteria
@@ -29,8 +31,8 @@ const csvData = `Time,Event,Location
 5:45 PM,Game Dev Workshop,173
 5:45 PM,Women In STEM,103
 6:30 PM,Data Visualization,172
-6:30 PM,Web Development and Github,171
-7:00 PM,Hacking Ends,
+6:30 PM,Web Development,171
+7:00 PM,Hacking Ends,Large Cafeteria
 7:15 PM,Dinner,Large Cafeteria
 7:15 PM,Judging Begins,
 7:30 PM,Cup Stacking,Large Cafeteria
