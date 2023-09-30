@@ -137,11 +137,15 @@ export default function Home() {
         <img src="/B3.png" width="250" className={styles.building} onClick={() => scroll('prizes')} style={{bottom: `${hookedYPosition * 500 - 360}vh`, right: `${hookedYPosition * 500 - 360}vw`}}/>
         <img src="/B4.png" width="250" className={styles.building} onClick={() => scroll('faq')} style={{bottom: `${hookedYPosition * 500 - 400}vh`, left: `${hookedYPosition * 500 - 400}vw`}}/>
       {/* <motion.div className={styles.wrapper}> */}
-        <div className={styles.backdrop}> 
+        <div className={styles.backdrop}>
+        <div className={styles.mlh}>
+          <img src="/mlh-official.png" className={styles.mlh} alt="Logo" />
+        </div>
           <h1 className={styles.frontTitle}>
             BRHS Hacks
           </h1>
         </div>
+
         <p className={styles.credit}>
           <a href="https://www.freepik.com/free-vector/metropolis-night-landscape-neon-cartoon-vector_4393824.htm#query=cyberpunk%20city&position=0&from_view=keyword&track=ais"></a>
         {/*  The following image is by Vectorpocket on Freepik. Via the link. */}

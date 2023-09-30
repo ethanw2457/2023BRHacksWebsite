@@ -64,7 +64,11 @@
 //     transform-origin: 0%;
 //     z-index: 3;
 //   }
-  
+
+.mlh {
+    padding-left: 450px;
+    // shrink the size
+}
 
 .titleText {
     margin: 1rem auto;
@@ -129,7 +133,11 @@
 
 
 .mlh {
-    margin-left: 5rem;
+    margin-left: 10rem;
+    margin-right: 5rem;
+    position: relative;
+    width: 540px;
+    z-index: 9999;
 }
 
 .circle,

@@ -97,6 +97,7 @@ const Sponsors = () => {
               src="echo3D-Logo.png" 
               width={`${300 * scale}px`}
               className={styles.logo}
+
               initial="hidden"
               animate={controls}
               variants={{
