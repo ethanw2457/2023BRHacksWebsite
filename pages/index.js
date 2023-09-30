@@ -139,7 +139,9 @@ export default function Home() {
       {/* <motion.div className={styles.wrapper}> */}
         <div className={styles.backdrop}>
         <div className={styles.mlh}>
+          <a href="https://mlh.io/" target="_blank" rel="noopener noreferrer">
           <img src="/mlh-official.png" className={styles.mlh} alt="Logo" />
+          </a>
         </div>
           <h1 className={styles.frontTitle}>
             BRHS Hacks

@@ -133,11 +133,14 @@
 
 
 .mlh {
-    margin-left: 165px;
-    margin-right: 3rem;
+    left: 165px;
+    right: 3rem;
+    // move downwards a bit
+    top: 1.5rem;
     position: relative;
     width: 540px;
-    z-index: 9999;
+    z-index: 991;
+    cursor: pointer;
 }
 
 .circle,
