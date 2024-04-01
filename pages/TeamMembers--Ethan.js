@@ -22,7 +22,7 @@ const TeamMembers = () => {
     instagramLink: 'https://www.instagram.com/ethan.w2457/',
     linkedinLink: 'https://www.linkedin.com/in/ethan-wang-a1701b257/',
   };
-//          MAKE SURE TO REPLACE THE ICON ---------        VVVVVVVV       ---- LOOK BELOW
+//          MAKE SURE TO REPLACE THE ICON ---------       VVVVVVVV       ---- LOOK BELOW
   return (
     <>
     <div className={styles.container}>
