@@ -1,6 +1,27 @@
-2024 BRHacks Website
-https://brhacks24.vercel.app/
+# BRHacks 2023 - Official Website
 
+This was the official website for BRHacks 2023, the first-ever hackathon hosted by Bridgewater-Raritan High School. The site served as the central hub for registration, FAQs, schedule, and sponsor information, and helped attract over 150 student participants.
+
+## 💻 Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Next.js
+
+## 🚀 Features
+- Responsive design for desktop and mobile
+- Animated landing page with key event info
+- Registration portal integration (via Google Forms)
+- Dynamic sponsor section
+- FAQ accordion + real-time schedule updates
+
+## 🌐 Live Site (no longer active)
+Archived: [https://2023-br-hacks-website.vercel.app/](https://2023-br-hacks-website.vercel.app/)
+
+## 🏁 Outcome
+The site helped onboard over 150 participants, attract multiple sponsors, and lay the groundwork for future BRHacks events.
+
+---
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
